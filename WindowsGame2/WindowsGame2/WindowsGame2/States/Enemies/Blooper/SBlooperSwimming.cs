@@ -23,22 +23,22 @@ namespace WindowsGame2
         public SBlooperSwimming (IEnemy enemy)
         {
             this.Enemy = enemy;
-            Enemy.Sprite = new Animation(Textures.blooperSwimming, 2, 30);
-            Enemy.Acceleration = Vector2.Zero;
+            bool left = HUD.level.player.Position.X < Enemy.Position.X;
+            Enemy.Sprite = new Animation(Textures.blooperSwimming, 2, 20);
+            Enemy.Velocity = new Vector2(left ? -0.8f : 0.8f, -1f);
 
-            Enemy.Hitbox.SetOffset(Hitboxes.BLOOPER_OFFSET_X, Hitboxes.BLOOPER_OFFSET_Y);
             Enemy.Hitbox.Clear();
             SetHitbox();
             timer = 0;
-
         }
 
         public void Update()
         {
+            timer++;
             Enemy.Hitbox.Cycle();
             SetHitbox();
 
-            if (Enemy.Position.Y < 30 || (Math.Abs(Enemy.Position.X - HUD.level.player.Position.X) < 5))
+            if (Enemy.Position.Y < 30 || timer == 30)
             {
                 Enemy.State = new SBlooperIdle(Enemy);
             }

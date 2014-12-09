@@ -3690,7 +3690,7 @@
       <properties>
         <dimensions width="512" height="16" />
         <time seconds="999" />
-        <start x="1" y="2" />
+        <start x="2" y="13" />
       </properties>
       <objects>
         <floorblock x="0" y="14" width="512" height="2" />
@@ -3698,6 +3698,22 @@
         <springboard x="5" y="13" color="red" />
         <springboard x="15" y="10" color="red" />
         <springboard x="25" y="8" color="red" />
+      </objects>
+    </sublevel>
+  </level>
+
+  <level name="9-2">
+    <sublevel>
+      <properties>
+        <dimensions width="512" height="16" />
+        <setting type="underwater" background="water" />
+        <time seconds="999" />
+        <start x="2" y="13" />
+      </properties>
+      <objects>
+        <floorblock x="0" y="14" width="512" height="2" />
+
+        <blooper x="7" y="10" />
       </objects>
     </sublevel>
   </level>

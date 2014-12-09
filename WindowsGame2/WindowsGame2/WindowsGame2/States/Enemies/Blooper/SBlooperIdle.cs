@@ -25,14 +25,13 @@ namespace WindowsGame2
         {
             this.Enemy = enemy;
             Enemy.Sprite = new Animation(Textures.blooperIdle);
-            Enemy.Hitbox.SetOffset(Hitboxes.BLOOPER_OFFSET_X, Hitboxes.BLOOPER_OFFSET_Y);
             Enemy.Hitbox.Clear();
             SetHitbox();
+            Enemy.Velocity = new Vector2(0f, 0.5f);
+
             timer = 0;
-            Enemy.Acceleration = new Vector2(0, 0.001f);
             rand = new Random();
-            timerLimit = ((rand.Next())%200) + 100;
-            
+            timerLimit = rand.Next(20, 100);
         }
 
         public void Update()
@@ -42,7 +41,7 @@ namespace WindowsGame2
 
             timer++;
 
-            if ((timer >= timerLimit) || Enemy.Position.Y > HotDAMN.WINDOW_HEIGHT - 32) 
+            if ((timer >= timerLimit) || Enemy.Position.Y > HotDAMN.WINDOW_HEIGHT - 4 * HotDAMN.GRID) 
             {
                 Enemy.State = new SBlooperSwimming(Enemy);
             }

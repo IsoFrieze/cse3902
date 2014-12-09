@@ -26,7 +26,7 @@ namespace WindowsGame2
             this.Acceleration = Vector2.Zero;
             this.Hitbox = new Hitbox(Hitboxes.BLOOPER_OFFSET_X, Hitboxes.BLOOPER_OFFSET_Y);
             this.State = new SBlooperIdle(this);
-            this.Sprite = new Animation(Textures.blooperSwimming);
+            this.Sprite = new Animation(Textures.blooperIdle);
             this.IsActive = true;
             this.CollisionHandler = new BlooperCollisionHandler(this);
         }
@@ -37,10 +37,6 @@ namespace WindowsGame2
             Position += Velocity;
             Sprite.Update();
             State.Update();
-            if (Velocity.Y > Physics.TERMINAL_VELOCITY_FALLING)
-            {
-                Velocity = new Vector2(Velocity.X, Physics.TERMINAL_VELOCITY_FALLING);
-            }
         }
 
         public void Draw(SpriteBatch sb, Rectangle camera)
