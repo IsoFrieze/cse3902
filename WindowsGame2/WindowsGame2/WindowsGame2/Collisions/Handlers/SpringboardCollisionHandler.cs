@@ -16,7 +16,7 @@ namespace WindowsGame2
 
         public void CollisionAbove(ITangible type)
         {
-            if (type is IPlayer)
+            if (type is IPlayer && subject.State is SSpringboardIdle)
             {
                 subject.State = new SSpringboardCompressing(subject);
             }

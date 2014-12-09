@@ -3667,7 +3667,7 @@
       </enemies>
     </sublevel>
   </level>
-  
+
   <level name="warpzone">
     <sublevel>
       <properties>
@@ -3681,6 +3681,23 @@
         <pipe x="1" y="11" height="3" name="1-1" />
         <pipe x="7" y="11" height="3" name="1-1" />
         <pipe x="13" y="11" height="3" name="1-1" />
+      </objects>
+    </sublevel>
+  </level>
+
+  <level name="9-1">
+    <sublevel>
+      <properties>
+        <dimensions width="512" height="16" />
+        <time seconds="999" />
+        <start x="1" y="2" />
+      </properties>
+      <objects>
+        <floorblock x="0" y="14" width="512" height="2" />
+
+        <springboard x="5" y="13" color="red" />
+        <springboard x="15" y="10" color="red" />
+        <springboard x="25" y="8" color="red" />
       </objects>
     </sublevel>
   </level>

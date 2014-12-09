@@ -30,8 +30,6 @@ namespace WindowsGame2
             SetHitbox();
         }
 
-        public void Spawn() { }
-
         private void SetHitbox()
         {
             Block.Hitbox.AddRectHitbox(

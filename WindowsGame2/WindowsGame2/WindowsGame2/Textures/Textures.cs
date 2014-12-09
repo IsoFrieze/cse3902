@@ -48,7 +48,6 @@ namespace WindowsGame2
 
         public static Texture2D springboardIdle;
         public static Texture2D springboardCompressing;
-        public static Texture2D springboardRelaxing;
 
         public static Texture2D water;
 
@@ -321,7 +320,6 @@ namespace WindowsGame2
 
             springboardIdle = Content.Load<Texture2D>("Sprites/Blocks/Springboard/SpringboardIdle");
             springboardCompressing = Content.Load<Texture2D>("Sprites/Blocks/Springboard/SpringboardCompressing");
-            springboardRelaxing = Content.Load<Texture2D>("Sprites/Blocks/Springboard/SpringboardRelaxing");
 
             water = Content.Load<Texture2D>("Sprites/Blocks/Water");
 
@@ -459,7 +457,7 @@ namespace WindowsGame2
             luigi2 = Content.Load<Texture2D>("Sprites/Players/Luigi/Luigi2");
             luigi3 = Content.Load<Texture2D>("Sprites/Players/Luigi/Luigi3");
 
-            mushroomPointer = Content.Load<Texture2D>("Sprites/MushroomPointer");
+            mushroomPointer = Content.Load<Texture2D>("Sprites/HUD/MushroomPointer");
 
             for (int i = 0; i < 5; i++)
             {

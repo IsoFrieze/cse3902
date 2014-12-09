@@ -25,6 +25,7 @@ namespace WindowsGame2
 
         public void Update()
         {
+            counter++; 
             if (counter % speed == 0)
             {
                 currentFrame++;
@@ -33,8 +34,7 @@ namespace WindowsGame2
                 {
                     currentFrame = 0;
                 }
-            }
-            counter++;     
+            }    
         }
 
         public void Draw(SpriteBatch spriteBatch, int x, int y)

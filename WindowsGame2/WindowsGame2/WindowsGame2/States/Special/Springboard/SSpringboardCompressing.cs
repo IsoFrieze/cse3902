@@ -17,51 +17,36 @@ namespace WindowsGame2
         public IBlock Block { get; set; }
 
         private int timer;
-        private int hitboxLocation;
         public SSpringboardCompressing(IBlock block)
         {
             this.Block = block;
-            Block.Sprite = new Animation(Textures.springboardCompressing, 3, 8);
+            Block.Sprite = new Animation(Textures.springboardCompressing, 8, 4);
             Block.CollisionHandler = new StaticBlockCollisionHandler(Block);
             Block.Hitbox.Clear();
             SetHitbox();
-            hitboxLocation = (int)Block.Position.Y;
             timer = 0;
         }
         public void Update()
         {
             Block.Hitbox.Cycle();
-            ShrinkHitbox();
+            SetHitbox();
             timer++;
 
-            if (timer == 24)
+            if (timer == 32)
             {
-                 Block.State = new SSpringboardRelaxing(Block);
+                 Block.State = new SSpringboardIdle(Block);
             }
 
         }
 
-        public void Spawn() { }
-
         private void SetHitbox()
         {
+            int offset = (int)(16 * Math.Sin(Math.PI * timer / 32));
             Block.Hitbox.AddRectHitbox(
                     (int)Block.Position.X,
-                    (int)Block.Position.Y,
+                    (int)Block.Position.Y + offset,
                     Hitboxes.SPRINGBOARD_WIDTH,
-                    Hitboxes.SPRINGBOARD_HEIGHT
-                );
-        }
-
-        private void ShrinkHitbox()
-        {
-            hitboxLocation--;
-
-            Block.Hitbox.AddRectHitbox(
-                    (int)Block.Position.X,
-                    hitboxLocation,
-                    Hitboxes.SPRINGBOARD_WIDTH,
-                    Hitboxes.SPRINGBOARD_HEIGHT
+                    Hitboxes.SPRINGBOARD_HEIGHT - offset
                 );
         }
     }

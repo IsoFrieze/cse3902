@@ -164,10 +164,6 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
     </Content>
-    <Content Include="Levels\TestLevel.csv">
-      <Name>TestLevel</Name>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Compile Include="Sprites\Items\Mushroom.png">
       <Name>Mushroom</Name>
       <Importer>TextureImporter</Importer>
@@ -873,7 +869,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Sprites\MushroomPointer.png">
+    <Compile Include="Sprites\HUD\MushroomPointer.png">
       <Name>MushroomPointer</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
@@ -930,21 +926,6 @@
     </Compile>
     <Compile Include="Sprites\Enemies\Blooper\BlooperSwimming.png">
       <Name>BlooperSwimming</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites\Blocks\Springboard\SpringboardCompressing.png">
-      <Name>SpringboardCompressing</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites\Blocks\Springboard\SpringboardIdle.png">
-      <Name>SpringboardIdle</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites\Blocks\Springboard\SpringboardRelaxing.png">
-      <Name>SpringboardRelaxing</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
@@ -1138,16 +1119,16 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Levels\1-1.csv">
-      <Name>1-1</Name>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Levels\1-2.csv">
-      <Name>1-2</Name>
-    </Content>
+    <Compile Include="Sprites\Blocks\Springboard\SpringboardCompressing.png">
+      <Name>SpringboardCompressing</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Blocks\Springboard\SpringboardIdle.png">
+      <Name>SpringboardIdle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

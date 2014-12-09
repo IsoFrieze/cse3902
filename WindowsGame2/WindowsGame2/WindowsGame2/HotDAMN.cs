@@ -123,7 +123,8 @@ namespace WindowsGame2
                                                             TAB + "5-1" + TAB + TAB + "5-2" + TAB + TAB + "5-3" + TAB + TAB + "5-4\n" +
                                                             TAB + "6-1" + TAB + TAB + "6-2" + TAB + TAB + "6-3" + TAB + TAB + "6-4\n" +
                                                             TAB + "7-1" + TAB + TAB + "7-2" + TAB + TAB + "7-3" + TAB + TAB + "7-4\n" +
-                                                            TAB + "8-1" + TAB + TAB + "8-2" + TAB + TAB + "8-3" + TAB + TAB + "8-4";
+                                                            TAB + "8-1" + TAB + TAB + "8-2" + TAB + TAB + "8-3" + TAB + TAB + "8-4\n" +
+                                                            TAB + "T-1" + TAB + TAB + "T-2" + TAB + TAB + "T-3" + TAB + TAB + "T-4";
 
 
         public static char TAG_SUBLEVEL = '@';

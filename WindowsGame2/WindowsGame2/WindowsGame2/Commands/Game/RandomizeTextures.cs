@@ -45,7 +45,6 @@ namespace WindowsGame2
 
                 Textures.springboardIdle,
                 Textures.springboardCompressing,
-                Textures.springboardRelaxing,
 
                 Textures.water,
 
@@ -200,7 +199,6 @@ namespace WindowsGame2
 
                 Textures.springboardIdle = list[random.Next(0, list.Count())];
                 Textures.springboardCompressing = list[random.Next(0, list.Count())];
-                Textures.springboardRelaxing = list[random.Next(0, list.Count())];
 
                 Textures.water = list[random.Next(0, list.Count())];
 

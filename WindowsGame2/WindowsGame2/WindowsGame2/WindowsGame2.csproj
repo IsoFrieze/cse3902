@@ -251,7 +251,6 @@
     <Compile Include="States\Special\Generator\SGeneratorIdle.cs" />
     <Compile Include="States\Special\Springboard\SSpringboardCompressing.cs" />
     <Compile Include="States\Special\Springboard\SSpringboardIdle.cs" />
-    <Compile Include="States\Special\Springboard\SSpringboardRelaxing.cs" />
     <Compile Include="Tangibles\Blocks\BlockBulletBlaster.cs" />
     <Compile Include="Tangibles\Blocks\BlockInvisible.cs" />
     <Compile Include="Tangibles\Enemies\Blooper.cs" />
