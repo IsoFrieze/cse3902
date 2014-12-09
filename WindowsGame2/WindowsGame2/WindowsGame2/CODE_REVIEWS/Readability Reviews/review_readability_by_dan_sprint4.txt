@@ -1,0 +1,11 @@
+﻿Dan Carlozzi
+10/28/14
+Sprint4
+
+Reviewing: Camera1.cs
+by: Christian Winterhalter
+
+
++ Seperated jobs into multiple methods so one method doesn't do everything. The code that is used works very efficiently.
+
+- Had a lot of code that was commented out. Move is never used. Had a lot of magic numbers.

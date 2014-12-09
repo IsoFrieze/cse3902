@@ -1,0 +1,9 @@
+﻿Author: Alex Losego
+Date: 12/7/14
+Sprint: 6
+Reviewing: BowserCollisionHandler.cs
+By: Dan Carlozzi
+
++ Cohesion is good, coupling is low because of the local fireball hit count. Good idea putting it here.
+
+- Each Collision method has the same check for fireballs, so that should be a private method instead of having the same code copied 4 times.

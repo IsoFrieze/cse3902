@@ -1,0 +1,9 @@
+Author: David Margolis
+Date: 12/07/14
+Sprint: 6
+Reviewing: GeneratorBulletBills.cs
+By: Alex Losego
+
++ The method is not too many lines which makes it easier to read.
+
+- One of the lines is very long making it harder to read.

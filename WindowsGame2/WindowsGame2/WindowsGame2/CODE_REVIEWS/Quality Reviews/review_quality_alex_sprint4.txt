@@ -1,0 +1,9 @@
+﻿Author: Alex Losego
+Date: 11/3/14
+Sprint: 4
+Reviewing: SMarioTansition.cs
+By: Dan Carlozzi
+
++ High cohesion: Class does exactly what it needs to do.
+
+- High coupling: Class depends on using Activator for creating the new state--may be better to have a different class for each transition type?

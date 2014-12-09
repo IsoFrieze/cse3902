@@ -1,0 +1,13 @@
+﻿Michael McGaha
+11/12/14
+Sprint5
+
+Reviewing: HUD.cs
+by: Dan Carlozzi
+
+Time: 5 minutes
+
++ Class is well organized into easy to read sections.
+
+- The class is getting a little long. Many variables makes some sections hard to follow. There should be 
+an update method for HUD

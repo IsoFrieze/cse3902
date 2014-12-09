@@ -1,0 +1,15 @@
+﻿Michael McGaha
+11/3/14
+Sprint3
+Time: 5 minutes
+Reviewing: physics.cs
+by: Alex Losego
+
+
++ The class has high cohesion as it does what it is supposed to do and nothing more. This class
+has low coupeling as it doesn't rely on any other classes. 
+
+- A lot of classes rely on this class to impliment physics aspects. A change to this class could break others.
+
+
+A hypothetical change that I would propose would to make a class simular to this to sync the question and coin objects

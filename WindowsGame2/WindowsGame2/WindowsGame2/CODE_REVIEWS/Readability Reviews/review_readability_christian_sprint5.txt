@@ -1,0 +1,9 @@
+﻿Author: Christian Winterhalter
+Date: 11/12/14
+Sprint: 5
+Reviewing: HUD.cs
+By: Alex Lesago
+
++ Overall easy to read. Alittle confusing what the methods are fully intended for.
+
+- Definitly could use alittle refining but the necessity of it seems obvious.

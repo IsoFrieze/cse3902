@@ -1,0 +1,8 @@
+﻿Author: Christian Winterhalter
+Date: 11/17/14
+Sprint: 5
+Reviewing: HUD.cs
+By: Alex Lesago
+
+Alot goes into this one, since everything from the UI of the game goes in this file there isnt a general trend of the code. The implementation could have been possibly alittle more streamlined but
+over all the coding is solid.

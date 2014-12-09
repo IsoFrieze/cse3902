@@ -1,0 +1,12 @@
+﻿Michael McGaha
+10/29/14
+Sprint4
+
+Reviewing: Physics.cs
+by: Alex Losego
+
+Time: 5 minutes
+
++ Class is short which makes it easy to read. 
+
+- No organization to the constants that the class holds. 

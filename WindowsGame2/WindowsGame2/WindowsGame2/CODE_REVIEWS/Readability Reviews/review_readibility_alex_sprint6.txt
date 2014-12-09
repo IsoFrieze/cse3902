@@ -1,0 +1,7 @@
+﻿Author: Alex Losego
+Date: 12/7/14
+Sprint: 6
+Reviewing: BowserCollisionHandler.cs
+By: Dan Carlozzi
+
++ The class is very short and neat which makes it very easy to read.

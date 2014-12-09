@@ -1,0 +1,9 @@
+﻿Author: Christian Winterhalter
+Date: 12/7/14
+Sprint: 6
+Reviewing: STitleScreen.cs
+By: Micheal McGaha
+
++ The class is small and easy to understand, has high cohesion.
+
+- Nothing to mention

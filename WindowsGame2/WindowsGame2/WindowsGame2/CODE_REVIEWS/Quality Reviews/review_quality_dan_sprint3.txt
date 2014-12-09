@@ -1,0 +1,9 @@
+﻿Author: Dan Carlozzi
+Date: 10/13/14
+Sprint: 3
+Reviewing: Collider.cs (changed name from Collider2.cs)
+By: David Margolis
+
++ Class is a lot more readible than before.
+
+- Still very long. Some comments are not necessary. Has code that is never used.

@@ -1,0 +1,9 @@
+Author: David Margolis
+Date: 12/07/14
+Sprint: 6
+Reviewing: SBowserMovingLeft.cs
+By: Dan Carlozzi
+
++ The method has high cohesion for the state of the enemy.
+
+- There are some magic numbers that probably should be stored in meaningfully named constants.

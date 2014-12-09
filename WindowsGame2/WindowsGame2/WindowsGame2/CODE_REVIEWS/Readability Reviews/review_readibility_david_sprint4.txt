@@ -1,0 +1,9 @@
+Author: David Margolis
+Date: 10/29/14
+Sprint: 4
+Reviewing: Physics.cs
+By: Alex Losego
+
++ The method is very consise.
+
+- The class is pretty limited and static.

@@ -1,0 +1,11 @@
+﻿Author: Christian Winterhalter
+Date: 10/29/14
+Sprint: 4
+Reviewing: Fireball.cs
+By: Alex Losego
+
++ Overall easy to understand. All logic used and methods called are clear and easy to understand.
+
+- Nothing
+  
+  Time: 10 minutes

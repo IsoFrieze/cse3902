@@ -1,0 +1,9 @@
+﻿Author: Alex Losego
+Date: 12/7/14
+Sprint: 6
+Reviewing: HotDAMN.cs
+By: Alex Losego
+
++ The class is organized so that the values are easy to read, also has a good name
+
+-This class is increadibly long

@@ -1,0 +1,11 @@
+﻿Author: Alex Losego
+Date: 10/30/14
+Sprint: 4
+Reviewing: SMarioTansition.cs
+By: Dan Carlozzi
+
++ Only one method and one constructor make this class small and generally easy to read.
+
+- Using the Activator makes you have to actually think about what's going on if you aren't familiar with the code.
+
+- Class name is misspelled!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

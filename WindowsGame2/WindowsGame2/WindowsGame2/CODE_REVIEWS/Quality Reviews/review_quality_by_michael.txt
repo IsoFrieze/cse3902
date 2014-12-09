@@ -1,0 +1,11 @@
+﻿Author: Michael McGaha
+Date: 12/7/14
+Sprint: 6
+Reviewing: HotDamn.cs
+By: Alex Losego
+
++  This class has high cohesion as it only does its job and nothing more.
+
+- Class is a little long
+
+A possible change would be to organize the numbers that belong together to be together in the class

@@ -1,0 +1,9 @@
+﻿Author: Dan Carlozzi
+Date: 9/24/14
+Sprint: 2
+Reviewing: PlayerCommand.cs
+By: David Margolis
+
++ Well organized so anybody can easily figure out how it works.
+
+- Missing brackets in if and for loop. Could lead to confusion if more methods or variables are placed inside of both.

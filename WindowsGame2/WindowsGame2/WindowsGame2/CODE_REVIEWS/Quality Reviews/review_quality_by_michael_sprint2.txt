@@ -1,0 +1,15 @@
+﻿Michael McGaha
+9/30/14
+Sprint2
+
+Reviewing: BlockQuestion.cs
+by: Alex Losego
+
+
++ The class has high cohesion as it does what it is supposed to do and nothing more.
+- variables frame, lag, and counter are unused.
+
+A hypothetical change that we could do in the future is change the game sprites to costruct a new game,
+this class is generic enough that we could easily use it to dispense a random powerup or item without
+changing anything else but the sprite. Also the animation would have to be changed, but the the animation
+class would handle that.

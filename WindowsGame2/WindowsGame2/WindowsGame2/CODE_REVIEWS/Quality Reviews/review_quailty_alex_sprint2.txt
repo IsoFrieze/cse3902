@@ -1,0 +1,9 @@
+﻿Author: Alex Losego
+Date: 9/29/14
+Sprint: 2
+Reviewing: GoombaMovingLeft.cs
+By: Michael McGaha
+
++ High cohesion--the class only does what it is design to do and nothing more.
+
+- Magic Numbers for frames and speed.

@@ -1,0 +1,9 @@
+﻿Author: Alex Losego
+Date: 11/18/14
+Sprint: 5
+Reviewing: SLevelComplete.cs
+By: Michael McGaha
+
++ High cohesion: Class does exactly what it needs to do.
+
+- Some coupling: All the references to HUD are less than ideal.

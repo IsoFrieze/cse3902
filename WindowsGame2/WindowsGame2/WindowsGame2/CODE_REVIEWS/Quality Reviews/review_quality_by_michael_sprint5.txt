@@ -1,0 +1,14 @@
+﻿Michael McGaha
+11/18/14
+Sprint5
+
+Reviewing: HUD.cs
+by: Dan Carlozzi
+
+Time: 10 minutes
+
++ The Class has low coupeling as it doesn't rely on other classes and methods to accomplish its task.
+
+- The class has low cohesion, as it does way more than it should like the score sequnces. 
+
+The score elements should be moved to a separate class

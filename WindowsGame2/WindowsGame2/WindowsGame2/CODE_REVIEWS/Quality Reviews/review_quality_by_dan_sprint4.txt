@@ -1,0 +1,9 @@
+﻿Author: Dan Carlozzi
+Date: 11/3/14
+Sprint: 4
+Reviewing: Camera1.cs
+By: Christian Winterhalter
+
++ Camera class does exactly what it needs to do.
+
+- Still has a lot of code commented out(not sure it's really needed)

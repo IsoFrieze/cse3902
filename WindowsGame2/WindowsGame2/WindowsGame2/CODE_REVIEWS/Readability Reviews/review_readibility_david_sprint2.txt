@@ -1,0 +1,9 @@
+Author: David Margolis
+Date: 9/24/14
+Sprint: 2
+Reviewing: MushroomMoveLeft.cs
+By: Christian Winterhalter
+
++ The methods names are all very clear.
+
+- There are two fields, xSource and ySource, initialized at the top of the file instead of in the constructor which make it less readable.

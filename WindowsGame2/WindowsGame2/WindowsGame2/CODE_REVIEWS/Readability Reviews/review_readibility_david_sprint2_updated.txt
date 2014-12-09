@@ -1,0 +1,9 @@
+Author: David Margolis
+Date: 9/29/14
+Sprint: 2
+Reviewing: MushroomMoveLeft.cs
+By: Christian Winterhalter
+
++ The method bodies all very concise.
+
+- The methods bodies don't use the this keyword to refer to class fields.

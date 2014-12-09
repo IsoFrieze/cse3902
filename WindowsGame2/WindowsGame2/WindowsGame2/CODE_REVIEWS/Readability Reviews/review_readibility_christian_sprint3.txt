@@ -1,0 +1,11 @@
+Author: Christian Winterhalter
+Date: 10/07/14
+Sprint: 3
+Reviewing: StarDecorator
+By: Alex Losego
+
++ Seems concise and understandable
+
+- Alittle confusing since its an abstract class.
+  
+  Time: 10 minutes

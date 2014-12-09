@@ -1,0 +1,9 @@
+﻿Author: Dan Carlozzi
+Date: 10/13/14
+Sprint: 3
+Reviewing: Collider2.cs
+By: David Margolis
+
++ Very neat. Has a high cohesion. Each method has a distinct purpose. 
+
+- A little on the long side.

@@ -1,0 +1,9 @@
+﻿Author: Alex Losego
+Date: 10/8/14
+Sprint: 3
+Reviewing: SMushroomMovingLeft.cs
+By: Michael McGaha
+
++ High cohesion makes this class easy to read. Each method has only a few or one lines.
+
+- The Position and Velocity properties are included after the constructor, which tripped me up at first.

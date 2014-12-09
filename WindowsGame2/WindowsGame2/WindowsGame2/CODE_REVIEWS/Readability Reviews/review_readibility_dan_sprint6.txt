@@ -1,0 +1,10 @@
+﻿Author: Dan Carlozzi
+Date: 12/7/14
+Sprint: 6
+Reviewing: CheepCheepLand.cs
+By: Micheal McGaha
+
++ Easy to understand due to its high cohesion. Setup the same way as the previous Tangables.
+
+- Nothing really to say.
+

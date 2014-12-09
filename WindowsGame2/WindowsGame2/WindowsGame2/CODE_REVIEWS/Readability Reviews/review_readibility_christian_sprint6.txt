@@ -1,0 +1,10 @@
+﻿Author: Christian Winterhalter
+Date: 12/7/14
+Sprint: 6
+Reviewing: STitleScreen.cs
+By: Micheal McGaha
+
++ Easy to read due to high cohesion. Nothing confusion about whats happening in this class.
+
+- N/A
+

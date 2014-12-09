@@ -1,0 +1,3687 @@
+<game ref="http://alex.losego.com/cse/3902/levelsref.html">
+  <level name="0-0">
+    <sublevel>
+      <properties>
+        <dimensions width="69" height="16" />
+        <setting background="bushesnhills" />
+        <time seconds="999" />
+        <start x="2" y="13" title />
+      </properties>
+      <objects>
+        <floorblock x="0" y="14" width="69" height="2" />
+        <pipe x="28" y="12" height="2" />
+        <pipe x="38" y="11" height="3" />
+        <pipe x="46" y="10" height="4" />
+        <pipe x="57" y="10" height="4" />
+
+        <questionblock x="16" y="10" />
+        <questionblock x="21" y="10" contains="powerup" />
+        <questionblock x="23" y="10" />
+        <questionblock x="22" y="6" />
+
+        <brickblock x="20" y="10" />
+        <brickblock x="22" y="10" />
+        <brickblock x="24" y="10" />
+
+        <hiddenblock x="64" y="9" contains="1up" />
+      </objects>
+      <enemies>
+        <goomba x="22" y="13" />
+        <goomba x="40" y="13" />
+        <goomba x="51" y="13" count="2" />
+      </enemies>
+    </sublevel>
+  </level>
+  
+  <level name="1-1">
+    <sublevel>
+      <properties>
+        <dimensions width="210" height="16" />
+        <setting background="bushesnhills" />
+        <midpoint x="82" />
+        <time seconds="400" />
+        <start x="2" y="13" />
+      </properties>
+      <objects>
+        <flagpole x="198" y="13" />
+        <floorblock x="0" y="14" width="69" height="2" />
+        <floorblock x="71" y="14" width="15" height="2" />
+        <floorblock x="89" y="14" width="64" height="2" />
+        <floorblock x="155" y="14" width="55" height="2" />
+        <pipe x="28" y="12" height="2" />
+        <pipe x="38" y="11" height="3" />
+        <pipe x="46" y="10" height="4" />
+        <pipe x="57" y="10" height="4" goto="1-1@bonus" />
+        <pipe x="163" y="12" height="2" name="bonus_exit" />
+        <pipe x="179" y="12" height="2" />
+        <staircase x="134" y="13" height="4" width="4" direction="right" />
+        <staircase x="140" y="13" height="4" width="4" direction="left" />
+        <staircase x="148" y="13" height="4" width="5" direction="right" />
+        <staircase x="155" y="13" height="4" width="4" direction="left" />
+        <staircase x="181" y="13" height="8" width="9" direction="right" />
+
+        <questionblock x="16" y="10" />
+        <questionblock x="21" y="10" contains="powerup" />
+        <questionblock x="23" y="10" />
+        <questionblock x="22" y="6" />
+        <questionblock x="78" y="10" contains="powerup" />
+        <questionblock x="94" y="6" />
+        <questionblock x="106" y="10" />
+        <questionblock x="109" y="10" />
+        <questionblock x="112" y="10" />
+        <questionblock x="109" y="6" contains="powerup" />
+        <questionblock x="129" y="6" width="2" />
+        <questionblock x="170" y="10" />
+
+        <brickblock x="20" y="10" />
+        <brickblock x="22" y="10" />
+        <brickblock x="24" y="10" />
+        <brickblock x="77" y="10" />
+        <brickblock x="79" y="10" />
+        <brickblock x="80" y="6" width="8" />
+        <brickblock x="91" y="6" width="3" />
+        <brickblock x="94" y="10" contains="multicoin" />
+        <brickblock x="100" y="10" />
+        <brickblock x="101" y="10" contains="star" />
+        <brickblock x="118" y="10" />
+        <brickblock x="121" y="6" width="3" />
+        <brickblock x="128" y="6" />
+        <brickblock x="131" y="6" />
+        <brickblock x="129" y="10" width="2" />
+        <brickblock x="168" y="10" width="2" />
+        <brickblock x="171" y="10" />
+
+        <hiddenblock x="64" y="9" contains="1up" />
+
+        <castle x="203" y="13" size="small" />
+      </objects>
+      <enemies>
+        <goomba x="22" y="13" />
+        <goomba x="51" y="13" count="2" />
+        <goomba x="80" y="5" />
+        <goomba x="82" y="5" />
+        <goomba x="97" y="13" count="2" />
+        <goomba x="114" y="13" count="2" />
+        <goomba x="124" y="13" count="2" />
+        <goomba x="128" y="13" count="2" />
+        <goomba x="174" y="13" count="2" />
+
+        <koopa x="107" y="13" color="green" />
+      </enemies>
+    </sublevel>
+    <sublevel name="bonus">
+      <properties>
+        <dimensions width="16" height="16" />
+        <setting type="underground" />
+        <start x="2" y="4" />
+      </properties>
+      <objects>
+        <floorblock x="0" y="14" width="16" height="2" />
+
+        <pipe x="13" y="12" height="11" width="2" goto="1-1#bonus_exit" />
+
+        <brickblock x="0" y="3" height="11" />
+        <brickblock x="4" y="3" width="7" />
+        <brickblock x="4" y="11" width="7" height="3" />
+
+        <coin x="5" y="6" width="5" />
+        <coin x="4" y="8" width="7" />
+        <coin x="4" y="10" width="7" />
+      </objects>
+    </sublevel>
+  </level>
+
+  <level name="1-2">
+    <sublevel>
+      <properties>
+        <dimensions width="16" height="16" />
+        <setting type="overworld" background="clouds" />
+        <time seconds="400" />
+        <start x="2" y="13" auto />
+      </properties>
+      <objects>
+        <floorblock x="0" y="14" width="16" height="2" />
+
+        <pipe x="10" y="12" height="4" width="2" showtop goto="1-2@main" />
+
+        <castle x="0" y="13" size="small" />
+      </objects>
+    </sublevel>
+    <sublevel name="main">
+      <properties>
+        <dimensions width="192" height="16" />
+        <setting type="underground" />
+        <midpoint x="98" />
+        <time seconds="400" />
+        <start x="2" y="4" />
+      </properties>
+      <objects>
+        <floorblock x="0" y="14" width="80" height="2" />
+        <floorblock x="83" y="14" width="37" height="2" />
+        <floorblock x="122" y="14" width="2" height="2" />
+        <floorblock x="126" y="14" width="12" height="2" />
+        <floorblock x="145" y="14" width="8" height="2" />
+        <floorblock x="160" y="14" width="32" height="2" />
+
+        <pipe x="103" y="11" height="3" goto="1-2@bonus" />
+        <pipe x="109" y="10" height="4" />
+        <pipe x="115" y="12" height="2" name="bonus_exit" />
+        <pipe x="166" y="9" height="8" width="2" goto="1-2@outro#begin" />
+        <pipe x="178" y="11" height="3" goto="4-1" />
+        <pipe x="182" y="11" height="3" goto="3-1" />
+        <pipe x="186" y="11" height="3" goto="2-1" />
+
+        <stairblock x="17" y="13" />
+        <stairblock x="19" y="12" height="2" />
+        <stairblock x="21" y="11" height="3" />
+        <stairblock x="23" y="10" height="4" />
+        <stairblock x="25" y="10" height="4" />
+        <stairblock x="27" y="11" height="3" />
+        <stairblock x="31" y="11" height="3" />
+        <stairblock x="33" y="12" height="2" />
+        <staircase x="133" y="13" height="4" width="5" direction="right" />
+
+        <questionblock x="10" y="10" contains="powerup" />
+        <questionblock x="11" y="10" width="4" />
+
+        <brickblock x="0" y="3" height="11" />
+        <brickblock x="6" y="3" width="83" />
+        <brickblock x="29" y="9" contains="multicoin" />
+        <brickblock x="39" y="8" height="3" />
+        <brickblock x="40" y="10" />
+        <brickblock x="41" y="8" height="3" />
+        <brickblock x="42" y="8" width="2" />
+        <brickblock x="44" y="8" height="3" />
+        <brickblock x="45" y="10" />
+        <brickblock x="46" y="9" height="2" />
+        <brickblock x="46" y="8" contains="star" />
+        <brickblock x="52" y="6" width="2" height="5" />
+        <brickblock x="54" y="4" width="2" height="2" />
+        <brickblock x="54" y="10" width="2" height="3" />
+        <brickblock x="58" y="4" width="6" height="2" />
+        <brickblock x="58" y="10" width="4" />
+        <brickblock x="62" y="6" width="2" height="5" />
+        <brickblock x="66" y="4" width="4" height="2" />
+        <brickblock x="67" y="6" height="4" />
+        <brickblock x="67" y="10" width="3" />
+        <brickblock x="69" y="9" contains="powerup" />
+        <brickblock x="72" y="6" height="5" />
+        <brickblock x="73" y="6" height="3" />
+        <brickblock x="73" y="9" contains="multicoin" />
+        <brickblock x="73" y="10" />
+        <brickblock x="76" y="4" width="4" height="2" />
+        <brickblock x="76" y="10" width="4" />
+        <brickblock x="84" y="8" width="6" height="2" />
+        <brickblock x="89" y="3" contains="1up" />
+        <brickblock x="90" y="3" width="48" />
+        <brickblock x="122" y="11" width="2" height="3" />
+        <brickblock x="145" y="9" width="5" />
+        <brickblock x="150" y="9" contains="powerup" />
+        <brickblock x="161" y="3" width="7" />
+        <brickblock x="160" y="11" width="10" height="3" />
+        <brickblock x="170" y="3" width="17" />
+        <brickblock x="170" y="4" width="7" height="10" />
+        <brickblock x="190" y="3" width="2" height="11" />
+
+        <coin x="40" y="9" />
+        <coin x="41" y="6" width="4" />
+        <coin x="45" y="9" />
+        <coin x="58" y="9" width="4" />
+        <coin x="68" y="9" />
+        <coin x="84" y="6" width="6" />
+
+        <infiniteplatform x="140" width="3" direction="down" frequency="2" />
+        <infiniteplatform x="155" width="3" direction="up" frequency="2" />
+      </objects>
+      <enemies>
+        <goomba x="16" y="13" />
+        <goomba x="17" y="12" />
+        <goomba x="29" y="13" />
+        <goomba x="62" y="13" />
+        <goomba x="64" y="13" />
+        <goomba x="73" y="5" />
+        <goomba x="76" y="9" count="2" />
+        <goomba x="99" y="13" count="3" />
+        <goomba x="113" y="13" />
+        <goomba x="135" y="9" count="2" />
+
+        <koopa x="44" y="13" color="green" count="2" />
+        <koopa x="59" y="13" color="green" />
+        <koopa x="146" y="13" color="red" />
+
+        <piranhaplant x="103" y="11" color="green" />
+        <piranhaplant x="109" y="10" color="green" />
+        <piranhaplant x="115" y="12" color="green" />
+      </enemies>
+    </sublevel>
+    <sublevel name="outro">
+      <properties>
+        <dimensions width="34" height="16" />
+        <setting type="overworld" background="bushesnhills" />
+        <start x="2" y="13" />
+      </properties>
+      <objects>
+        <flagpole x="22" y="13" />
+
+        <floorblock x="0" y="14" width="34" height="2" />
+
+        <pipe x="3" y="12" height="2" name="begin" />
+
+        <staircase x="5" y="13" height="8" width="9" direction="right" />
+
+        <castle x="27" y="13" size="small" />
+      </objects>
+      <enemies>
+        <piranhaplant x="3" y="12" color="green" />
+      </enemies>
+    </sublevel>
+    <sublevel name="bonus">
+      <properties>
+        <dimensions width="16" height="16" />
+        <setting type="underground" />
+        <start x="2" y="4" />
+      </properties>
+      <objects>
+        <floorblock x="0" y="14" width="16" height="2" />
+
+        <pipe x="13" y="12" height="11" width="2" goto="1-2@main#bonus_exit" />
+
+        <brickblock x="0" y="3" height="11" />
+        <brickblock x="3" y="3" width="10" height="4" />
+        <brickblock x="3" y="10" width="9" />
+        <brickblock x="13" y="3" width="2" height="9" />
+        <brickblock x="12" y="10" contains="multicoin" />
+
+        <coin x="4" y="9" width="8" />
+        <coin x="3" y="13" width="9" />
+      </objects>
+    </sublevel>
+  </level>
+
+  <level name="1-3">
+    <sublevel>
+      <properties>
+        <dimensions width="164" height="16" />
+        <setting type="overworld" background="clouds" />
+        <midpoint x="66" />
+        <time seconds="300" />
+        <start x="2" y="13" />
+      </properties>
+      <objects>
+        <flagpole x="152" y="13" />
+        <floorblock x="0" y="14" width="16" height="2" />
+        <floorblock x="129" y="14" width="35" height="2" />
+
+        <stairblock x="138" y="10" width="6" height="4" />
+        <stairblock x="140" y="8" width="2" height="2" />
+        <stairblock x="142" y="6" width="2" height="4" />
+
+        <questionblock x="59" y="11" contains="powerup" />
+
+        <grassledge x="18" y="13" width="4" height="3" />
+        <grassledge x="24" y="10" width="8" height="6" />
+        <grassledge x="26" y="6" width="5" height="4" />
+        <grassledge x="32" y="13" width="3" height="3" />
+        <grassledge x="35" y="9" width="5" height="7" />
+        <grassledge x="40" y="5" width="7" height="11" />
+        <grassledge x="50" y="14" width="4" height="2" />
+        <grassledge x="59" y="14" width="5" height="2" />
+        <grassledge x="60" y="6" width="4" height="8" />
+        <grassledge x="65" y="14" width="5" height="2" />
+        <grassledge x="70" y="10" width="3" height="6" />
+        <grassledge x="76" y="7" width="6" height="9" />
+        <grassledge x="98" y="12" width="4" height="4" />
+        <grassledge x="104" y="8" width="8" height="8" />
+        <grassledge x="113" y="14" width="3" height="2" />
+        <grassledge x="116" y="10" width="4" height="6" />
+        <grassledge x="122" y="10" width="4" height="6" />
+
+        <coin x="27" y="5" width="3" />
+        <coin x="33" y="12" />
+        <coin x="37" y="3" width="2" />
+        <coin x="50" y="7" width="2" />
+        <coin x="60" y="5" width="4" />
+        <coin x="85" y="6" width="2" />
+        <coin x="93" y="5" width="2" />
+        <coin x="97" y="5" width="2" />
+        <coin x="113" y="13" width="3" />
+        <coin x="120" y="6" width="2" />
+
+        <movingplatform x1="55" y1="7" x2="55" y2="15" width="3" />
+        <movingplatform x1="86" y1="9" x2="83" y2="9" width="3" />
+        <movingplatform x1="94" y1="10" x2="91" y2="10" width="3" />
+        <movingplatform x1="131" y1="7" x2="128" y2="7" width="3" />
+
+        <castle x="0" y="13" size="small" />
+        <castle x="155" y="13" size="large" />
+      </objects>
+      <enemies>
+        <goomba x="44" y="4" />
+        <goomba x="46" y="4" />
+        <goomba x="80" y="5" />
+
+        <koopa x="30" y="5" color="red" />
+        <koopa x="110" y="7" color="red" />
+        <koopa x="113" y="13" color="red" />
+
+        <parakoopa x1="74" y1="5" x2="74" y2="11" />
+        <parakoopa x1="114" y1="6" x2="114" y2="12" />
+      </enemies>
+    </sublevel>
+  </level>
+
+  <level name="1-4">
+    <sublevel>
+      <properties>
+        <dimensions width="160" height="16" />
+        <setting type="castle" />
+        <time seconds="300" />
+        <start x="2" y="7" />
+      </properties>
+      <objects>
+        <staircase x="0" y="10" width="5" height="3" direction="left" />
+        <stairblock x="0" y="11" width="13" height="5" />
+        <stairblock x="0" y="3" width="24" height="3" />
+        <stairblock x="23" y="6" />
+        <stairblock x="15" y="11" width="11" height="5" />
+        <stairblock x="24" y="3" width="13" />
+        <stairblock x="29" y="12" width="3" height="4" />
+        <stairblock x="29" y="11" />
+        <stairblock x="31" y="11" />
+        <stairblock x="35" y="10" width="37" height="6" />
+        <stairblock x="37" y="3" width="35" height="4" />
+        <stairblock x="72" y="3" width="25" />
+        <stairblock x="80" y="4" />
+        <stairblock x="88" y="4" />
+        <stairblock x="72" y="11" width="32" height="5" />
+        <stairblock x="97" y="3" width="7" height="3" />
+        <stairblock x="104" y="3" width="19" />
+        <stairblock x="104" y="14" width="19" height="2" />
+        <stairblock x="116" y="11" width="4" height="3" />
+        <stairblock x="123" y="11" width="5" height="5" />
+        <stairblock x="123" y="3" width="5" height="3" />
+        <stairblock x="128" y="3" width="32" />
+        <stairblock x="142" y="4" width="2" height="3" />
+        <stairblock x="141" y="10" width="3" height="6" />
+        <stairblock x="144" y="14" width="16" height="2" />
+
+        <questionblock x="30" y="7" contains="powerup" />
+
+        <usedblock x="23" y="7" />
+        <usedblock x="30" y="11" />
+        <usedblock x="37" y="7" />
+        <usedblock x="49" y="7" />
+        <usedblock x="60" y="7" />
+        <usedblock x="67" y="7" />
+        <usedblock x="76" y="10" />
+        <usedblock x="80" y="5" />
+        <usedblock x="84" y="10" />
+        <usedblock x="88" y="5" />
+        <usedblock x="92" y="10" />
+
+        <hiddenblock x="106" y="10" />
+        <hiddenblock x="109" y="10" />
+        <hiddenblock x="112" y="10" />
+        <hiddenblock x="107" y="6" />
+        <hiddenblock x="110" y="6" />
+        <hiddenblock x="113" y="6" />
+
+        <movingplatform x1="138" y1="7" x2="135" y2="7" width="2" />
+
+        <water x="13" y="13" width="2" />
+        <water x="26" y="14" width="3" />
+        <water x="32" y="14" width="3" />
+        <water x="128" y="14" width="13" />
+
+        <bowserbridge x="128" y="11" width="13" />
+        <axe x="141" y="9" />
+
+        <toad x="153" y="13" />
+      </objects>
+      <enemies>
+        <firebar x="30" y="11" direction="counterclockwise" size="small" />
+        <firebar x="49" y="7" direction="counterclockwise" size="small" />
+        <firebar x="60" y="7" direction="counterclockwise" size="small" />
+        <firebar x="67" y="7" direction="counterclockwise" size="small" />
+        <firebar x="76" y="10" direction="counterclockwise" size="small" />
+        <firebar x="84" y="10" direction="counterclockwise" size="small" />
+        <firebar x="88" y="5" direction="clockwise" size="small" />
+
+        <bowser x="136" y="10" fireballs trueform="goomba" />
+
+        <generator type="fireballs" xstart="104" xend="128" />
+      </enemies>
+    </sublevel>
+  </level>
+
+  <level name="2-1">
+    <sublevel>
+      <properties>
+        <dimensions width="212" height="16" />
+        <setting background="fencesntrees" />
+        <midpoint x="98" />
+        <time seconds="400" />
+        <start x="2" y="13" />
+      </properties>
+      <objects>
+        <flagpole x="200" y="13" />
+        <floorblock x="0" y="14" width="92" height="2" />
+        <floorblock x="96" y="14" width="10" height="2" />
+        <floorblock x="109" y="14" width="30" height="2" />
+        <floorblock x="142" y="14" width="10" height="2" />
+        <floorblock x="154" y="14" width="58" height="2" />
+
+        <pipe x="46" y="10" height="4" />
+        <pipe x="74" y="10" height="4" />
+        <pipe x="103" y="10" height="4" goto="2-1@bonus2" />
+        <pipe x="115" y="12" height="2" name="bonus_exit" />
+        <pipe x="122" y="10" height="4" />
+        <pipe x="126" y="11" height="3" />
+        <pipe x="130" y="9" height="5" />
+        <pipe x="176" y="11" height="3" />
+
+        <staircase x="20" y="13" width="5" height="5" direction="right" />
+        <stairblock x="34" y="10" height="4" />
+        <stairblock x="35" y="12" height="2" />
+        <stairblock x="154" y="11" height="3" />
+        <stairblock x="190" y="4" width="2" height="10" />
+
+        <questionblock x="53" y="6" width="5" />
+        <questionblock x="54" y="10" width="4" />
+        <questionblock x="53" y="10" contains="powerup" />
+        <questionblock x="79" y="10" width="4" />
+        <questionblock x="170" y="10" />
+
+        <brickblock x="15" y="10" />
+        <brickblock x="16" y="10" contains="powerup" />
+        <brickblock x="17" y="10" />
+        <brickblock x="29" y="6" width="3" />
+        <brickblock x="68" y="10" />
+        <brickblock x="69" y="6" contains="star" />
+        <brickblock x="70" y="6" width="3" />
+        <brickblock x="81" y="6" width="2" />
+        <brickblock x="83" y="6" contains="vine" goto="2-1@bonus1" />
+        <brickblock x="84" y="6" width="2" />
+        <brickblock x="92" y="6" width="4" />
+        <brickblock x="125" y="6" contains="powerup" />
+        <brickblock x="126" y="6" width="3" />
+        <brickblock x="161" y="10" contains="multicoin" />
+        <brickblock x="164" y="6" width="5" />
+        <brickblock x="172" y="6" contains="powerup" />
+        <brickblock x="185" y="10" width="2" />
+
+        <hiddenblock x="28" y="10" />
+        <hiddenblock x="28" y="6" contains="1up" />
+        <hiddenblock x="186" y="6" />
+
+        <springboard x="188" y="13" color="red" />
+
+        <castle x="205" y="13" size="small" />
+        <castle x="-2" y="13" size="large" />
+      </objects>
+      <enemies>
+        <goomba x="24" y="7" />
+        <goomba x="59" y="13" count="2" />
+        <goomba x="68" y="13" count="3" />
+        <goomba x="87" y="13" count="3" />
+        <goomba x="103" y="9" />
+        <goomba x="116" y="11" />
+        <goomba x="120" y="13" />
+        <goomba x="162" y="13" count="2" />
+
+        <koopa x="32" y="13" color="green" />
+        <koopa x="55" y="9" color="green" />
+        <koopa x="66" y="13" color="green" />
+        <koopa x="137" y="13" color="green" />
+        <koopa x="185" y="13" color="green" />
+
+        <bouncingkoopa x="151" y="13" />
+        <bouncingkoopa x="169" y="13" />
+        <bouncingkoopa x="171" y="13" />
+
+        <piranhaplant x="46" y="10" color="green" />
+        <piranhaplant x="74" y="10" color="green" />
+        <piranhaplant x="103" y="10" color="green" />
+        <piranhaplant x="115" y="12" color="green" />
+        <piranhaplant x="122" y="10" color="green" />
+        <piranhaplant x="126" y="11" color="green" />
+        <piranhaplant x="130" y="9" color="green" />
+        <piranhaplant x="176" y="11" color="green" />
+      </enemies>
+    </sublevel>
+    <sublevel name="bonus1">
+      <properties>
+        <dimensions width="80" height="16" />
+        <setting type="skybonus" />
+        <start x="4" y="13" />
+        <offscreen goto="2-1#160" />
+      </properties>
+      <objects>
+        <stairblock x="0" y="14" width="4" />
+        <stairblock x="5" y="14" width="57" />
+
+        <vine x="4" y="10" height="6" />
+
+        <coin x="14" y="7" width="16" />
+        <coin x="31" y="5" width="3" />
+        <coin x="35" y="6" width="16" />
+        <coin x="52" y="5" width="3" />
+        <coin x="68" y="13" width="3" />
+
+        <ridingplatform x="15" y="11" width="3" />
+      </objects>
+    </sublevel>
+    <sublevel name="bonus2">
+      <properties>
+        <dimensions width="16" height="16" />
+        <setting type="underground" />
+        <start x="2" y="4" />
+      </properties>
+      <objects>
+        <floorblock x="0" y="14" width="16" height="2" />
+
+        <brickblock x="0" y="3" height="11" />
+        <brickblock x="4" y="3" width="7" />
+        <brickblock x="4" y="11" width="7" height="3" />
+
+        <coin x="5" y="6" width="5" />
+        <coin x="4" y="8" width="7" />
+        <coin x="4" y="10" width="7" />
+
+        <pipe x="13" y="12" height="11" width="2" goto="2-1#bonus_exit" />
+      </objects>
+    </sublevel>
+  </level>
+
+  <level name="2-2">
+    <sublevel>
+      <properties>
+        <dimensions width="16" height="16" />
+        <setting background="clouds" />
+        <time seconds="400" />
+        <start x="2" y="13" auto />
+      </properties>
+      <objects>
+        <floorblock x="0" y="14" width="16" height="2" />
+
+        <pipe x="10" y="12" height="4" width="2" showtop goto="2-2@main" />
+
+        <castle x="0" y="13" size="small" />
+      </objects>
+    </sublevel>
+    <sublevel name="main">
+      <properties>
+        <dimensions width="192" height="16" />
+        <setting type="underwater" background="water" />
+        <midpoint x="82" />
+        <time seconds="400" />
+        <start x="2" y="4" />
+      </properties>
+      <objects>
+        <floorblock x="0" y="14" width="66" height="2" />
+        <floorblock x="18" y="10" width="3" />
+        <floorblock x="42" y="10" width="2" />
+        <floorblock x="64" y="11" height="3" />
+        <floorblock x="65" y="9" height="5" />
+        <floorblock x="71" y="14" width="60" height="2" />
+        <floorblock x="71" y="9" height="5" />
+        <floorblock x="72" y="11" height="3" />
+        <floorblock x="78" y="3" width="2" height="3" />
+        <floorblock x="78" y="11" width="2" height="3" />
+        <floorblock x="82" y="6" width="3" />
+        <floorblock x="102" y="10" width="2" />
+        <floorblock x="115" y="9" width="2" />
+        <floorblock x="129" y="10" height="4" />
+        <floorblock x="130" y="12" height="2" />
+        <floorblock x="140" y="14" width="17" height="2" />
+        <floorblock x="140" y="12" height="2" />
+        <floorblock x="141" y="10" height="4" />
+        <floorblock x="131" y="3" height="2" />
+        <floorblock x="131" y="5" width="9" />
+        <floorblock x="156" y="6" height="8" />
+        <floorblock x="157" y="6" width="2" />
+        <floorblock x="162" y="6" width="2" />
+        <floorblock x="164" y="6" height="8" />
+        <floorblock x="164" y="14" width="28" height="2" />
+        <floorblock x="172" y="6" width="5" />
+        <floorblock x="172" y="10" width="5" />
+        <floorblock x="180" y="6" width="4" />
+        <floorblock x="180" y="10" width="4" />
+        <floorblock x="185" y="13" width="7" />
+        <floorblock x="186" y="12" width="6" />
+        <floorblock x="187" y="11" width="5" />
+        <floorblock x="188" y="10" width="4" />
+        <floorblock x="188" y="3" width="4" height="4" />
+        <floorblock x="190" y="7" width="2" height="3" />
+
+        <stairblock x="11" y="11" height="3" />
+        <stairblock x="33" y="9" height="5" />
+        <stairblock x="42" y="8" height="2" />
+        <stairblock x="50" y="10" height="4" />
+        <stairblock x="83" y="4" height="2" />
+        <stairblock x="90" y="11" height="3" />
+        <stairblock x="102" y="6" height="4" />
+        <stairblock x="120" y="10" height="4" />
+        <stairblock x="147" y="12" height="2" />
+        <stairblock x="149" y="11" height="3" />
+        <stairblock x="173" y="4" height="2" />
+
+        <coin x="14" y="13" width="2" />
+        <coin x="27" y="6" width="3" />
+        <coin x="36" y="13" width="3" />
+        <coin x="67" y="11" width="3" />
+        <coin x="101" y="12" width="3" />
+        <coin x="113" y="7" width="3" />
+        <coin x="133" y="12" />
+        <coin x="134" y="13" width="3" />
+        <coin x="137" y="12" />
+        <coin x="159" y="10" width="3" />
+        <coin x="159" y="13" width="3" />
+
+        <pipe x="189" y="8" width="1" height="7" goto="2-2@outro#begin" />
+      </objects>
+      <enemies>
+        <blooper x="22" y="12" />
+        <blooper x="46" y="10" />
+        <blooper x="55" y="11" />
+        <blooper x="83" y="9" />
+        <blooper x="94" y="4" />
+        <blooper x="105" y="12" />
+
+        <generator type="swimmingfish" xstart="80" />
+      </enemies>
+    </sublevel>
+    <sublevel name="outro">
+      <properties>
+        <dimensions width="34" height="16" />
+        <setting type="overworld" background="bushesnhills" />
+        <start x="2" y="13" />
+      </properties>
+      <objects>
+        <flagpole x="22" y="13" />
+
+        <floorblock x="0" y="14" width="34" height="2" />
+
+        <pipe x="3" y="12" height="2" name="begin" />
+
+        <staircase x="5" y="13" height="8" width="9" direction="right" />
+
+        <castle x="27" y="13" size="small" />
+      </objects>
+      <enemies>
+        <piranhaplant x="3" y="12" color="green" />
+      </enemies>
+    </sublevel>
+  </level>
+
+  <level name="2-3">
+    <sublevel>
+      <properties>
+        <dimensions width="237" height="16" />
+        <setting background="clouds" />
+        <midpoint x="114" />
+        <time seconds="300" />
+        <start x="2" y="13" />
+      </properties>
+      <objects>
+        <flagpole x="225" y="13" />
+        <floorblock x="0" y="14" width="7" height="2" />
+        <floorblock x="207" y="14" width="30" height="2" />
+
+        <staircase x="10" y="13" width="5" height="3" direction="right" />
+        <stairblock x="31" y="11" height="5" />
+        <stairblock x="47" y="11" height="5" />
+        <stairblock x="63" y="11" height="5" />
+        <stairblock x="68" y="11" height="5" />
+        <stairblock x="79" y="11" height="5" />
+        <stairblock x="84" y="11" height="5" />
+        <stairblock x="95" y="11" height="5" />
+        <stairblock x="99" y="10" height="6" />
+        <stairblock x="105" y="10" height="6" />
+        <stairblock x="127" y="11" height="5" />
+        <stairblock x="143" y="11" height="5" />
+        <stairblock x="146" y="13" height="3" />
+        <stairblock x="155" y="13" height="3" />
+        <stairblock x="159" y="11" height="5" />
+        <stairblock x="168" y="11" height="5" />
+        <stairblock x="183" y="11" height="5" />
+        <staircase x="193" y="13" width="4" height="3" direction="left" />
+        <staircase x="208" y="13" width="9" height="8" direction="right" />
+
+        <questionblock x="102" y="6" contains="powerup" />
+
+        <grassledge x="8" y="14" width="8" height="2" />
+        <grassledge x="112" y="14" width="8" height="2" />
+        <grassledge x="192" y="14" width="13" height="2" />
+
+        <bridge x="15" y="11" width="16" />
+        <bridge x="32" y="11" width="15" />
+        <bridge x="48" y="11" width="16" />
+        <bridge x="69" y="11" width="10" />
+        <bridge x="85" y="11" width="10" />
+        <bridge x="100" y="10" width="5" />
+        <bridge x="122" y="11" width="3" />
+        <bridge x="128" y="11" width="15" />
+        <bridge x="147" y="13" width="8" />
+        <bridge x="160" y="11" width="8" />
+        <bridge x="171" y="11" width="2" />
+        <bridge x="175" y="11" width="2" />
+        <bridge x="179" y="11" width="2" />
+        <bridge x="184" y="11" width="9" />
+
+        <coin x="36" y="6" width="4" />
+        <coin x="55" y="6" />
+        <coin x="56" y="7" />
+        <coin x="57" y="6" />
+        <coin x="58" y="7" />
+        <coin x="59" y="6" />
+        <coin x="72" y="6" />
+        <coin x="73" y="5" width="2" />
+        <coin x="75" y="6" />
+        <coin x="97" y="6" width="3" />
+        <coin x="108" y="6" width="3" />
+        <coin x="133" y="6" width="6" />
+        <coin x="149" y="9" width="7" />
+        <coin x="173" y="7" width="6" />
+
+        <castle x="0" y="13" size="small" />
+        <castle x="228" y="13" size="large" />
+      </objects>
+      <enemies>
+        <generator type="jumpingfish" xstart="16" xend="192" />
+      </enemies>
+    </sublevel>
+  </level>
+
+  <level name="2-4">
+    <sublevel>
+      <properties>
+        <dimensions width="160" height="16" />
+        <setting type="castle" />
+        <time seconds="300" />
+        <start x="2" y="7" />
+      </properties>
+      <objects>
+        <staircase x="0" y="10" width="5" height="3" direction="left" />
+        <stairblock x="0" y="11" width="16" height="5" />
+        <stairblock x="0" y="3" width="16" height="3" />
+        <stairblock x="18" y="10" width="2" />
+        <stairblock x="22" y="8" />
+        <stairblock x="24" y="8" />
+        <stairblock x="27" y="10" width="2" />
+        <stairblock x="32" y="11" width="2" height="5" />
+        <stairblock x="34" y="3" width="49" height="3" />
+        <stairblock x="34" y="6" width="21" />
+        <stairblock x="56" y="6" width="27" />
+        <stairblock x="34" y="14" width="9" />
+        <stairblock x="44" y="14" width="11" />
+        <stairblock x="56" y="14" width="11" />
+        <stairblock x="68" y="14" width="12" />
+        <stairblock x="34" y="15" width="46" />
+        <stairblock x="37" y="10" width="12" />
+        <stairblock x="50" y="10" width="11" />
+        <stairblock x="62" y="10" width="11" />
+        <stairblock x="80" y="11" width="4" height="5" />
+        <stairblock x="93" y="3" width="6" height="3" />
+        <stairblock x="92" y="14" width="17" height="2" />
+        <stairblock x="92" y="12" width="7" height="2" />
+        <stairblock x="93" y="11" width="6" />
+        <stairblock x="108" y="11" height="3" />
+        <stairblock x="111" y="11" width="2" height="5" />
+        <stairblock x="115" y="14" width="13" height="2" />
+        <stairblock x="115" y="11" width="5" height="3" />
+        <stairblock x="122" y="11" width="2" height="3" />
+        <stairblock x="126" y="11" width="2" height="3" />
+        <stairblock x="115" y="4" width="13" height="2" />
+        <stairblock x="115" y="3" width="45" />
+        <stairblock x="142" y="4" width="2" height="3" />
+        <stairblock x="141" y="10" width="3" height="4" />
+        <stairblock x="141" y="14" width="19" height="2" />
+
+        <questionblock x="23" y="4" contains="powerup" />
+
+        <usedblock x="23" y="8" />
+        <usedblock x="43" y="14" />
+        <usedblock x="55" y="14" />
+        <usedblock x="67" y="14" />
+        <usedblock x="49" y="10" />
+        <usedblock x="61" y="10" />
+        <usedblock x="73" y="10" />
+        <usedblock x="55" y="6" />
+        <usedblock x="82" y="7" />
+        <usedblock x="92" y="11" />
+        <usedblock x="103" y="12" />
+
+        <coin x="102" y="9" width="3" />
+        <coin x="102" y="13" width="3" />
+
+        <brickblock x="128" y="6" width="6" />
+
+        <infiniteplatform x="86" width="1" frequency="3" direction="up" showpath />
+        <infiniteplatform x="89" width="1" frequency="3" direction="down" showpath />
+        <movingplatform x1="138" y1="7" x2="135" y2="7" width="2" />
+
+        <water x="16" y="14" width="16" />
+        <water x="109" y="14" width="2" />
+        <water x="113" y="14" width="2" />
+        <water x="128" y="14" width="13" />
+
+        <bowserbridge x="128" y="11" width="13" />
+        <axe x="141" y="9" />
+
+        <toad x="153" y="13" />
+      </objects>
+      <enemies>
+        <firebar x="49" y="10" direction="counterclockwise" size="small" />
+        <firebar x="55" y="6" direction="counterclockwise" size="small" />
+        <firebar x="61" y="10" direction="counterclockwise" size="small" />
+        <firebar x="73" y="10" direction="counterclockwise" size="small" />
+        <firebar x="82" y="7" direction="counterclockwise" size="small" />
+        <firebar x="92" y="11" direction="clockwise" size="small" />
+
+        <podoboo x="16" y="6" />
+        <podoboo x="30" y="6" />
+
+        <bowser x="136" y="10" fireballs trueform="koopa" />
+
+        <generator type="fireballs" xstart="104" xend="128" />
+      </enemies>
+    </sublevel>
+  </level>
+
+  <level name="3-1">
+    <sublevel>
+      <properties>
+        <dimensions width="212" height="16" />
+        <setting type="snowynighttime" background="fencesntrees" />
+        <midpoint x="98" />
+        <time seconds="400" />
+        <start x="2" y="13" />
+      </properties>
+      <objects>
+        <flagpole x="200" y="13" />
+
+        <floorblock x="0" y="14" width="45" height="2" />
+        <floorblock x="48" y="14" width="29" height="2" />
+        <floorblock x="85" y="14" height="2" />
+        <floorblock x="88" y="14" width="40" height="2" />
+        <floorblock x="132" y="14" width="10" height="2" />
+        <floorblock x="144" y="14" width="33" height="2" />
+        <floorblock x="180" y="14" width="32" height="2" />
+
+        <staircase x="73" y="13" width="4" height="4" direction="right" />
+        <staircase x="136" y="13" width="6" height="6" direction="right" />
+        <staircase x="183" y="13" width="9" height="8" direction="right" />
+        <stairblock x="85" y="10" height="4" />
+        <stairblock x="88" y="10" height="4" />
+        <stairblock x="89" y="12" height="2" />
+        <stairblock x="174" y="11" height="3" />
+        <stairblock x="175" y="8" height="6" />
+
+        <pipe x="32" y="11" height="3" />
+        <pipe x="38" y="10" height="4" goto="3-1@bonus2" />
+        <pipe x="57" y="11" height="3" />
+        <pipe x="67" y="12" height="2" name="bonus_exit" />
+        <pipe x="103" y="10" height="4" />
+
+        <questionblock x="16" y="10" />
+        <questionblock x="19" y="9" />
+        <questionblock x="22" y="9" contains="powerup" />
+        <questionblock x="113" y="6" />
+        <questionblock x="117" y="6" contains="powerup" />
+        <questionblock x="151" y="6" />
+        <questionblock x="156" y="6" />
+        <questionblock x="151" y="10" />
+        <questionblock x="156" y="10" contains="powerup" />
+
+        <brickblock x="26" y="10" width="3" />
+        <brickblock x="61" y="10" />
+        <brickblock x="90" y="6" contains="star" />
+        <brickblock x="91" y="6" width="2" />
+        <brickblock x="111" y="6" width="2" />
+        <brickblock x="114" y="6" width="3" />
+        <brickblock x="118" y="6" width="3" />
+        <brickblock x="111" y="10" width="11" />
+        <brickblock x="129" y="10" width="2" />
+        <brickblock x="131" y="10" contains="vine" goto="3-1@bonus1" />
+        <brickblock x="129" y="6" width="3" />
+        <brickblock x="150" y="6" />
+        <brickblock x="152" y="6" />
+        <brickblock x="155" y="6" />
+        <brickblock x="157" y="6" />
+        <brickblock x="150" y="10" />
+        <brickblock x="152" y="10" />
+        <brickblock x="155" y="10" />
+        <brickblock x="157" y="10" />
+        <brickblock x="166" y="10" />
+        <brickblock x="167" y="10" contains="multicoin" />
+        <brickblock x="168" y="10" width="3" />
+
+        <hiddenblock x="82" y="6" contains="1up" />
+
+        <bridge x="77" y="10" width="8" />
+
+        <water x="77" y="13" width="8" />
+        <water x="86" y="13" width="2" />
+
+        <springboard x="126" y="13" />
+
+        <castle x="-2" y="13" size="large" />
+        <castle x="205" y="13" size="small" />
+      </objects>
+      <enemies>
+        <goomba x="37" y="13" />
+        <goomba x="53" y="13" count="3" />
+        <goomba x="82" y="9" count="3" />
+        <goomba x="94" y="13" count="2" />
+        <goomba x="139" y="9" />
+        <goomba x="140" y="8" />
+        <goomba x="154" y="13" count="3" />
+
+        <koopa x="65" y="13" color="green" />
+        <koopa x="101" y="13" color="green" />
+        <koopa x="149" y="13" color="green" />
+        <koopa x="152" y="5" color="green" />
+        <koopa x="170" y="8" color="green" />
+        <koopa x="188" y="7" color="green" />
+        <koopa x="191" y="5" color="green" />
+
+        <bouncingkoopa x="25" y="13" />
+        <bouncingkoopa x="28" y="12" />
+        <bouncingkoopa x="165" y="13" />
+        <bouncingkoopa x="168" y="12" />
+        <bouncingkoopa x="171" y="13" />
+
+        <piranhaplant x="32" y="11" color="green" />
+        <piranhaplant x="38" y="10" color="green" />
+        <piranhaplant x="57" y="11" color="green" />
+        <piranhaplant x="67" y="12" color="green" />
+        <piranhaplant x="103" y="10" color="green" />
+
+        <hammerbro x="113" y="9" action="stay" />
+        <hammerbro x="116" y="13" action="stay" />
+      </enemies>
+    </sublevel>
+    <sublevel name="bonus1">
+      <properties>
+        <dimensions width="94" height="16" />
+        <setting type="skybonus" />
+        <start x="4" y="13" />
+        <offscreen goto="3-1#160" />
+      </properties>
+      <objects>
+        <stairblock x="0" y="14" width="4" />
+        <stairblock x="5" y="14" width="78" />
+        <stairblock x="32" y="9" />
+        <stairblock x="51" y="8" height="2" />
+        <stairblock x="61" y="8" height="2" />
+        <stairblock x="67" y="7" width="2" />
+        <stairblock x="71" y="7" />
+        <stairblock x="73" y="7" />
+        <stairblock x="75" y="7" />
+        <stairblock x="77" y="7" />
+        <stairblock x="79" y="7" />
+
+        <vine x="4" y="10" height="6" />
+
+        <coin x="15" y="7" width="16" />
+        <coin x="34" y="7" width="16" />
+        <coin x="53" y="6" width="7" />
+        <coin x="71" y="6" width="10" />
+        <coin x="85" y="12" width="3" />
+
+        <ridingplatform x="16" y="11" width="3" />
+      </objects>
+    </sublevel>
+    <sublevel name="bonus2">
+      <properties>
+        <dimensions width="16" height="16" />
+        <setting type="underground" />
+        <start x="2" y="4" />
+      </properties>
+      <objects>
+        <floorblock x="0" y="14" width="16" height="2" />
+
+        <brickblock x="0" y="3" height="11" />
+        <brickblock x="3" y="6" height="4" />
+        <brickblock x="4" y="6" height="2" />
+        <brickblock x="5" y="6" contains="powerup" />
+        <brickblock x="4" y="10" />
+        <brickblock x="5" y="9" />
+        <brickblock x="6" y="8" />
+        <brickblock x="7" y="6" width="2" height="2" />
+        <brickblock x="9" y="9" />
+        <brickblock x="10" y="8" />
+        <brickblock x="11" y="10" />
+        <brickblock x="10" y="6" />
+        <brickblock x="11" y="6" height="2" />
+        <brickblock x="12" y="6" height="4" />
+
+        <coin x="4" y="9" />
+        <coin x="5" y="8" />
+        <coin x="6" y="7" />
+        <coin x="6" y="5" width="4" />
+        <coin x="7" y="4" width="2" />
+        <coin x="9" y="7" />
+        <coin x="10" y="8" />
+        <coin x="11" y="9" />
+
+        <pipe x="13" y="12" height="11" width="2" goto="3-1#bonus_exit" />
+      </objects>
+    </sublevel>
+  </level>
+
+  <level name="3-2">
+    <sublevel>
+      <properties>
+        <dimensions width="221" height="16" />
+        <setting type="snowynighttime" background="fencesntrees" />
+        <midpoint x="98" />
+        <time seconds="300" />
+        <start x="2" y="13" />
+      </properties>
+      <objects>
+        <flagpole x="209" y="13" />
+
+        <floorblock x="0" y="14" width="80" height="2" />
+        <floorblock x="82" y="14" width="41" height="2" />
+        <floorblock x="125" y="14" width="3" height="2" />
+        <floorblock x="130" y="14" width="91" height="2" />
+
+        <staircase x="192" y="13" width="9" height="8" direction="right" />
+        <stairblock x="49" y="13" />
+        <stairblock x="60" y="11" height="3" />
+        <stairblock x="75" y="12" height="2" />
+        <stairblock x="79" y="12" height="2" />
+        <stairblock x="126" y="12" height="2" />
+
+        <pipe x="169" y="11" height="3" />
+
+        <questionblock x="60" y="7" contains="powerup" />
+
+        <brickblock x="77" y="10" contains="multicoin" />
+        <brickblock x="77" y="6" contains="star" />
+        <brickblock x="126" y="7" />
+
+        <castle x="0" y="13" size="small" />
+        <castle x="214" y="13" size="small" />
+      </objects>
+      <enemies>
+        <goomba x="24" y="13" count="3" />
+        <goomba x="71" y="13" count="3" />
+        <goomba x="119" y="13" count="3" />
+        <goomba x="179" y="13" count="3" />
+        <goomba x="188" y="13" count="3" />
+
+        <koopa x="17" y="13" color="green" />
+        <koopa x="33" y="13" color="green" count="3" />
+        <koopa x="43" y="13" color="green" count="2" />
+        <koopa x="66" y="13" color="green" />
+        <koopa x="78" y="13" color="green" />
+        <koopa x="111" y="13" color="green" />
+        <koopa x="134" y="13" color="green" />
+        <koopa x="140" y="13" color="green" count="3"/>
+        <koopa x="150" y="13" color="green" count="2"/>
+        <koopa x="162" y="13" color="green" count="3"/>
+        <koopa x="175" y="13" color="green" />
+
+        <bouncingkoopa x="92" y="13" />
+
+        <piranhaplant x="169" y="11" color="green" />
+      </enemies>
+    </sublevel>
+  </level>
+
+  <level name="3-3">
+    <sublevel>
+      <properties>
+        <dimensions width="163" height="16" />
+        <setting type="nighttime" background="clouds" />
+        <midpoint x="66" />
+        <time seconds="300" />
+        <start x="2" y="13" />
+      </properties>
+      <objects>
+        <flagpole x="151" y="13" />
+
+        <floorblock x="0" y="14" width="16" height="2" />
+        <floorblock x="144" y="14" width="19" height="2" />
+
+        <questionblock x="49" y="4" contains="powerup" />
+
+        <grassledge x="18" y="11" width="5" height="5" />
+        <grassledge x="22" y="8" width="6" height="8" />
+        <grassledge x="30" y="14" width="3" height="2" />
+        <grassledge x="36" y="13" width="7" height="3" />
+        <grassledge x="43" y="10" width="4" height="6" />
+        <grassledge x="46" y="12" width="10" height="4" />
+        <grassledge x="47" y="8" width="6" height="4" />
+        <grassledge x="55" y="4" width="4" height="12" />
+        <grassledge x="65" y="14" width="16" height="2" />
+        <grassledge x="65" y="8" width="3" height="6" />
+        <grassledge x="69" y="8" width="3" height="6" />
+        <grassledge x="73" y="8" width="3" height="6" />
+        <grassledge x="77" y="5" width="3" height="9" />
+        <grassledge x="84" y="12" width="4" height="4" />
+        <grassledge x="97" y="10" width="3" height="6" />
+        <grassledge x="104" y="6" width="4" height="10" />
+        <grassledge x="108" y="8" width="3" height="4" />
+        <grassledge x="107" y="12" width="5" height="4" />
+        <grassledge x="116" y="14" width="3" height="2" />
+        <grassledge x="119" y="11" width="12" height="5" />
+
+        <coin x="31" y="13" width="2" />
+        <coin x="37" y="7" />
+        <coin x="42" y="7" width="3" />
+        <coin x="52" y="10" width="3" />
+        <coin x="56" y="3" width="2" />
+        <coin x="66" y="7" />
+        <coin x="70" y="7" />
+        <coin x="74" y="7" />
+        <coin x="78" y="3" />
+        <coin x="81" y="6" />
+        <coin x="88" y="6" />
+        <coin x="90" y="6" />
+        <coin x="105" y="5" width="2" />
+        <coin x="109" y="7" />
+        <coin x="108" y="11" />
+
+        <movingplatform x1="30" y1="5" x2="27" y2="5" width="3" />
+        <movingplatform x1="33" y1="9" x2="30" y2="9" width="3" />
+        <movingplatform x1="94" y1="10" x2="91" y2="10" width="3" />
+        <movingplatform x1="96" y1="6" x2="93" y2="6" width="3" />
+        <movingplatform x1="103" y1="12" x2="100" y2="12" width="3" />
+        <movingplatform x1="132" y1="7" x2="129" y2="7" width="3" />
+        
+        <fallingplatform x="60" y="7" width="3" />
+
+        <scaleplatforms x1="81" y1="7" x2="88" y2="9" y3="3" width="3" />
+        <scaleplatforms x1="136" y1="6" x2="140" y2="9" y3="3" width="3" />
+
+        <castle x="0" y="13" size="small" />
+        <castle x="154" y="13" size="large" />
+      </objects>
+      <enemies>
+        <goomba x="26" y="7" />
+
+        <koopa x="52" y="7" color="red" />
+        <koopa x="54" y="11" color="red" />
+        <koopa x="73" y="13" color="red" />
+        <koopa x="124" y="10" color="red" />
+        <koopa x="126" y="10" color="red" />
+
+        <parakoopa x1="114" y1="6" x2="114" y2="12" />
+      </enemies>
+    </sublevel>
+  </level>
+
+  <level name="3-4">
+    <sublevel>
+      <properties>
+        <dimensions width="160" height="16" />
+        <setting type="castle" />
+        <time seconds="300" />
+        <start x="2" y="7" />
+      </properties>
+      <objects>
+        <staircase x="0" y="10" width="5" height="3" direction="left" />
+        <stairblock x="0" y="11" width="16" height="5" />
+        <stairblock x="0" y="3" width="16" height="3" />
+        <stairblock x="16" y="3" width="19" />
+        <stairblock x="18" y="11" width="3" />
+        <stairblock x="18" y="12" />
+        <stairblock x="20" y="12" />
+        <stairblock x="18" y="13" width="3" height="3" />
+        <stairblock x="23" y="11" width="3" />
+        <stairblock x="23" y="12" />
+        <stairblock x="25" y="12" />
+        <stairblock x="23" y="13" width="3" height="3" />
+        <stairblock x="28" y="11" width="3" />
+        <stairblock x="28" y="12" />
+        <stairblock x="30" y="12" />
+        <stairblock x="28" y="13" width="3" height="3" />
+        <stairblock x="33" y="11" width="2" height="5" />
+        <stairblock x="35" y="3" width="11" height="3" />
+        <stairblock x="35" y="14" width="11" height="2" />
+        <stairblock x="46" y="3" width="44" />
+        <stairblock x="48" y="14" width="40" height="2" />
+        <stairblock x="53" y="4" width="3" height="2" />
+        <stairblock x="53" y="13" width="3" />
+        <stairblock x="63" y="4" width="3" height="2" />
+        <stairblock x="63" y="13" width="3" />
+        <stairblock x="79" y="4" width="3" height="2" />
+        <stairblock x="79" y="13" width="3" />
+        <stairblock x="90" y="3" width="6" height="3" />
+        <stairblock x="90" y="11" width="6" height="5" />
+        <stairblock x="96" y="3" width="15" />
+        <stairblock x="99" y="11" width="3" height="5" />
+        <stairblock x="105" y="11" width="3" height="5" />
+        <stairblock x="111" y="11" width="5" height="5" />
+        <stairblock x="116" y="14" width="2" height="2" />
+        <stairblock x="118" y="11" width="10" height="5" />
+        <stairblock x="111" y="3" width="17" height="3" />
+        <stairblock x="128" y="3" width="32" />
+        <stairblock x="142" y="4" width="2" height="3" />
+        <stairblock x="141" y="10" width="3" height="4" />
+        <stairblock x="141" y="14" width="19" height="2" />
+
+        <questionblock x="42" y="10" />
+        <questionblock x="43" y="10" contains="powerup" />
+        <questionblock x="44" y="10" />
+
+        <usedblock x="19" y="12" />
+        <usedblock x="24" y="12" />
+        <usedblock x="29" y="12" />
+
+        <usedblock x="54" y="6" />
+        <usedblock x="54" y="12" />
+        <usedblock x="64" y="6" />
+        <usedblock x="64" y="12" />
+        <usedblock x="80" y="6" />
+        <usedblock x="80" y="12" />
+
+        <coin x="81" y="7" width="3" />
+
+        <brickblock x="131" y="4" width="2" height="3" />
+
+        <movingplatform x1="138" y1="7" x2="135" y2="7" width="2" />
+
+        <water x="46" y="14" width="2" />
+        <water x="88" y="14" width="2" />
+        <water x="96" y="14" width="3" />
+        <water x="102" y="14" width="3" />
+        <water x="108" y="14" width="3" />
+        <water x="128" y="14" width="13" />
+
+        <bowserbridge x="128" y="11" width="13" />
+        <axe x="141" y="9" />
+
+        <toad x="153" y="13" />
+      </objects>
+      <enemies>
+        <firebar x="19" y="12" direction="counterclockwise" size="small" />
+        <firebar x="24" y="12" direction="counterclockwise" size="small" />
+        <firebar x="29" y="12" direction="counterclockwise" size="small" />
+        <firebar x="54" y="6" direction="counterclockwise" size="small" />
+        <firebar x="54" y="12" direction="clockwise" size="small" />
+        <firebar x="64" y="6" direction="counterclockwise" size="small" />
+        <firebar x="64" y="12" direction="clockwise" size="small" />
+        <firebar x="80" y="6" direction="clockwise" size="small" />
+        <firebar x="80" y="12" direction="counterclockwise" size="small" />
+
+        <podoboo x="16" y="6" />
+        <podoboo x="26" y="6" />
+        <podoboo x="88" y="6" />
+        <podoboo x="97" y="6" />
+        <podoboo x="103" y="6" />
+        <podoboo x="109" y="6" />
+
+        <bowser x="136" y="10" fireballs trueform="buzzybeetle" />
+
+        <generator type="fireballs" xstart="104" xend="128" />
+      </enemies>
+    </sublevel>
+  </level>
+
+  <level name="4-1">
+    <sublevel>
+      <properties>
+        <dimensions width="237" height="16" />
+        <setting background="bushesnhills" />
+        <midpoint x="98" />
+        <time seconds="400" />
+        <start x="2" y="13" />
+      </properties>
+      <objects>
+        <flagpole x="225" y="13" />
+
+        <floorblock x="0" y="14" width="32" height="2" />
+        <floorblock x="34" y="14" width="44" height="2" />
+        <floorblock x="82" y="14" width="67" height="2" />
+        <floorblock x="151" y="14" width="23" height="2" />
+        <floorblock x="177" y="14" width="3" height="2" />
+        <floorblock x="182" y="14" width="8" height="2" />
+        <floorblock x="192" y="14" width="45" height="2" />
+
+        <staircase x="208" y="13" width="9" height="8" direction="right" />
+        <stairblock x="103" y="11" height="3" />
+        <stairblock x="189" y="11" height="3" />
+
+        <pipe x="21" y="11" height="3" />
+        <pipe x="116" y="10" height="4" />
+        <pipe x="132" y="10" height="4" goto="4-1@bonus" />
+        <pipe x="163" y="12" height="2" name="bonus_exit" />
+
+        <questionblock x="25" y="6" />
+        <questionblock x="25" y="10" contains="powerup" />
+        <questionblock x="64" y="6" />
+        <questionblock x="64" y="10" />
+        <questionblock x="66" y="6" />
+        <questionblock x="66" y="10" />
+        <questionblock x="90" y="10" width="4" />
+        <questionblock x="148" y="6" width="4" />
+        <questionblock x="146" y="10" width="2" />
+        <questionblock x="148" y="10" contains="powerup" />
+        <questionblock x="151" y="10" width="3" />
+
+        <brickblock x="149" y="10" width="2" />
+        <brickblock x="220" y="10" contains="multicoin" />
+
+        <hiddenblock x="92" y="6" contains="1up" />
+
+        <castle x="-2" y="13" size="large" />
+        <castle x="230" y="13" size="small" />
+      </objects>
+      <enemies>
+        <piranhaplant x="21" y="11" color="green" />
+        <piranhaplant x="116" y="10" color="green" />
+        <piranhaplant x="132" y="10" color="green" />
+        <piranhaplant x="163" y="12" color="green" />
+
+        <lakitu x="29" y="4" stop="193" />
+      </enemies>
+    </sublevel>
+    <sublevel name="bonus">
+      <properties>
+        <dimensions width="16" height="16" />
+        <setting type="underground" />
+        <start x="2" y="4" />
+      </properties>
+      <objects>
+        <floorblock x="0" y="14" width="16" height="2" />
+
+        <brickblock x="0" y="3" height="11" />
+        <brickblock x="3" y="3" width="12" />
+        <brickblock x="3" y="11" height="2" />
+        <brickblock x="3" y="10" width="8" />
+        <brickblock x="10" y="11" height="2" />
+        <brickblock x="13" y="10" contains="powerup" />
+
+        <coin x="3" y="9" width="8" />
+        <coin x="3" y="13" width="10" />
+
+        <pipe x="13" y="12" height="11" width="2" goto="4-1#bonus_exit" />
+      </objects>
+    </sublevel>
+  </level>
+
+  <level name="4-2">
+    <sublevel>
+      <properties>
+        <dimensions width="16" height="16" />
+        <setting type="overworld" background="clouds" />
+        <time seconds="400" />
+        <start x="2" y="13" auto />
+      </properties>
+      <objects>
+        <floorblock x="0" y="14" width="16" height="2" />
+
+        <pipe x="10" y="12" height="4" width="2" showtop="" goto="4-2@main" />
+
+        <castle x="0" y="13" size="small" />
+      </objects>
+    </sublevel>
+    <sublevel name="main">
+      <properties>
+        <dimensions width="224" height="16" />
+        <setting type="underground" />
+        <midpoint x="98" />
+        <time seconds="400" />
+        <start x="2" y="4" />
+      </properties>
+      <objects>
+        <floorblock x="0" y="14" width="11" height="2" />
+        <floorblock x="13" y="14" width="2" height="2" />
+        <floorblock x="17" y="14" height="2" />
+        <floorblock x="21" y="14" width="36" height="2" />
+        <floorblock x="63" y="14" width="42" height="2" />
+        <floorblock x="107" y="14" width="2" height="2" />
+        <floorblock x="111" y="14" width="2" height="2" />
+        <floorblock x="119" y="14" width="4" height="2" />
+        <floorblock x="129" y="14" width="15" height="2" />
+        <floorblock x="146" y="14" width="9" height="2" />
+        <floorblock x="160" y="14" width="23" height="2" />
+        <floorblock x="185" y="14" width="39" height="2" />
+
+        <pipe x="72" y="11" height="3" />
+        <pipe x="78" y="7" height="7" />
+        <pipe x="84" y="11" height="3" goto="4-2@bonus" />
+        <pipe x="89" y="11" height="3" />
+        <pipe x="107" y="10" height="4" />
+        <pipe x="131" y="12" height="2" name="bonus_exit" />
+        <pipe x="138" y="11" height="3" />
+        <pipe x="142" y="10" height="4" />
+        <pipe x="180" y="7" height="7" />
+        <pipe x="187" y="9" height="8" width="2" goto="4-2@outro" />
+        <pipe x="214" y="11" height="3" goto="5-1" />
+
+        <stairblock x="103" y="12" height="2" />
+        <stairblock x="104" y="11" height="3" />
+        <stairblock x="111" y="11" width="2" height="3" />
+        <staircase x="152" y="13" height="3" width="3" direction="right" />
+        <staircase x="173" y="13" height="4" width="4" direction="right" />
+
+        <questionblock x="50" y="6" width="2" />
+        <questionblock x="50" y="10" width="2" />
+        <questionblock x="54" y="10" />
+        <questionblock x="55" y="10" contains="powerup" />
+        <questionblock x="56" y="10" />
+
+        <brickblock x="0" y="3" height="11" />
+        <brickblock x="6" y="3" width="51" />
+        <brickblock x="20" y="4" width="23" height="3" />
+        <brickblock x="43" y="4" />
+        <brickblock x="43" y="5" contains="multicoin" />
+        <brickblock x="43" y="6" />
+        <brickblock x="44" y="4" width="4" height="3" />
+        <brickblock x="22" y="10" width="5" height="3" />
+        <brickblock x="27" y="10" />
+        <brickblock x="28" y="10" contains="powerup" />
+        <brickblock x="30" y="10" width="18" height="4" />
+        <brickblock x="64" y="6" contains="vine" goto="4-2@skybonus" />
+        <brickblock x="65" y="6" width="2" />
+        <brickblock x="67" y="3" width="45" />
+        <brickblock x="76" y="10" />
+        <brickblock x="77" y="10" contains="multicoin" />
+        <brickblock x="80" y="10" />
+        <brickblock x="81" y="10" contains="star" />
+        <brickblock x="87" y="9" />
+        <brickblock x="119" y="3" width="4" />
+        <brickblock x="119" y="6" />
+        <brickblock x="120" y="6" contains="powerup" />
+        <brickblock x="121" y="6" />
+        <brickblock x="119" y="10" width="4" />
+        <brickblock x="128" y="3" width="27" />
+        <brickblock x="160" y="3" width="29" />
+        <brickblock x="160" y="4" width="16" />
+        <brickblock x="160" y="7" height="2" />
+        <brickblock x="161" y="10" contains="powerup" />
+        <brickblock x="162" y="10" width="10" />
+        <brickblock x="185" y="11" width="6" height="3" />
+        <brickblock x="191" y="3" width="18" height="11" />
+        <brickblock x="209" y="3" width="10" />
+        <brickblock x="222" y="3" width="2" height="11" />
+
+        <hiddenblock x="63" y="9" />
+        <hiddenblock x="64" y="8" />
+        <hiddenblock x="65" y="9" />
+        <hiddenblock x="66" y="10" />
+
+        <coin x="27" y="13" width="3" />
+        <coin x="162" y="9" width="10" />
+
+        <infiniteplatform x="59" width="3" direction="down" frequency="1" />
+        <infiniteplatform x="115" width="3" direction="down" frequency="2" />
+        <infiniteplatform x="124" width="3" direction="up" frequency="2" />
+        <infiniteplatform x="156" width="3" direction="down" frequency="2" />
+      </objects>
+      <enemies>
+        <goomba x="43" y="9" count="3" />
+
+        <koopa x="77" y="13" color="green" />
+        <koopa x="100" y="13" color="green" count="2" />
+        <koopa x="137" y="13" color="green" />
+        <koopa x="168" y="13" color="green" count="2" />
+
+        <buzzybeetle x="83" y="13" />
+        <buzzybeetle x="88" y="13" />
+        <buzzybeetle x="154" y="13" />
+        <buzzybeetle x="179" y="13" />
+
+        <piranhaplant x="72" y="11" color="green" />
+        <piranhaplant x="78" y="7" color="green" />
+        <piranhaplant x="84" y="11" color="green" />
+        <piranhaplant x="89" y="11" color="green" />
+        <piranhaplant x="107" y="10" color="green" />
+        <piranhaplant x="131" y="12" color="green" />
+        <piranhaplant x="138" y="11" color="green" />
+        <piranhaplant x="142" y="10" color="green" />
+        <piranhaplant x="180" y="7" color="green" />
+      </enemies>
+    </sublevel>
+    <sublevel name="outro">
+      <properties>
+        <dimensions width="34" height="16" />
+        <setting type="overworld" background="bushesnhills" />
+        <start x="2" y="13" />
+      </properties>
+      <objects>
+        <flagpole x="22" y="13" />
+
+        <floorblock x="0" y="14" width="34" height="2" />
+
+        <pipe x="3" y="12" height="2" name="begin" />
+
+        <staircase x="5" y="13" height="8" width="9" direction="right" />
+
+        <castle x="27" y="13" size="small" />
+      </objects>
+      <enemies>
+        <piranhaplant x="3" y="12" color="green" />
+      </enemies>
+    </sublevel>
+    <sublevel name="bonus">
+      <properties>
+        <dimensions width="16" height="16" />
+        <setting type="underground" />
+        <start x="2" y="4" />
+      </properties>
+      <objects>
+        <floorblock x="0" y="14" width="16" height="2" />
+
+        <pipe x="13" y="12" height="11" width="2" goto="4-2@main#bonus_exit" />
+
+        <brickblock x="0" y="3" height="11" />
+        <brickblock x="4" y="3" width="7" />
+        <brickblock x="10" y="4" height="4" />
+        <brickblock x="4" y="7" height="2" />
+        <brickblock x="5" y="8" width="6" />
+        <brickblock x="11" y="7" width="2" />
+        <brickblock x="14" y="8" contains="multicoin" />
+
+        <coin x="5" y="6" width="5" height="2" />
+      </objects>
+    </sublevel>
+    <sublevel name="skybonus">
+      <properties>
+        <dimensions width="64" height="16" />
+        <setting background="clouds" />
+        <start x="4" y="13" />
+      </properties>
+      <objects>
+        <floorblock x="0" y="14" width="4" height="2" />
+        <floorblock x="5" y="14" width="59" height="2" />
+
+        <vine x="4" y="10" height="6" />
+
+        <pipe x="50" y="11" height="3" goto="8-1" />
+        <pipe x="54" y="11" height="3" goto="7-1" />
+        <pipe x="58" y="11" height="3" goto="6-1" />
+
+        <staircase x="40" y="13" width="9" height="9" direction="right" />
+        <stairblock x="48" y="5" width="11" />
+        <stairblock x="62" y="3" width="2" height="11" />
+
+        <mushroomledge x="12" y="10" width="3" height="4" />
+        <mushroomledge x="16" y="6" width="3" height="8" />
+        <mushroomledge x="18" y="12" width="3" height="2" />
+        <mushroomledge x="22" y="6" width="3" height="8" />
+        <mushroomledge x="22" y="12" width="5" height="2" />
+        <mushroomledge x="26" y="8" width="3" height="6" />
+        <mushroomledge x="30" y="5" width="5" height="9" />
+        <mushroomledge x="31" y="11" width="7" height="3" />
+
+        <coin x="12" y="9" width="3" />
+        <coin x="16" y="5" width="3" />
+        <coin x="22" y="5" width="3" />
+        <coin x="26" y="7" width="3" />
+        <coin x="30" y="4" width="5" />
+        <coin x="35" y="10" width="2" />
+      </objects>
+    </sublevel>
+  </level>
+
+  <level name="4-3">
+    <sublevel>
+      <properties>
+        <dimensions width="159" height="16" />
+        <setting background="clouds" />
+        <midpoint x="66" />
+        <time seconds="300" />
+        <start x="2" y="13" />
+      </properties>
+      <objects>
+        <flagpole x="147" y="13" />
+
+        <floorblock x="0" y="14" width="15" height="2" />
+        <floorblock x="141" y="14" width="18" height="2" />
+
+        <questionblock x="43" y="3" contains="powerup" />
+
+        <mushroomledge x="16" y="14" width="5" height="2" />
+        <mushroomledge x="19" y="6" width="5" height="10" />
+        <mushroomledge x="23" y="10" width="7" height="6" />
+        <mushroomledge x="32" y="5" width="3" height="11" />
+        <mushroomledge x="39" y="6" width="5" height="10" />
+        <mushroomledge x="36" y="13" width="7" height="3" />
+        <mushroomledge x="44" y="10" width="3" height="6" />
+        <mushroomledge x="54" y="9" width="3" height="7" />
+        <mushroomledge x="67" y="8" width="3" height="8" />
+        <mushroomledge x="65" y="14" width="5" height="2" />
+        <mushroomledge x="70" y="4" width="3" height="12" />
+        <mushroomledge x="72" y="10" width="5" height="6" />
+        <mushroomledge x="74" y="6" width="5" height="10" />
+        <mushroomledge x="84" y="10" width="3" height="6" />
+        <mushroomledge x="99" y="12" width="3" height="4" />
+        <mushroomledge x="105" y="11" width="3" height="5" />
+        <mushroomledge x="113" y="10" width="5" height="6" />
+        <mushroomledge x="117" y="7" width="3" height="9" />
+        <mushroomledge x="121" y="14" width="7" height="2" />
+        <mushroomledge x="130" y="11" width="5" height="5" />
+
+        <coin x="20" y="5" width="3" />
+        <coin x="24" y="9" width="5" />
+        <coin x="38" y="12" width="3" />
+        <coin x="48" y="8" />
+        <coin x="57" y="4" />
+        <coin x="67" y="7" width="3" />
+        <coin x="70" y="3" width="3" />
+        <coin x="73" y="9" />
+        <coin x="96" y="8" />
+        <coin x="104" y="5" />
+        <coin x="113" y="9" width="5" />
+
+        <movingplatform x1="58" y1="7" x2="58" y2="15" width="3" />
+        <movingplatform x1="62" y1="5" x2="62" y2="13" width="3" />
+        <movingplatform x1="60" y1="6" x2="60" y2="14" width="3" />
+
+        <scaleplatforms x1="48" y1="6" x2="55" y2="10" y3="3" width="3" />
+        <scaleplatforms x1="80" y1="6" x2="88" y2="10" y3="3" width="3" />
+        <scaleplatforms x1="91" y1="6" x2="96" y2="10" y3="3" width="3" />
+        <scaleplatforms x1="102" y1="6" x2="108" y2="10" y3="3" width="3" />
+
+        <castle x="0" y="13" size="small" />
+        <castle x="150" y="13" size="large" />
+      </objects>
+      <enemies>
+        <koopa x="28" y="9" color="red" />
+        <koopa x="29" y="9" color="red" />
+        <koopa x="39" y="12" color="red" />
+        <koopa x="68" y="13" color="red" />
+        <koopa x="78" y="5" color="red" />
+
+        <parakoopa x1="36" y1="4" x2="36" y2="10" />
+      </enemies>
+    </sublevel>
+  </level>
+
+  <level name="4-4">
+    <sublevel>
+      <properties>
+        <dimensions width="192" height="16" />
+        <setting type="castle" />
+        <time seconds="400" />
+        <start x="2" y="7" />
+      </properties>
+      <objects>
+        <staircase x="0" y="10" width="5" height="3" direction="left" />
+        <stairblock x="0" y="11" width="7" height="5" />
+        <stairblock x="0" y="3" width="6" height="3" />
+        <stairblock x="6" y="3" width="141" />
+        <stairblock x="9" y="11" width="2" height="5" />
+        <stairblock x="13" y="11" width="3" height="5" />
+        <stairblock x="16" y="14" width="72" height="2" />
+        <stairblock x="18" y="7" width="6" height="4" />
+        <stairblock x="25" y="7" height="4" />
+        <stairblock x="27" y="7" height="4" />
+        <stairblock x="29" y="7" height="4" />
+        <stairblock x="31" y="7" height="4" />
+        <stairblock x="33" y="7" height="4" />
+        <stairblock x="35" y="7" width="3" height="4" />
+        <stairblock x="38" y="7" width="6" />
+        <stairblock x="44" y="7" width="31" height="4" />
+        <stairblock x="77" y="4" width="3" height="3" />
+        <stairblock x="77" y="11" width="3" height="3" />
+        <stairblock x="86" y="11" width="2" />
+        <stairblock x="89" y="9" width="2" />
+        <stairblock x="90" y="11" height="5" />
+        <stairblock x="91" y="11" width="3" />
+        <stairblock x="94" y="9" height="3" />
+        <stairblock x="93" y="8" />
+        <stairblock x="95" y="8" />
+        <stairblock x="95" y="7" width="3" />
+        <stairblock x="100" y="7" width="4" />
+        <stairblock x="105" y="7" width="3" />
+        <stairblock x="110" y="7" width="34" />
+        <stairblock x="96" y="11" width="48" />
+        <stairblock x="105" y="8" height="3" />
+        <stairblock x="95" y="14" width="65" height="2" />
+        <stairblock x="144" y="6" height="5" />
+        <stairblock x="145" y="4" width="2" height="2" />
+        <stairblock x="152" y="3" width="40" />
+        <stairblock x="152" y="11" width="4" height="3" />
+        <stairblock x="158" y="11" width="2" height="3" />
+        <stairblock x="173" y="14" width="19" height="2" />
+        <stairblock x="173" y="10" width="2" height="3" />
+        <stairblock x="174" y="4" width="3" height="4" />
+
+        <pipe x="40" y="11" height="3" />
+
+        <water x="7" y="14" width="2" />
+        <water x="11" y="14" width="2" />
+        <water x="88" y="14" width="2" />
+        <water x="91" y="14" width="4" />
+        <water x="160" y="14" width="13" />
+
+        <bowserbridge x="160" y="11" width="13" />
+        <axe x="173" y="9" />
+
+        <toad x="185" y="13" />
+      </objects>
+      <enemies>
+        <firebar x="53" y="7" direction="clockwise" size="small" />
+        <firebar x="60" y="10" direction="clockwise" size="small" />
+        <firebar x="115" y="7" direction="clockwise" size="small" />
+        <firebar x="122" y="11" direction="clockwise" size="small" />
+        <firebar x="162" y="11" direction="clockwise" size="small" />
+
+        <podoboo x="165" y="6" />
+
+        <bowser x="168" y="10" fireballs trueform="spiny" />
+
+        <generator type="fireballs" xstart="128" xend="160" />
+      </enemies>
+      <maze>
+        <loop>
+          <checkpoint x="18" y="4" height="3" />
+          <checkpoint x="45" y="4" height="3" />
+          <finish x="80" setback="16" />
+        </loop>
+        <loop>
+          <checkpoint x="96" y="12" height="2" />
+          <checkpoint x="112" y="12" height="2" />
+          <finish x="144" setback="80" />
+        </loop>
+      </maze>
+    </sublevel>
+  </level>
+
+  <level name="5-1">
+    <sublevel>
+      <properties>
+        <dimensions width="211" height="16" />
+        <setting type="snowy" background="fencesntrees" />
+        <midpoint x="98" />
+        <time seconds="300" />
+        <start x="2" y="13" />
+      </properties>
+      <objects>
+        <flagpole x="199" y="13" />
+
+        <floorblock x="0" y="14" width="49" height="2" />
+        <floorblock x="51" y="14" width="41" height="2" />
+        <floorblock x="96" y="14" width="18" height="2" />
+        <floorblock x="116" y="14" width="36" height="2" />
+        <floorblock x="155" y="14" width="56" height="2" />
+
+        <stairblock x="89" y="10" height="4" />
+        <stairblock x="90" y="10" width="4" />
+        <stairblock x="116" y="11" height="3" />
+        <stairblock x="147" y="10" height="4" />
+        <stairblock x="156" y="10" width="2" />
+        <staircase x="182" y="13" width="5" height="5" direction="right" />
+        <stairblock x="189" y="6" width="2" height="6" />
+
+        <pipe x="44" y="11" height="3" />
+        <pipe x="51" y="11" height="3" />
+        <pipe x="156" y="8" height="2" goto="5-1@bonus" />
+        <pipe x="163" y="12" height="2" name="bonus_exit" />
+
+        <brickblock x="90" y="6" />
+        <brickblock x="91" y="6" contains="star" />
+        <brickblock x="92" y="6" />
+        <brickblock x="147" y="10" width="2" />
+
+        <hiddenblock x="148" y="10" contains="1up" />
+
+        <billblaster x="111" y="12" height="2" />
+        <billblaster x="159" y="12" height="2" />
+        <billblaster x="170" y="12" height="2" />
+
+        <castle x="0" y="13" size="small" />
+        <castle x="204" y="13" size="small" />
+      </objects>
+      <enemies>
+        <goomba x="19" y="13" count="3" />
+        <goomba x="30" y="13" count="3" />
+        <goomba x="65" y="13" count="3" />
+        <goomba x="76" y="13" count="3" />
+        <goomba x="103" y="13" count="3" />
+        <goomba x="121" y="13" count="3" />
+        <goomba x="135" y="13" count="3" />
+
+        <koopa x="16" y="13" color="green" />
+        <koopa x="41" y="13" color="green" count="2" />
+        <koopa x="127" y="13" color="green" />
+        <koopa x="144" y="13" color="green" count="2" />
+
+        <bouncingkoopa x="61" y="13" />
+        <bouncingkoopa x="87" y="13" />
+        <bouncingkoopa x="178" y="13" />
+        <bouncingkoopa x="182" y="9" />
+
+        <piranhaplant x="44" y="11" color="green" />
+        <piranhaplant x="51" y="11" color="green" />
+        <piranhaplant x="156" y="8" color="green" />
+        <piranhaplant x="163" y="12" color="green" />
+      </enemies>
+    </sublevel>
+    <sublevel name="bonus">
+      <properties>
+        <dimensions width="16" height="16" />
+        <setting type="underground" />
+        <start x="2" y="4" />
+      </properties>
+      <objects>
+        <floorblock x="0" y="14" width="16" height="2" />
+
+        <pipe x="13" y="12" height="11" width="2" goto="5-1#bonus_exit" />
+
+        <brickblock x="0" y="3" height="11" />
+        <brickblock x="4" y="3" width="7" />
+        <brickblock x="10" y="4" height="4" />
+        <brickblock x="4" y="7" height="2" />
+        <brickblock x="5" y="8" width="6" />
+        <brickblock x="11" y="7" width="2" />
+        <brickblock x="14" y="8" contains="multicoin" />
+
+        <coin x="5" y="6" width="5" height="2" />
+      </objects>
+    </sublevel>
+  </level>
+
+  <level name="5-2">
+    <sublevel>
+      <properties>
+        <dimensions width="212" height="16" />
+        <setting type="snowy" background="fencesntrees" />
+        <midpoint x="98" />
+        <time seconds="400" />
+        <start x="2" y="13" />
+      </properties>
+      <objects>
+        <flagpole x="200" y="13" />
+
+        <floorblock x="0" y="14" width="26" height="2" />
+        <floorblock x="29" y="14" width="37" height="2" />
+        <floorblock x="68" y="14" width="24" height="2" />
+        <floorblock x="96" y="14" width="31" height="2" />
+        <floorblock x="129" y="14" width="15" height="2" />
+        <floorblock x="151" y="14" width="19" height="2" />
+        <floorblock x="173" y="14" width="2" height="2" />
+        <floorblock x="177" y="14" width="8" height="2" />
+        <floorblock x="186" y="14" width="2" height="2" />
+        <floorblock x="189" y="14" width="23" height="2" />
+
+        <staircase x="12" y="13" width="4" height="4" direction="right" />
+        <stairblock x="16" y="10" width="3" />
+        <staircase x="44" y="13" width="5" height="4" direction="right" />
+        <stairblock x="49" y="12" height="2" />
+        <staircase x="62" y="13" width="4" height="4" direction="right" />
+        <staircase x="68" y="9" width="3" height="2" direction="right" />
+        <stairblock x="68" y="10" width="3" height="4" />
+        <stairblock x="129" y="11" height="3" />
+        <staircase x="183" y="13" width="2" height="2" direction="right" />
+        <staircase x="186" y="10" width="2" height="2" direction="right" />
+        <staircase x="189" y="7" width="3" height="2" direction="right" />
+        <stairblock x="186" y="11" width="2" height="3" />
+        <stairblock x="189" y="8" width="3" height="6" />
+
+        <pipe x="55" y="11" height="3" goto="5-2@underwater" />
+        <pipe x="115" y="12" height="2" name="underwater_exit" />
+        <pipe x="173" y="12" height="2" />
+
+        <questionblock x="78" y="10" width="10" />
+
+        <brickblock x="29" y="6" width="5" />
+        <brickblock x="34" y="6" contains="powerup" />
+        <brickblock x="29" y="10" width="6" />
+        <brickblock x="85" y="6" contains="vine" goto="5-2@skybonus" />
+        <brickblock x="86" y="6" width="2" />
+        <brickblock x="89" y="9" width="3" />
+        <brickblock x="118" y="6" width="7" />
+        <brickblock x="125" y="6" contains="star" />
+        <brickblock x="118" y="10" width="8" />
+        <brickblock x="141" y="12" contains="multicoin" />
+        <brickblock x="142" y="12" contains="powerup" />
+        <brickblock x="147" y="10" width="3" />
+        <brickblock x="153" y="6" width="5" />
+        <brickblock x="168" y="10" contains="powerup" />
+        <brickblock x="172" y="6" width="4" />
+
+        <hiddenblock x="84" y="10" />
+
+        <coin x="21" y="5" width="3" />
+        <coin x="29" y="9" width="3" />
+        <coin x="89" y="13" width="2" />
+        <coin x="86" y="5" width="2" />
+        <coin x="172" y="5" width="2" />
+
+        <billblaster x="17" y="8" height="2" />
+        <billblaster x="107" y="12" height="2" />
+        
+        <springboard x="25" y="13" color="red" />
+
+        <castle x="0" y="13" size="small" />
+        <castle x="205" y="13" size="small" />
+      </objects>
+      <enemies>
+        <goomba x="63" y="11" />
+        <goomba x="65" y="9" />
+        <goomba x="155" y="13" />
+        <goomba x="156" y="13" />
+
+        <koopa x="23" y="13" color="green" />
+        <koopa x="157" y="5" color="red" />
+
+        <bouncingkoopa x="40" y="13" />
+        <bouncingkoopa x="106" y="13" />
+        <bouncingkoopa x="163" y="13" />
+        <bouncingkoopa x="166" y="13" />
+        <bouncingkoopa x="186" y="9" />
+
+        <buzzybeetle x="136" y="13" />
+        <buzzybeetle x="137" y="13" />
+        <buzzybeetle x="138" y="13" />
+
+        <piranhaplant x="55" y="11" color="green" />
+        <piranhaplant x="115" y="12" color="green" />
+        <piranhaplant x="173" y="12" color="green" />
+
+        <hammerbro x="46" y="10" action="stay" />
+        <hammerbro x="81" y="8" action="stay" />
+        <hammerbro x="120" y="9" action="stay" />
+        <hammerbro x="124" y="5" action="stay" />
+      </enemies>
+    </sublevel>
+    <sublevel name="underwater">
+      <properties>
+        <dimensions width="64" height="16" />
+        <setting type="underwater" background="water" />
+        <start x="2" y="4" />
+      </properties>
+      <objects>
+        <floorblock x="0" y="14" width="22" height="2" />
+        <floorblock x="11" y="7" width="5" />
+        <floorblock x="26" y="3" width="2" height="3" />
+        <floorblock x="26" y="11" width="2" height="5" />
+        <floorblock x="32" y="3" width="2" height="3" />
+        <floorblock x="32" y="11" width="2" height="5" />
+        <floorblock x="34" y="14" width="4" height="2" />
+        <floorblock x="40" y="14" width="2" height="2" />
+        <floorblock x="38" y="5" width="6" />
+        <floorblock x="50" y="10" width="4" />
+        <floorblock x="54" y="7" width="4" />
+        <floorblock x="44" y="14" width="20" height="2" />
+        <floorblock x="59" y="13" width="5" />
+        <floorblock x="60" y="12" width="4" />
+        <floorblock x="61" y="10" width="3" height="2" />
+        <floorblock x="61" y="3" width="3" height="4" />
+        <floorblock x="63" y="7" height="3" />
+
+        <stairblock x="12" y="11" height="3" />
+        <stairblock x="15" y="5" height="2" />
+        <stairblock x="20" y="10" height="4" />
+        <stairblock x="38" y="6" height="4" />
+        <stairblock x="43" y="6" height="4" />
+        <stairblock x="46" y="12" height="2" />
+
+        <coin x="22" y="8" width="10" />
+        <coin x="40" y="13" width="2" />
+        <coin x="50" y="9" width="4" />
+        <coin x="54" y="6" width="4" />
+
+        <pipe x="62" y="8" width="1" height="7" goto="5-2#underwater_exit" />
+
+        <infiniteplatform x="23" frequency="1" direciton="down" width="3" />
+        <infiniteplatform x="29" frequency="1" direciton="down" width="3" />
+      </objects>
+      <enemies>
+        <blooper x="19" y="13" />
+        <blooper x="35" y="13" />
+        <blooper x="45" y="13" />
+
+        <generator type="swimmingfish" xstart="16" />
+      </enemies>
+    </sublevel>
+    <sublevel name="skybonus">
+      <properties>
+        <dimensions width="80" height="16" />
+        <setting type="skybonus" />
+        <start x="4" y="13" />
+        <offscreen goto="5-2#130" />
+      </properties>
+      <objects>
+        <stairblock x="0" y="14" width="4" />
+        <stairblock x="5" y="14" width="57" />
+
+        <vine x="4" y="10" height="6" />
+
+        <coin x="15" y="7" width="16" />
+        <coin x="32" y="5" width="3" />
+        <coin x="36" y="6" width="16" />
+        <coin x="53" y="5" width="3" />
+        <coin x="69" y="13" width="3" />
+
+        <ridingplatform x="16" y="11" width="3" />
+      </objects>
+    </sublevel>
+  </level>
+
+  <level name="5-3">
+    <sublevel>
+      <properties>
+        <dimensions width="164" height="16" />
+        <setting type="overworld" background="clouds" />
+        <midpoint x="66" />
+        <time seconds="300" />
+        <start x="2" y="13" />
+      </properties>
+      <objects>
+        <flagpole x="152" y="13" />
+        <floorblock x="0" y="14" width="16" height="2" />
+        <floorblock x="129" y="14" width="35" height="2" />
+
+        <stairblock x="138" y="10" width="6" height="4" />
+        <stairblock x="140" y="8" width="2" height="2" />
+        <stairblock x="142" y="6" width="2" height="4" />
+
+        <questionblock x="59" y="11" contains="powerup" />
+
+        <grassledge x="18" y="13" width="4" height="3" />
+        <grassledge x="24" y="10" width="8" height="6" />
+        <grassledge x="26" y="6" width="5" height="4" />
+        <grassledge x="32" y="13" width="3" height="3" />
+        <grassledge x="35" y="9" width="5" height="7" />
+        <grassledge x="40" y="5" width="7" height="11" />
+        <grassledge x="50" y="14" width="4" height="2" />
+        <grassledge x="59" y="14" width="5" height="2" />
+        <grassledge x="60" y="6" width="4" height="8" />
+        <grassledge x="65" y="14" width="5" height="2" />
+        <grassledge x="70" y="10" width="3" height="6" />
+        <grassledge x="76" y="7" width="6" height="9" />
+        <grassledge x="98" y="12" width="4" height="4" />
+        <grassledge x="104" y="8" width="8" height="8" />
+        <grassledge x="113" y="14" width="3" height="2" />
+        <grassledge x="116" y="10" width="4" height="6" />
+        <grassledge x="122" y="10" width="4" height="6" />
+
+        <coin x="27" y="5" width="3" />
+        <coin x="33" y="12" />
+        <coin x="37" y="3" width="2" />
+        <coin x="50" y="7" width="2" />
+        <coin x="60" y="5" width="4" />
+        <coin x="85" y="6" width="2" />
+        <coin x="93" y="5" width="2" />
+        <coin x="97" y="5" width="2" />
+        <coin x="113" y="13" width="3" />
+        <coin x="120" y="6" width="2" />
+
+        <movingplatform x1="55" y1="7" x2="55" y2="15" width="2" />
+        <movingplatform x1="86" y1="9" x2="83" y2="9" width="2" />
+        <movingplatform x1="94" y1="10" x2="91" y2="10" width="2" />
+        <movingplatform x1="131" y1="7" x2="128" y2="7" width="2" />
+
+        <castle x="0" y="13" size="small" />
+        <castle x="155" y="13" size="large" />
+      </objects>
+      <enemies>
+        <goomba x="44" y="4" />
+        <goomba x="46" y="4" />
+        <goomba x="80" y="5" />
+
+        <koopa x="30" y="5" color="red" />
+        <koopa x="110" y="7" color="red" />
+        <koopa x="113" y="13" color="red" />
+
+        <parakoopa x1="74" y1="5" x2="74" y2="11" />
+        <parakoopa x1="114" y1="6" x2="114" y2="12" />
+
+        <generator type="bulletbills" xstart="16" xend="144" />
+      </enemies>
+    </sublevel>
+  </level>
+
+  <level name="5-4">
+    <sublevel>
+      <properties>
+        <dimensions width="160" height="16" />
+        <setting type="castle" />
+        <time seconds="300" />
+        <start x="2" y="7" />
+      </properties>
+      <objects>
+        <staircase x="0" y="10" width="5" height="3" direction="left" />
+        <stairblock x="0" y="11" width="16" height="5" />
+        <stairblock x="0" y="3" width="16" height="3" />
+        <stairblock x="18" y="10" width="2" />
+        <stairblock x="22" y="8" />
+        <stairblock x="24" y="8" />
+        <stairblock x="27" y="10" width="2" />
+        <stairblock x="32" y="11" width="2" height="5" />
+        <stairblock x="34" y="3" width="49" height="3" />
+        <stairblock x="34" y="6" width="21" />
+        <stairblock x="56" y="6" width="27" />
+        <stairblock x="34" y="14" width="9" />
+        <stairblock x="44" y="14" width="11" />
+        <stairblock x="56" y="14" width="11" />
+        <stairblock x="68" y="14" width="12" />
+        <stairblock x="34" y="15" width="46" />
+        <stairblock x="37" y="10" width="12" />
+        <stairblock x="50" y="10" width="11" />
+        <stairblock x="62" y="10" width="11" />
+        <stairblock x="80" y="11" width="4" height="5" />
+        <stairblock x="93" y="3" width="6" height="3" />
+        <stairblock x="92" y="14" width="17" height="2" />
+        <stairblock x="92" y="12" width="7" height="2" />
+        <stairblock x="93" y="11" width="6" />
+        <stairblock x="108" y="11" height="3" />
+        <stairblock x="111" y="11" width="2" height="5" />
+        <stairblock x="115" y="14" width="13" height="2" />
+        <stairblock x="115" y="11" width="5" height="3" />
+        <stairblock x="122" y="11" width="2" height="3" />
+        <stairblock x="126" y="11" width="2" height="3" />
+        <stairblock x="115" y="4" width="13" height="2" />
+        <stairblock x="115" y="3" width="45" />
+        <stairblock x="142" y="4" width="2" height="3" />
+        <stairblock x="141" y="10" width="3" height="4" />
+        <stairblock x="141" y="14" width="19" height="2" />
+
+        <questionblock x="23" y="4" contains="powerup" />
+
+        <usedblock x="23" y="8" />
+        <usedblock x="43" y="14" />
+        <usedblock x="55" y="14" />
+        <usedblock x="67" y="14" />
+        <usedblock x="49" y="10" />
+        <usedblock x="61" y="10" />
+        <usedblock x="73" y="10" />
+        <usedblock x="55" y="6" />
+        <usedblock x="82" y="7" />
+        <usedblock x="92" y="11" />
+        <usedblock x="103" y="12" />
+
+        <coin x="102" y="9" width="3" />
+        <coin x="102" y="13" width="3" />
+
+        <brickblock x="128" y="6" width="6" />
+
+        <infiniteplatform x="86" width="1" frequency="3" direction="up" showpath />
+        <infiniteplatform x="89" width="1" frequency="3" direction="down" showpath />
+        <movingplatform x1="138" y1="7" x2="135" y2="7" width="2" />
+
+        <water x="16" y="14" width="16" />
+        <water x="109" y="14" width="2" />
+        <water x="113" y="14" width="2" />
+        <water x="128" y="14" width="13" />
+
+        <bowserbridge x="128" y="11" width="13" />
+        <axe x="141" y="9" />
+
+        <toad x="153" y="13" />
+      </objects>
+      <enemies>
+        <firebar x="23" y="8" direction="clockwise" size="large" />
+        <firebar x="43" y="14" direction="clockwise" size="small" />
+        <firebar x="49" y="10" direction="counterclockwise" size="small" />
+        <firebar x="55" y="6" direction="counterclockwise" size="small" />
+        <firebar x="5" y="14" direction="clockwise" size="small" />
+        <firebar x="61" y="10" direction="counterclockwise" size="small" />
+        <firebar x="67" y="14" direction="counterclockwise" size="small" />
+        <firebar x="73" y="10" direction="counterclockwise" size="small" />
+        <firebar x="82" y="7" direction="counterclockwise" size="small" />
+        <firebar x="92" y="11" direction="clockwise" size="small" />
+        <firebar x="103" y="12" direction="clockwise" size="small" />
+
+        <podoboo x="16" y="6" />
+        <podoboo x="20" y="6" />
+        <podoboo x="30" y="6" />
+        <podoboo x="109" y="6" />
+        <podoboo x="113" y="6" />
+        <podoboo x="131" y="6" />
+
+        <bowser x="136" y="10" fireballs hammers trueform="lakitu" />
+
+        <generator type="fireballs" xstart="104" xend="128" />
+      </enemies>
+    </sublevel>
+  </level>
+
+  <level name="6-1">
+    <sublevel>
+      <properties>
+        <dimensions width="198" height="16" />
+        <setting type="nighttime" background="bushesnclouds" />
+        <midpoint x="98" />
+        <time seconds="400" />
+        <start x="2" y="13" />
+      </properties>
+      <objects>
+        <flagpole x="186" y="13" />
+        <floorblock x="0" y="14" width="20" height="2" />
+        <floorblock x="22" y="14" width="9" height="2" />
+        <floorblock x="37" y="14" width="2" height="2" />
+        <floorblock x="41" y="14" width="16" height="2" />
+        <floorblock x="59" y="14" width="15" height="2" />
+        <floorblock x="77" y="14" width="16" height="2" />
+        <floorblock x="96" y="14" width="31" height="2" />
+        <floorblock x="134" y="14" width="2" height="2" />
+        <floorblock x="137" y="14" width="12" height="2" />
+        <floorblock x="155" y="14" width="9" height="2" />
+        <floorblock x="167" y="14" width="7" height="2" />
+        <floorblock x="176" y="14" width="22" height="2" />
+
+        <pipe x="102" y="11" height="3" />
+
+        <stairblock x="26" y="13" width="6" />
+        <stairblock x="29" y="12" width="5" />
+        <stairblock x="32" y="11" width="4" />
+        <stairblock x="35" y="10" width="3" />
+        <staircase x="69" y="13" width="5" height="4" direction="right" />
+        <staircase x="84" y="12" width="2" height="2" direction="right" />
+        <stairblock x="87" y="10" width="3" height="4" />
+        <staircase x="87" y="12" width="3" height="3" direction="right" />
+        <staircase x="122" y="13" width="5" height="5" direction="right" />
+        <staircase x="143" y="13" width="6" height="6" direction="right" />
+        <staircase x="169" y="13" width="5" height="5" direction="right" />
+        <stairblock x="176" y="6" width="2" height="8" />
+
+        <questionblock x="16" y="10" width="2" />
+        <questionblock x="130" y="9" contains="powerup" />
+        <questionblock x="131" y="9" />
+
+        <brickblock x="36" y="6" contains="powerup" />
+        <brickblock x="37" y="6" />
+        <brickblock x="41" y="10" width="2" />
+        <brickblock x="43" y="10" contains="multicoin" />
+        <brickblock x="90" y="7" width="3" />
+        <brickblock x="92" y="11" width="3" />
+        <brickblock x="127" y="9" width="2" />
+        <brickblock x="130" y="13" width="5" />
+        <brickblock x="149" y="8" width="2" />
+        <brickblock x="151" y="10" />
+        <brickblock x="152" y="10" contains="multicoin" />
+        <brickblock x="152" y="12" width="3" />
+
+        <hiddenblock x="90" y="9" contains="1up" />
+        <hiddenblock x="113" y="6" />
+        <hiddenblock x="113" y="10" />
+
+        <coin x="62" y="10" width="3" />
+        <coin x="76" y="8" width="2" />
+        <coin x="105" y="9" width="3" />
+
+        <castle x="191" y="13" size="small" />
+        <castle x="-2" y="13" size="large" />
+      </objects>
+      <enemies>
+        <lakitu x="32" y="4" stop="160" />
+
+        <piranhaplant x="102" y="11" color="green" />
+      </enemies>
+    </sublevel>
+  </level>
+
+  <level name="6-2">
+    <sublevel>
+      <properties>
+        <dimensions width="228" height="16" />
+        <setting type="nighttime" background="bushesnclouds" />
+        <midpoint x="98" />
+        <time seconds="400" />
+        <start x="2" y="13" />
+      </properties>
+      <objects>
+        <flagpole x="216" y="13" />
+        <floorblock x="0" y="14" width="123" height="2" />
+        <floorblock x="129" y="14" width="12" height="2" />
+        <floorblock x="142" y="14" height="2" />
+        <floorblock x="144" y="14" width="8" height="2" />
+        <floorblock x="153" y="14" width="75" height="2" />
+
+        <pipe x="19" y="10" height="4" goto="6-2@bonus1" />
+        <pipe x="28" y="10" height="4" />
+        <pipe x="32" y="7" height="2" />
+        <pipe x="35" y="12" height="2" name="bonus1_exit" />
+        <pipe x="37" y="12" height="2" />
+        <pipe x="46" y="10" height="4" />
+        <pipe x="56" y="9" height="5" goto="6-2@underwater" />
+        <pipe x="62" y="8" height="2" />
+        <pipe x="67" y="12" height="2" />
+        <pipe x="74" y="12" height="2" />
+        <pipe x="80" y="11" height="3" />
+        <pipe x="84" y="12" height="2" />
+        <pipe x="87" y="8" height="6" />
+        <pipe x="94" y="11" height="3" />
+        <pipe x="102" y="10" height="4" />
+        <pipe x="105" y="12" height="2" />
+        <pipe x="111" y="7" height="3" />
+        <pipe x="115" y="12" height="2" name="underwater_exit" />
+        <pipe x="131" y="12" height="2" />
+        <pipe x="135" y="12" height="2" />
+        <pipe x="153" y="11" height="3" goto="6-2@bonus2" />
+        <pipe x="167" y="7" height="3" />
+        <pipe x="174" y="10" height="4" />
+        <pipe x="179" y="12" height="2" name="bonus2_exit" />
+        <pipe x="181" y="11" height="3" />
+        <pipe x="183" y="10" height="4" />
+        <pipe x="189" y="11" height="3" />
+        <pipe x="201" y="10" height="4" />
+
+        <stairblock x="32" y="9" width="2" />
+        <stairblock x="62" y="10" width="2" />
+        <stairblock x="111" y="10" width="2" />
+        <staircase x="149" y="13" width="3" height="3" direction="right" />
+        <stairblock x="156" y="10" height="4" />
+        <stairblock x="157" y="12" height="2" />
+        <stairblock x="167" y="10" width="2" />
+        <staircase x="199" y="13" width="2" height="2" direction="right" />
+        <staircase x="203" y="9" width="5" height="4" direction="right" />
+        <stairblock x="203" y="10" width="5" height="4" />
+
+        <brickblock x="10" y="10" width="3" />
+        <brickblock x="23" y="6" />
+        <brickblock x="24" y="6" contains="multicoin" />
+        <brickblock x="25" y="6" />
+        <brickblock x="51" y="10" />
+        <brickblock x="52" y="10" contains="powerup" />
+        <brickblock x="67" y="6" width="5" />
+        <brickblock x="77" y="6" width="4" />
+        <brickblock x="52" y="10" contains="vine" goto="6-2@skybonus" />
+        <brickblock x="110" y="10" />
+        <brickblock x="113" y="10" />
+        <brickblock x="115" y="6" />
+        <brickblock x="119" y="6" width="9" />
+        <brickblock x="138" y="9" width="2" />
+        <brickblock x="140" y="6" contains="star" />
+        <brickblock x="141" y="6" />
+        <brickblock x="144" y="10" width="3" />
+        <brickblock x="145" y="6" width="2" />
+        <brickblock x="160" y="10" width="3" />
+        <brickblock x="160" y="6" width="3" />
+
+        <hiddenblock x="24" y="10" />
+        <hiddenblock x="82" y="10" />
+
+        <castle x="221" y="13" size="small" />
+        <castle x="-2" y="13" size="large" />
+      </objects>
+      <enemies>
+        <goomba x="67" y="5" />
+        <goomba x="68" y="5" />
+        <goomba x="169" y="13" count="2" />
+
+        <koopa x="26" y="13" color="green" />
+
+        <bouncingkoopa x="43" y="13" />
+        <bouncingkoopa x="206" y="5" />
+
+        <buzzybeetle x="54" y="13" />
+        <buzzybeetle x="92" y="13" />
+        <buzzybeetle x="120" y="5" />
+        <buzzybeetle x="163" y="13" />
+
+        <piranhaplant x="19" y="10" color="green" />
+        <piranhaplant x="28" y="10" color="green" />
+        <piranhaplant x="32" y="7" color="green" />
+        <piranhaplant x="35" y="12" color="green" />
+        <piranhaplant x="37" y="12" color="green" />
+        <piranhaplant x="46" y="10" color="green" />
+        <piranhaplant x="56" y="9" color="green" />
+        <piranhaplant x="62" y="8" color="green" />
+        <piranhaplant x="67" y="12" color="green" />
+        <piranhaplant x="74" y="12" color="green" />
+        <piranhaplant x="80" y="11" color="green" />
+        <piranhaplant x="84" y="12" color="green" />
+        <piranhaplant x="87" y="8" color="green" />
+        <piranhaplant x="94" y="11" color="green" />
+        <piranhaplant x="102" y="10" color="green" />
+        <piranhaplant x="105" y="12" color="green" />
+        <piranhaplant x="111" y="7" color="green" />
+        <piranhaplant x="115" y="12" color="green" />
+        <piranhaplant x="131" y="12" color="green" />
+        <piranhaplant x="135" y="12" color="green" />
+        <piranhaplant x="153" y="11" color="green" />
+        <piranhaplant x="167" y="7" color="green" />
+        <piranhaplant x="174" y="10" color="green" />
+        <piranhaplant x="179" y="12" color="green" />
+        <piranhaplant x="181" y="11" color="green" />
+        <piranhaplant x="183" y="10" color="green" />
+        <piranhaplant x="189" y="11" color="green" />
+        <piranhaplant x="201" y="10" color="green" />
+      </enemies>
+    </sublevel>
+    <sublevel name="bonus1">
+      <properties>
+        <dimensions width="16" height="16" />
+        <setting type="underground" />
+        <start x="2" y="4" />
+      </properties>
+      <objects>
+        <floorblock x="0" y="14" width="16" height="2" />
+
+        <pipe x="13" y="12" height="11" width="2" goto="6-2#bonus1_exit" />
+
+        <brickblock x="0" y="3" height="11" />
+        <brickblock x="4" y="3" width="7" />
+        <brickblock x="10" y="4" height="4" />
+        <brickblock x="4" y="7" height="2" />
+        <brickblock x="5" y="8" width="6" />
+        <brickblock x="11" y="7" width="2" />
+        <brickblock x="14" y="8" contains="multicoin" />
+
+        <coin x="5" y="6" width="5" height="2" />
+      </objects>
+    </sublevel>
+    <sublevel name="skybonus">
+      <properties>
+        <dimensions width="94" height="16" />
+        <setting type="skybonus" />
+        <start x="4" y="13" />
+        <offscreen goto="6-2#160" />
+      </properties>
+      <objects>
+        <stairblock x="0" y="14" width="4" />
+        <stairblock x="5" y="14" width="78" />
+        <stairblock x="32" y="9" />
+        <stairblock x="51" y="8" height="2" />
+        <stairblock x="61" y="8" height="2" />
+        <stairblock x="67" y="7" width="2" />
+        <stairblock x="71" y="7" />
+        <stairblock x="73" y="7" />
+        <stairblock x="75" y="7" />
+        <stairblock x="77" y="7" />
+        <stairblock x="79" y="7" />
+
+        <vine x="4" y="10" height="6" />
+
+        <coin x="15" y="7" width="16" />
+        <coin x="34" y="7" width="16" />
+        <coin x="53" y="6" width="7" />
+        <coin x="71" y="6" width="10" />
+        <coin x="85" y="12" width="3" />
+
+        <ridingplatform x="16" y="11" width="2" />
+      </objects>
+    </sublevel>
+    <sublevel name="underwater">
+      <properties>
+        <dimensions width="64" height="16" />
+        <setting type="underwater" background="water" />
+        <start x="2" y="4" />
+      </properties>
+      <objects>
+        <floorblock x="0" y="14" width="22" height="2" />
+        <floorblock x="11" y="7" width="5" />
+        <floorblock x="26" y="3" width="2" height="3" />
+        <floorblock x="26" y="11" width="2" height="5" />
+        <floorblock x="32" y="3" width="2" height="3" />
+        <floorblock x="32" y="11" width="2" height="5" />
+        <floorblock x="34" y="14" width="4" height="2" />
+        <floorblock x="40" y="14" width="2" height="2" />
+        <floorblock x="38" y="5" width="6" />
+        <floorblock x="50" y="10" width="4" />
+        <floorblock x="54" y="7" width="4" />
+        <floorblock x="44" y="14" width="20" height="2" />
+        <floorblock x="59" y="13" width="5" />
+        <floorblock x="60" y="12" width="4" />
+        <floorblock x="61" y="10" width="3" height="2" />
+        <floorblock x="61" y="3" width="3" height="4" />
+        <floorblock x="63" y="7" height="3" />
+
+        <stairblock x="12" y="11" height="3" />
+        <stairblock x="15" y="5" height="2" />
+        <stairblock x="20" y="10" height="4" />
+        <stairblock x="38" y="6" height="4" />
+        <stairblock x="43" y="6" height="4" />
+        <stairblock x="46" y="12" height="2" />
+
+        <coin x="22" y="8" width="10" />
+        <coin x="40" y="13" width="2" />
+        <coin x="50" y="9" width="4" />
+        <coin x="54" y="6" width="4" />
+
+        <pipe x="62" y="8" width="1" height="7" goto="6-2#underwater_exit" />
+
+        <infiniteplatform x="23" frequency="1" direciton="down" width="2" />
+        <infiniteplatform x="29" frequency="1" direciton="down" width="2" />
+      </objects>
+      <enemies>
+        <blooper x="19" y="13" />
+        <blooper x="35" y="13" />
+        <blooper x="45" y="13" />
+        
+        <generator type="swimmingfish" xstart="16" />
+      </enemies>
+    </sublevel>
+    <sublevel name="bonus2">
+      <properties>
+        <dimensions width="16" height="16" />
+        <setting type="underground" />
+        <start x="2" y="4" />
+      </properties>
+      <objects>
+        <floorblock x="0" y="14" width="16" height="2" />
+
+        <brickblock x="0" y="3" height="11" />
+        <brickblock x="3" y="3" width="12" />
+        <brickblock x="3" y="11" height="2" />
+        <brickblock x="3" y="10" width="8" />
+        <brickblock x="10" y="11" height="2" />
+        <brickblock x="13" y="10" contains="powerup" />
+
+        <coin x="3" y="9" width="8" />
+        <coin x="3" y="13" width="10" />
+
+        <pipe x="13" y="12" height="11" width="2" goto="6-2#bonus2_exit" />
+      </objects>
+    </sublevel>
+  </level>
+
+  <level name="6-3">
+    <sublevel>
+      <properties>
+        <dimensions width="179" height="16" />
+        <setting type="snowy" background="clouds" />
+        <midpoint x="98" />
+        <time seconds="300" />
+        <start x="2" y="13" />
+      </properties>
+      <objects>
+        <flagpole x="167" y="13" />
+        <floorblock x="0" y="14" width="16" height="2" />
+        <floorblock x="160" y="14" width="19" height="2" />
+
+        <questionblock x="55" y="4" contains="powerup" />
+
+        <grassledge x="18" y="14" width="3" height="2" />
+        <grassledge x="21" y="10" width="3" height="6" />
+        <grassledge x="24" y="14" width="3" height="2" />
+        <grassledge x="31" y="10" width="4" height="6" />
+        <grassledge x="37" y="14" width="3" height="2" />
+        <grassledge x="43" y="14" width="3" height="2" />
+        <grassledge x="49" y="12" width="4" height="4" />
+        <grassledge x="65" y="10" width="5" height="6" />
+        <grassledge x="85" y="11" width="5" height="5" />
+        <grassledge x="85" y="4" width="3" height="7" />
+        <grassledge x="90" y="9" width="3" height="7" />
+        <grassledge x="93" y="14" width="3" height="2" />
+        <grassledge x="97" y="14" width="4" height="2" />
+        <grassledge x="103" y="14" width="3" height="2" />
+        <grassledge x="107" y="10" width="5" height="6" />
+        <grassledge x="113" y="14" width="5" height="2" />
+        <grassledge x="123" y="14" width="3" height="2" />
+        <grassledge x="132" y="6" width="3" height="8" />
+        <grassledge x="132" y="14" width="4" height="2" />
+        <grassledge x="135" y="10" width="4" height="6" />
+        <grassledge x="156" y="6" width="3" height="10" />
+
+        <coin x="28" y="3" width="2" />
+        <coin x="43" y="5" width="7" />
+        <coin x="73" y="6" width="2" />
+        <coin x="85" y="3" width="3" />
+        <coin x="100" y="9" width="4" />
+        <coin x="128" y="6" width="2" />
+        <coin x="145" y="8" width="2" />
+        <coin x="154" y="4" width="2" />
+
+        <movingplatform x1="28" y1="6" x2="28" y2="14" width="2" />
+        <movingplatform x1="43" y1="6" x2="40" y2="6" width="2" />
+        <movingplatform x1="48" y1="10" x2="45" y2="10" width="2" />
+        <movingplatform x1="55" y1="7" x2="52" y2="7" width="2" />
+        <movingplatform x1="60" y1="5" x2="60" y2="13" width="2" />
+        <movingplatform x1="121" y1="6" x2="118" y2="6" width="2" />
+        <scaleplatforms x1="71" y1="6" x2="75" y2="10" y3="3" width="1" />
+        <scaleplatforms x1="79" y1="6" x2="82" y2="10" y3="3" width="1" />
+        <scaleplatforms x1="127" y1="7" x2="130" y2="10" y3="3" width="1" />
+        <fallingplatform x="141" y="8" width="2" />
+        <fallingplatform x="145" y="7" width="2" />
+        <fallingplatform x="149" y="9" width="2" />
+        <fallingplatform x="152" y="8" width="2" />
+
+        <springboard x="38" y="13" color="red" />
+        <springboard x="116" y="13" color="red" />
+
+        <castle x="0" y="13" size="small" />
+        <castle x="170" y="13" size="large" />
+      </objects>
+      <enemies>
+        <generator type="bulletbills" xstart="80" xend="160" />
+      </enemies>
+    </sublevel>
+  </level>
+
+  <level name="6-4">
+    <sublevel>
+      <properties>
+        <dimensions width="160" height="16" />
+        <setting type="castle" />
+        <time seconds="300" />
+        <start x="2" y="7" />
+      </properties>
+      <objects>
+        <staircase x="0" y="10" width="5" height="3" direction="left" />
+        <stairblock x="0" y="11" width="13" height="5" />
+        <stairblock x="0" y="3" width="24" height="3" />
+        <stairblock x="23" y="6" />
+        <stairblock x="15" y="11" width="11" height="5" />
+        <stairblock x="24" y="3" width="13" />
+        <stairblock x="29" y="12" width="3" height="4" />
+        <stairblock x="29" y="11" />
+        <stairblock x="31" y="11" />
+        <stairblock x="35" y="10" width="37" height="6" />
+        <stairblock x="37" y="3" width="35" height="4" />
+        <stairblock x="72" y="3" width="25" />
+        <stairblock x="80" y="4" />
+        <stairblock x="88" y="4" />
+        <stairblock x="72" y="11" width="32" height="5" />
+        <stairblock x="97" y="3" width="7" height="3" />
+        <stairblock x="104" y="3" width="19" />
+        <stairblock x="104" y="14" width="19" height="2" />
+        <stairblock x="116" y="11" width="4" height="3" />
+        <stairblock x="123" y="11" width="5" height="5" />
+        <stairblock x="123" y="3" width="5" height="3" />
+        <stairblock x="128" y="3" width="32" />
+        <stairblock x="142" y="4" width="2" height="3" />
+        <stairblock x="141" y="10" width="3" height="6" />
+        <stairblock x="144" y="14" width="16" height="2" />
+
+        <questionblock x="30" y="7" contains="powerup" />
+
+        <usedblock x="23" y="7" />
+        <usedblock x="30" y="11" />
+        <usedblock x="37" y="7" />
+        <usedblock x="49" y="7" />
+        <usedblock x="60" y="7" />
+        <usedblock x="67" y="7" />
+        <usedblock x="76" y="10" />
+        <usedblock x="80" y="5" />
+        <usedblock x="84" y="10" />
+        <usedblock x="88" y="5" />
+        <usedblock x="92" y="10" />
+
+        <hiddenblock x="106" y="10" />
+        <hiddenblock x="109" y="10" />
+        <hiddenblock x="112" y="10" />
+        <hiddenblock x="107" y="6" />
+        <hiddenblock x="110" y="6" />
+        <hiddenblock x="113" y="6" />
+
+        <movingplatform x1="138" y1="7" x2="135" y2="7" width="2" />
+
+        <water x="13" y="13" width="2" />
+        <water x="26" y="14" width="3" />
+        <water x="32" y="14" width="3" />
+        <water x="128" y="14" width="13" />
+
+        <bowserbridge x="128" y="11" width="13" />
+        <axe x="141" y="9" />
+
+        <toad x="153" y="13" />
+      </objects>
+      <enemies>
+        <firebar x="23" y="7" direction="counterclockwise" size="small" />
+        <firebar x="30" y="11" direction="counterclockwise" size="small" />
+        <firebar x="37" y="7" direction="counterclockwise" size="small" />
+        <firebar x="49" y="7" direction="counterclockwise" size="small" />
+        <firebar x="60" y="7" direction="counterclockwise" size="small" />
+        <firebar x="67" y="7" direction="counterclockwise" size="small" />
+        <firebar x="76" y="10" direction="counterclockwise" size="small" />
+        <firebar x="80" y="5" direction="clockwise" size="small" />
+        <firebar x="84" y="10" direction="counterclockwise" size="small" />
+        <firebar x="88" y="5" direction="clockwise" size="small" />
+        <firebar x="92" y="10" direction="counterclockwise" size="small" />
+
+        <podoboo x="27" y="6" />
+        <podoboo x="33" y="6" />
+        <podoboo x="131" y="6" />
+
+        <bowser x="136" y="10" fireballs hammers trueform="blooper" />
+
+        <generator type="fireballs" xstart="104" xend="128" />
+      </enemies>
+    </sublevel>
+  </level>
+
+  <level name="7-1">
+    <sublevel>
+      <properties>
+        <dimensions width="191" height="16" />
+        <setting type="snowy" background="fencesntrees" />
+        <midpoint x="98" />
+        <time seconds="400" />
+        <start x="2" y="13" />
+      </properties>
+      <objects>
+        <flagpole x="179" y="13" />
+        <floorblock x="0" y="14" width="73" height="2" />
+        <floorblock x="75" y="14" width="77" height="2" />
+        <floorblock x="153" y="14" width="38" height="2" />
+
+        <pipe x="76" y="11" height="3" />
+        <pipe x="93" y="11" height="3" goto="7-1@bonus" />
+        <pipe x="109" y="11" height="3" />
+        <pipe x="115" y="12" height="2" name="bonus_exit" />
+        <pipe x="128" y="12" height="2" />
+
+        <stairblock x="64" y="10" />
+        <stairblock x="141" y="11" height="3" />
+        <staircase x="153" y="13" width="6" height="6" direction="right" />
+        <staircase x="162" y="13" width="9" height="8" direction="right" />
+
+        <questionblock x="39" y="10" width="4" />
+
+        <brickblock x="27" y="6" contains="powerup" />
+        <brickblock x="28" y="6" width="2" />
+        <brickblock x="62" y="10" width="2" />
+        <brickblock x="65" y="10" contains="multicoin" />
+        <brickblock x="66" y="10" />
+        <brickblock x="82" y="10" width="7" />
+        <brickblock x="82" y="6" width="7" />
+        <brickblock x="134" y="10" width="5" />
+        <brickblock x="134" y="6" width="5" />
+        <brickblock x="149" y="9" width="2" />
+        <brickblock x="153" y="7" width="2" />
+        <brickblock x="151" y="3" contans="powerup" />
+
+        <hiddenblock x="93" y="6" contains="1up" />
+
+        <billblaster x="19" y="12" height="2" />
+        <billblaster x="28" y="11" height="2" />
+        <billblaster x="28" y="13" height="1" />
+        <billblaster x="36" y="12" height="2" />
+        <billblaster x="46" y="11" height="3" />
+        <billblaster x="56" y="11" height="2" />
+        <billblaster x="56" y="13" height="1" />
+        <billblaster x="64" y="8" height="2" />
+        <billblaster x="68" y="12" height="2" />
+        <billblaster x="104" y="12" height="2" />
+        <billblaster x="122" y="12" height="2" />
+        <billblaster x="146" y="11" height="2" />
+        <billblaster x="146" y="13" height="1" />
+
+        <springboard x="151" y="13" color="red" />
+
+        <castle x="184" y="13" size="small" />
+        <castle x="-2" y="13" size="large" />
+      </objects>
+      <enemies>
+        <bouncingkoopa x="26" y="13" />
+        <bouncingkoopa x="44" y="13" />
+        <bouncingkoopa x="53" y="13" />
+        <bouncingkoopa x="65" y="13" />
+
+        <koopa x="114" y="13" color="green" />
+        
+        <buzzybeetle x="169" y="4" />
+
+        <hammerbro x="84" y="13" action="stay" />
+        <hammerbro x="86" y="9" action="stay" />
+        <hammerbro x="135" y="13" action="stay" />
+        <hammerbro x="137" y="9" action="stay" />
+
+        <piranhaplant x="76" y="11" color="green" />
+        <piranhaplant x="93" y="11" color="green" />
+        <piranhaplant x="109" y="11" color="green" />
+        <piranhaplant x="115" y="12" color="green" />
+        <piranhaplant x="128" y="12" color="green" />
+      </enemies>
+    </sublevel>
+    <sublevel name="bonus">
+      <properties>
+        <dimensions width="16" height="16" />
+        <setting type="underground" />
+        <start x="2" y="4" />
+      </properties>
+      <objects>
+        <floorblock x="0" y="14" width="16" height="2" />
+
+        <pipe x="13" y="12" height="11" width="2" goto="7-1#bonus_exit" />
+
+        <brickblock x="0" y="3" height="11" />
+        <brickblock x="4" y="3" width="7" />
+        <brickblock x="4" y="11" width="7" height="3" />
+
+        <coin x="5" y="6" width="5" />
+        <coin x="4" y="8" width="7" />
+        <coin x="4" y="10" width="7" />
+      </objects>
+    </sublevel>
+  </level>
+
+  <level name="7-2">
+    <sublevel>
+      <properties>
+        <dimensions width="16" height="16" />
+        <setting background="clouds" />
+        <time seconds="400" />
+        <start x="2" y="13" auto />
+      </properties>
+      <objects>
+        <floorblock x="0" y="14" width="16" height="2" />
+
+        <pipe x="10" y="12" height="4" width="2" showtop="" goto="7-2@main" />
+
+        <castle x="0" y="13" size="small" />
+      </objects>
+    </sublevel>
+    <sublevel name="main">
+      <properties>
+        <dimensions width="192" height="16" />
+        <setting type="underwater" background="water" />
+        <midpoint x="82" />
+        <time seconds="400" />
+        <start x="2" y="4" />
+      </properties>
+      <objects>
+        <floorblock x="0" y="14" width="66" height="2" />
+        <floorblock x="18" y="10" width="3" />
+        <floorblock x="42" y="10" width="2" />
+        <floorblock x="64" y="11" height="3" />
+        <floorblock x="65" y="9" height="5" />
+        <floorblock x="71" y="14" width="60" height="2" />
+        <floorblock x="71" y="9" height="5" />
+        <floorblock x="72" y="11" height="3" />
+        <floorblock x="78" y="3" width="2" height="3" />
+        <floorblock x="78" y="11" width="2" height="3" />
+        <floorblock x="82" y="6" width="3" />
+        <floorblock x="102" y="10" width="2" />
+        <floorblock x="115" y="9" width="2" />
+        <floorblock x="129" y="10" height="4" />
+        <floorblock x="130" y="12" height="2" />
+        <floorblock x="140" y="14" width="17" height="2" />
+        <floorblock x="140" y="12" height="2" />
+        <floorblock x="141" y="10" height="4" />
+        <floorblock x="131" y="3" height="2" />
+        <floorblock x="131" y="5" width="9" />
+        <floorblock x="156" y="6" height="8" />
+        <floorblock x="157" y="6" width="2" />
+        <floorblock x="162" y="6" width="2" />
+        <floorblock x="164" y="6" height="8" />
+        <floorblock x="164" y="14" width="28" height="2" />
+        <floorblock x="172" y="6" width="5" />
+        <floorblock x="172" y="10" width="5" />
+        <floorblock x="180" y="6" width="4" />
+        <floorblock x="180" y="10" width="4" />
+        <floorblock x="185" y="13" width="7" />
+        <floorblock x="186" y="12" width="6" />
+        <floorblock x="187" y="11" width="5" />
+        <floorblock x="188" y="10" width="4" />
+        <floorblock x="188" y="3" width="4" height="4" />
+        <floorblock x="190" y="7" width="2" height="3" />
+
+        <stairblock x="11" y="11" height="3" />
+        <stairblock x="33" y="9" height="5" />
+        <stairblock x="42" y="8" height="2" />
+        <stairblock x="50" y="10" height="4" />
+        <stairblock x="83" y="4" height="2" />
+        <stairblock x="90" y="11" height="3" />
+        <stairblock x="102" y="6" height="4" />
+        <stairblock x="120" y="10" height="4" />
+        <stairblock x="147" y="12" height="2" />
+        <stairblock x="149" y="11" height="3" />
+        <stairblock x="173" y="4" height="2" />
+
+        <coin x="14" y="13" width="2" />
+        <coin x="27" y="6" width="3" />
+        <coin x="36" y="13" width="3" />
+        <coin x="67" y="11" width="3" />
+        <coin x="101" y="12" width="3" />
+        <coin x="113" y="7" width="3" />
+        <coin x="133" y="12" />
+        <coin x="134" y="13" width="3" />
+        <coin x="137" y="12" />
+        <coin x="159" y="10" width="3" />
+        <coin x="159" y="13" width="3" />
+
+        <pipe x="189" y="8" width="1" height="7" goto="7-2@outro#begin" />
+      </objects>
+      <enemies>
+        <blooper x="22" y="12" />
+        <blooper x="25" y="8" />
+        <blooper x="46" y="10" />
+        <blooper x="52" y="8" />
+        <blooper x="55" y="11" />
+        <blooper x="77" y="7" />
+        <blooper x="83" y="9" />
+        <blooper x="90" y="12" />
+        <blooper x="94" y="4" />
+        <blooper x="105" y="12" />
+        <blooper x="150" y="9" />
+        <blooper x="173" y="12" />
+        <blooper x="179" y="12" />
+
+        <generator type="swimmingfish" xstart="80" />
+      </enemies>
+    </sublevel>
+    <sublevel name="outro">
+      <properties>
+        <dimensions width="34" height="16" />
+        <setting type="overworld" background="bushesnhills" />
+        <start x="2" y="13" />
+      </properties>
+      <objects>
+        <flagpole x="22" y="13" />
+
+        <floorblock x="0" y="14" width="34" height="2" />
+
+        <pipe x="3" y="12" height="2" name="begin" />
+
+        <staircase x="5" y="13" height="8" width="9" direction="right" />
+
+        <castle x="27" y="13" size="small" />
+      </objects>
+      <enemies>
+        <piranhaplant x="3" y="12" color="green" />
+      </enemies>
+    </sublevel>
+  </level>
+
+  <level name="7-3">
+    <sublevel>
+      <properties>
+        <dimensions width="237" height="16" />
+        <setting background="clouds" />
+        <midpoint x="114" />
+        <time seconds="300" />
+        <start x="2" y="13" />
+      </properties>
+      <objects>
+        <flagpole x="225" y="13" />
+        <floorblock x="0" y="14" width="7" height="2" />
+        <floorblock x="207" y="14" width="30" height="2" />
+
+        <staircase x="10" y="13" width="5" height="3" direction="right" />
+        <stairblock x="31" y="11" height="5" />
+        <stairblock x="47" y="11" height="5" />
+        <stairblock x="63" y="11" height="5" />
+        <stairblock x="68" y="11" height="5" />
+        <stairblock x="79" y="11" height="5" />
+        <stairblock x="84" y="11" height="5" />
+        <stairblock x="95" y="11" height="5" />
+        <stairblock x="99" y="10" height="6" />
+        <stairblock x="105" y="10" height="6" />
+        <stairblock x="127" y="11" height="5" />
+        <stairblock x="143" y="11" height="5" />
+        <stairblock x="146" y="13" height="3" />
+        <stairblock x="155" y="13" height="3" />
+        <stairblock x="159" y="11" height="5" />
+        <stairblock x="168" y="11" height="5" />
+        <stairblock x="183" y="11" height="5" />
+        <staircase x="193" y="13" width="4" height="3" direction="left" />
+        <staircase x="208" y="13" width="9" height="8" direction="right" />
+
+        <questionblock x="102" y="6" contains="powerup" />
+
+        <grassledge x="8" y="14" width="8" height="2" />
+        <grassledge x="112" y="14" width="8" height="2" />
+        <grassledge x="192" y="14" width="13" height="2" />
+
+        <bridge x="15" y="11" width="16" />
+        <bridge x="32" y="11" width="15" />
+        <bridge x="48" y="11" width="16" />
+        <bridge x="69" y="11" width="10" />
+        <bridge x="85" y="11" width="10" />
+        <bridge x="100" y="10" width="5" />
+        <bridge x="122" y="11" width="3" />
+        <bridge x="128" y="11" width="15" />
+        <bridge x="147" y="13" width="8" />
+        <bridge x="160" y="11" width="8" />
+        <bridge x="171" y="11" width="2" />
+        <bridge x="175" y="11" width="2" />
+        <bridge x="179" y="11" width="2" />
+        <bridge x="184" y="11" width="9" />
+
+        <coin x="36" y="6" width="4" />
+        <coin x="55" y="6" />
+        <coin x="56" y="7" />
+        <coin x="57" y="6" />
+        <coin x="58" y="7" />
+        <coin x="59" y="6" />
+        <coin x="72" y="6" />
+        <coin x="73" y="5" width="2" />
+        <coin x="75" y="6" />
+        <coin x="97" y="6" width="3" />
+        <coin x="108" y="6" width="3" />
+        <coin x="133" y="6" width="6" />
+        <coin x="149" y="9" width="7" />
+        <coin x="173" y="7" width="6" />
+
+        <castle x="0" y="13" size="small" />
+        <castle x="228" y="13" size="large" />
+      </objects>
+      <enemies>
+        <koopa x="39" y="10" color="green" />
+        <koopa x="79" y="10" color="red" />
+        <koopa x="95" y="10" color="red" />
+        <koopa x="119" y="13" color="red" />
+
+        <bouncingkoopa x="52" y="10" />
+        <bouncingkoopa x="140" y="8" />
+        <bouncingkoopa x="156" y="10" />
+        
+        <generator type="jumpingfish" xstart="16" xend="192" />
+      </enemies>
+    </sublevel>
+  </level>
+
+  <level name="7-4">
+    <sublevel>
+      <properties>
+        <dimensions width="224" height="16" />
+        <setting type="castle" />
+        <time seconds="400" />
+        <start x="2" y="7" />
+      </properties>
+      <objects>
+        <staircase x="0" y="10" width="5" height="3" direction="left" />
+        <stairblock x="0" y="3" width="224" />
+        <stairblock x="0" y="11" width="16" height="5" />
+        <stairblock x="0" y="4" width="16" height="2" />
+        <stairblock x="27" y="11" width="5" height="5" />
+        <stairblock x="28" y="4" width="4" height="2" />
+        <stairblock x="32" y="14" width="68" height="2" />
+        <stairblock x="34" y="10" />
+        <staircase x="35" y="10" width="15" height="4" direction="right" />
+        <stairblock x="54" y="11" width="13" />
+        <stairblock x="55" y="7" width="11" />
+        <stairblock x="70" y="7" width="18" height="4" />
+        <stairblock x="88" y="7" height="3" />
+        <stairblock x="89" y="7" height="2" />
+        <stairblock x="90" y="7" width="2" />
+        <stairblock x="92" y="11" width="3" height="3" />
+        <stairblock x="99" y="7" width="2" />
+        <stairblock x="102" y="7" width="3" />
+        <stairblock x="106" y="7" width="4" />
+        <stairblock x="110" y="7" width="6" height="4" />
+        <stairblock x="103" y="14" height="2" />
+        <stairblock x="107" y="14" width="85" height="2" />
+        <stairblock x="118" y="7" width="3" />
+        <stairblock x="123" y="7" width="7" />
+        <stairblock x="132" y="7" width="3" />
+        <stairblock x="119" y="11" width="3" />
+        <stairblock x="124" y="11" width="7" />
+        <stairblock x="133" y="11" width="3" />
+        <stairblock x="137" y="7" height="4" />
+        <stairblock x="138" y="7" width="15" />
+        <staircase x="139" y="13" width="21" height="3" direction="right" />
+        <stairblock x="163" y="11" width="3" height="3" />
+        <stairblock x="168" y="11" width="8" height="3" />
+        <stairblock x="178" y="11" width="2" height="3" />
+        <stairblock x="182" y="11" width="2" height="3" />
+        <stairblock x="186" y="11" width="6" height="3" />
+        <stairblock x="205" y="14" width="19" height="2" />
+        <stairblock x="205" y="10" width="3" height="4" />
+        <stairblock x="206" y="4" width="2" height="3" />
+
+        <usedblock x="103" y="8" />
+
+        <fallingplatform x="18" y="8" width="2" />
+        <fallingplatform x="22" y="9" width="2" />
+
+        <water x="16" y="14" width="11" />
+        <water x="100" y="14" width="3" />
+        <water x="104" y="14" width="3" />
+        <water x="192" y="14" width="13" />
+
+        <bowserbridge x="192" y="11" width="13" />
+        <axe x="205" y="9" />
+
+        <toad x="217" y="13" />
+      </objects>
+      <enemies>
+        <firebar x="103" y="8" direction="clockwise" size="small" />
+
+        <podoboo x="20" y="6" />
+        <podoboo x="196" y="6" />
+
+        <bowser x="200" y="10" fireballs hammers trueform="hammerbro" />
+
+        <generator type="fireballs" xstart="128" xend="160" />
+      </enemies>
+      <maze>
+        <loop>
+          <checkpoint x="34" y="11" height="3" />
+          <checkpoint x="48" y="11" height="3" />
+          <checkpoint x="55" y="8" height="3" />
+          <checkpoint x="65" y="8" height="3" />
+          <checkpoint x="70" y="4" height="3" />
+          <checkpoint x="91" y="4" height="3" />
+          <finish x="93" setback="27" />
+        </loop>
+        <loop>
+          <checkpoint x="106" y="4" height="3" />
+          <checkpoint x="115" y="4" height="3" />
+          <checkpoint x="124" y="8" height="3" />
+          <checkpoint x="129" y="8" height="3" />
+          <checkpoint x="137" y="4" height="3" />
+          <checkpoint x="148" y="4" height="3" />
+          <finish x="153" setback="96" />
+        </loop>
+      </maze>
+    </sublevel>
+  </level>
+
+  <level name="8-1">
+    <sublevel>
+      <properties>
+        <dimensions width="388" height="16" />
+        <setting background="fencesntrees" />
+        <time seconds="300" />
+        <start x="2" y="13" />
+      </properties>
+      <objects>
+        <flagpole x="376" y="13" />
+        <floorblock x="0" y="14" width="46" height="2" />
+        <floorblock x="47" y="14" height="2" />
+        <floorblock x="49" y="14" width="2" height="2" />
+        <floorblock x="52" y="14" width="2" height="2" />
+        <floorblock x="55" y="14" width="2" height="2" />
+        <floorblock x="58" y="14" width="111" height="2" />
+        <floorblock x="170" y="14" height="2" />
+        <floorblock x="172" y="14" width="2" height="2" />
+        <floorblock x="175" y="14" height="2" />
+        <floorblock x="177" y="14" width="2" height="2" />
+        <floorblock x="180" y="14" width="17" height="2" />
+        <floorblock x="198" y="14" height="2" />
+        <floorblock x="200" y="14" height="2" />
+        <floorblock x="202" y="14" width="19" height="2" />
+        <floorblock x="227" y="14" width="10" height="2" />
+        <floorblock x="238" y="14" width="2" height="2" />
+        <floorblock x="242" y="14" width="2" height="2" />
+        <floorblock x="246" y="14" width="44" height="2" />
+        <floorblock x="293" y="14" width="2" height="2" />
+        <floorblock x="298" y="14" width="16" height="2" />
+        <floorblock x="319" y="14" height="2" />
+        <floorblock x="324" y="14" width="35" height="2" />
+        <floorblock x="360" y="14" height="2" />
+        <floorblock x="362" y="14" height="2" />
+        <floorblock x="364" y="14" height="2" />
+        <floorblock x="366" y="14" width="22" height="2" />
+
+        <pipe x="35" y="10" height="4" />
+        <pipe x="76" y="10" height="4" />
+        <pipe x="82" y="11" height="3" />
+        <pipe x="94" y="10" height="4" />
+        <pipe x="104" y="10" height="4" goto="bonus" />
+        <pipe x="115" y="12" height="2" name="bonus_exit" />
+        <pipe x="140" y="11" height="3" />
+        <pipe x="238" y="11" height="3" />
+        <pipe x="242" y="10" height="4" />
+        <pipe x="246" y="9" height="5" />
+        <pipe x="344" y="11" height="3" />
+        <pipe x="355" y="12" height="2" />
+
+        <stairblock x="153" y="10" height="4" />
+        <stairblock x="163" y="10" height="4" />
+        <stairblock x="210" y="12" height="2" />
+        <staircase x="275" y="13" width="6" height="6" direction="right" />
+        <stairblock x="303" y="12" height="2" />
+        <stairblock x="307" y="12" height="2" />
+        <stairblock x="360" y="12" height="2" />
+        <stairblock x="362" y="10" height="4" />
+        <stairblock x="364" y="8" height="6" />
+        <stairblock x="368" y="6" width="2" height="8" />
+
+        <brickblock x="154" y="6" width="4" />
+        <brickblock x="158" y="6" contains="multicoin" />
+        <brickblock x="159" y="6" width="3" />
+        <brickblock x="184" y="9" width="2" />
+        <brickblock x="186" y="9" contains="star" />
+        <brickblock x="187" y="9" width="5" />
+
+        <hiddenblock x="80" y="9" contains="1up" />
+        <hiddenblock x="158" y="10" />
+
+        <coin x="64" y="9" />
+        <coin x="89" y="9" />
+        <coin x="98" y="9" />
+        <coin x="107" y="5" width="2" />
+        <coin x="223" y="9" width="2" />
+        <coin x="283" y="9" width="2" />
+        <coin x="291" y="9" />
+        <coin x="296" y="9" />
+        <coin x="316" y="9" width="2" />
+        <coin x="321" y="9" width="2" />
+
+        <castle x="381" y="13" size="small" />
+        <castle x="-2" y="13" size="large" />
+      </objects>
+      <enemies>
+        <goomba x="23" y="13" count="3" />
+        <goomba x="30" y="13" count="3" />
+        <goomba x="69" y="13" count="3" />
+        <goomba x="108" y="13" count="3" />
+        <goomba x="148" y="13" count="3" />
+        <goomba x="232" y="13" count="3" />
+        <goomba x="257" y="13" count="3" />
+        <goomba x="264" y="13" count="3" />
+        <goomba x="272" y="13" count="2" />
+
+        <bouncingkoopa x="161" y="13" />
+        <bouncingkoopa x="172" y="13" />
+        <bouncingkoopa x="177" y="13" />
+
+        <koopa x="43" y="13" color="green" count="2" />
+        <koopa x="61" y="13" color="green" />
+        <koopa x="119" y="13" color="green" />
+        <koopa x="124" y="13" color="green" count="3" />
+        <koopa x="130" y="13" color="green" count="3" />
+        <koopa x="207" y="13" color="green" count="2" />
+        <koopa x="305" y="13" color="green" />
+        <koopa x="332" y="13" color="green" />
+        <koopa x="339" y="13" color="green" count="3" />
+
+        <buzzybeetle x="18" y="13" />
+        <buzzybeetle x="81" y="13" />
+        <buzzybeetle x="254" y="13" />
+        <buzzybeetle x="283" y="13" />
+
+        <piranhaplant x="35" y="10" color="green" />
+        <piranhaplant x="76" y="10" color="green" />
+        <piranhaplant x="82" y="11" color="green" />
+        <piranhaplant x="94" y="10" color="green" />
+        <piranhaplant x="104" y="10" color="green" />
+        <piranhaplant x="115" y="12" color="green" />
+        <piranhaplant x="140" y="11" color="green" />
+        <piranhaplant x="238" y="11" color="green" />
+        <piranhaplant x="242" y="10" color="green" />
+        <piranhaplant x="246" y="9" color="green" />
+        <piranhaplant x="344" y="11" color="green" />
+        <piranhaplant x="355" y="12" color="green" />
+      </enemies>
+    </sublevel>
+    <sublevel name="bonus">
+      <properties>
+        <dimensions width="16" height="16" />
+        <setting type="underground" />
+        <start x="2" y="4" />
+      </properties>
+      <objects>
+        <floorblock x="0" y="14" width="16" height="2" />
+
+        <pipe x="13" y="12" height="11" width="2" goto="8-1#bonus_exit" />
+
+        <brickblock x="0" y="3" height="11" />
+        <brickblock x="3" y="3" width="10" height="4" />
+        <brickblock x="3" y="10" width="9" />
+        <brickblock x="13" y="3" width="2" height="9" />
+        <brickblock x="12" y="10" contains="multicoin" />
+
+        <coin x="4" y="9" width="8" />
+        <coin x="3" y="13" width="9" />
+      </objects>
+    </sublevel>
+  </level>
+
+  <level name="8-2">
+    <sublevel>
+      <properties>
+        <dimensions width="228" height="16" />
+        <setting background="fencesntrees" />
+        <time seconds="400" />
+        <start x="2" y="13" />
+      </properties>
+      <objects>
+        <flagpole x="216" y="13" />
+        <floorblock x="0" y="14" width="15" height="2" />
+        <floorblock x="16" y="14" width="5" height="2" />
+        <floorblock x="22" y="14" width="14" height="2" />
+        <floorblock x="37" y="14" width="8" height="2" />
+        <floorblock x="46" y="14" width="4" height="2" />
+        <floorblock x="51" y="14" height="2" />
+        <floorblock x="53" y="14" width="3" height="2" />
+        <floorblock x="57" y="14" width="6" height="2" />
+        <floorblock x="64" y="14" width="14" height="2" />
+        <floorblock x="80" y="14" width="4" height="2" />
+        <floorblock x="85" y="14" width="53" height="2" />
+        <floorblock x="139" y="14" width="5" height="2" />
+        <floorblock x="145" y="14" height="2" />
+        <floorblock x="147" y="14" height="2" />
+        <floorblock x="154" y="14" width="20" height="2" />
+        <floorblock x="175" y="14" height="2" />
+        <floorblock x="179" y="14" width="23" height="2" />
+        <floorblock x="203" y="14" height="2" />
+        <floorblock x="206" y="14" width="22" height="2" />
+
+        <pipe x="131" y="12" height="2" />
+        <pipe x="142" y="12" height="2" />
+        <pipe x="156" y="10" height="4" goto="8-1@bonus" />
+        <pipe x="163" y="12" height="2" name="bonus_exit" />
+
+        <staircase x="17" y="13" width="4" height="4" direction="right" />
+        <staircase x="22" y="8" width="4" height="3" direction="right" />
+        <stairblock x="22" y="9" width="4" height="5" />
+        <stairblock x="119" y="10" />
+        <staircase x="182" y="13" width="5" height="5" direction="right" />
+        <staircase x="199" y="13" width="3" height="3" direction="right" />
+        <stairblock x="203" y="9" height="5" />
+        <stairblock x="206" y="6" width="2" height="8" />
+
+        <questionblock x="29" y="10" width="4" />
+
+        <brickblock x="43" y="6" />
+        <brickblock x="44" y="6" contains="1up" />
+        <brickblock x="45" y="6" width="31" />
+        <brickblock x="77" y="10" width="2" />
+        <brickblock x="99" y="10" />
+        <brickblock x="100" y="10" contains="powerup" />
+        <brickblock x="110" y="10" width="2" />
+        <brickblock x="118" y="10" />
+        <brickblock x="120" y="10" contains="multicoin" />
+
+        <billblaster x="85" y="12" height="2" />
+        <billblaster x="93" y="11" height="2" />
+        <billblaster x="93" y="13" height="1" />
+        <billblaster x="105" y="12" height="2" />
+        <billblaster x="115" y="13" height="1" />
+        <billblaster x="119" y="9" height="1" />
+        <billblaster x="125" y="11" height="3" />
+        <billblaster x="175" y="12" height="2" />
+        <billblaster x="191" y="11" height="2" />
+        <billblaster x="191" y="13" height="1" />
+
+        <springboard x="44" y="13" color="red" />
+
+        <castle x="221" y="13" size="small" />
+        <castle x="0" y="13" size="small" />
+      </objects>
+      <enemies>
+        <goomba x="184" y="10" />
+        <goomba x="186" y="8" />
+
+        <bouncingkoopa x="18" y="11" />
+        <bouncingkoopa x="24" y="5" />
+        <bouncingkoopa x="57" y="13" />
+        <bouncingkoopa x="66" y="13" />
+        <bouncingkoopa x="69" y="13" />
+        <bouncingkoopa x="92" y="13" />
+        <bouncingkoopa x="95" y="13" />
+        <bouncingkoopa x="139" y="13" />
+        <bouncingkoopa x="170" y="13" />
+        <bouncingkoopa x="172" y="13" />
+        <bouncingkoopa x="175" y="11" />
+        <bouncingkoopa x="203" y="8" />
+
+        <buzzybeetle x="111" y="13" />
+        <buzzybeetle x="121" y="13" />
+        <buzzybeetle x="123" y="13" />
+        <buzzybeetle x="189" y="13" />
+
+        <lakitu x="21" y="4" stop="48" />
+
+        <piranhaplant x="131" y="12" color="green" />
+        <piranhaplant x="142" y="12" color="green" />
+        <piranhaplant x="156" y="10" color="green" />
+        <piranhaplant x="163" y="12" color="green" />
+      </enemies>
+    </sublevel>
+    <sublevel name="bonus">
+      <properties>
+        <dimensions width="16" height="16" />
+        <setting type="underground" />
+        <start x="2" y="4" />
+      </properties>
+      <objects>
+        <floorblock x="0" y="14" width="16" height="2" />
+
+        <pipe x="13" y="12" height="11" width="2" goto="8-2#bonus_exit" />
+
+        <brickblock x="0" y="3" height="11" />
+        <brickblock x="4" y="3" width="7" />
+        <brickblock x="10" y="4" height="4" />
+        <brickblock x="4" y="7" height="2" />
+        <brickblock x="5" y="8" width="6" />
+        <brickblock x="11" y="7" width="2" />
+        <brickblock x="14" y="8" contains="multicoin" />
+
+        <coin x="5" y="6" width="5" height="2" />
+      </objects>
+    </sublevel>
+  </level>
+
+  <level name="8-3">
+    <sublevel>
+      <properties>
+        <dimensions width="226" height="16" />
+        <setting background="fencesntrees" />
+        <time seconds="300" />
+        <start x="2" y="13" />
+      </properties>
+      <objects>
+        <flagpole x="214" y="13" />
+        <floorblock x="0" y="14" width="69" height="2" />
+        <floorblock x="71" y="14" width="4" height="2" />
+        <floorblock x="77" y="14" width="47" height="2" />
+        <floorblock x="126" y="14" width="2" height="2" />
+        <floorblock x="130" y="14" width="67" height="2" />
+        <floorblock x="208" y="14" width="18" height="2" />
+
+        <pipe x="53" y="10" height="4" />
+        <pipe x="126" y="10" height="4" />
+        <pipe x="168" y="11" height="3" />
+
+        <staircase x="71" y="13" width="4" height="4" direction="left" />
+        <stairblock x="95" y="11" height="3" />
+        <stairblock x="109" y="10" width="2" height="4" />
+        <stairblock x="195" y="12" height="2" />
+        <stairblock x="198" y="12" />
+        <stairblock x="200" y="10" />
+        <stairblock x="202" y="8" />
+        <stairblock x="204" y="6" width="2" />
+
+        <brickblock x="60" y="6" width="6" />
+        <brickblock x="66" y="6" contains="powerup" />
+        <brickblock x="67" y="6" />
+        <brickblock x="60" y="10" width="8" />
+        <brickblock x="115" y="6" />
+        <brickblock x="116" y="6" contains="powerup" />
+        <brickblock x="117" y="6" width="6" />
+        <brickblock x="115" y="10" width="8" />
+        <brickblock x="190" y="10" contains="multicoin" />
+
+        <billblaster x="18" y="12" height="2" />
+        <billblaster x="34" y="11" height="3" />
+        <billblaster x="86" y="12" height="2" />
+
+        <castlewall x="24" y="8" width="8" height="6" />
+        <castlewall x="37" y="8" width="14" height="6" />
+        <castlewall x="79" y="8" width="6" height="6" />
+        <castlewall x="88" y="8" width="6" height="6" />
+        <castlewall x="97" y="8" width="10" height="6" />
+        <castlewall x="132" y="8" width="34" height="6" />
+        <castlewall x="172" y="8" width="20" height="6" />
+
+        <castle x="217" y="13" size="large" />
+        <castle x="0" y="13" size="small" />
+      </objects>
+      <enemies>
+        <koopa x="137" y="13" color="green" />
+
+        <bouncingkoopa x="30" y="13" />
+        <bouncingkoopa x="93" y="13" />
+
+        <hammerbro x="63" y="13" action="stay" />
+        <hammerbro x="65" y="9" action="stay" />
+        <hammerbro x="117" y="9" action="stay" />
+        <hammerbro x="119" y="13" action="stay" />
+        <hammerbro x="146" y="13" action="stay" />
+        <hammerbro x="159" y="13" action="stay" />
+        <hammerbro x="177" y="13" action="stay" />
+        <hammerbro x="185" y="13" action="stay" />
+
+        <piranhaplant x="53" y="10" color="green" />
+        <piranhaplant x="126" y="10" color="green" />
+        <piranhaplant x="168" y="11" color="green" />
+      </enemies>
+    </sublevel>
+  </level>
+
+  <level name="8-4">
+    <sublevel>
+      <properties>
+        <dimensions width="320" height="16" />
+        <setting type="castle" />
+        <time seconds="400" />
+        <start x="2" y="7" />
+      </properties>
+      <objects>
+        <stairblock x="0" y="3" width="320" />
+        <staircase x="0" y="11" width="6" height="4" direction="left" />
+        <stairblock x="0" y="12" width="6" height="4" />
+        <stairblock x="11" y="14" width="8" height="2" />
+        <stairblock x="21" y="14" width="30" height="2" />
+        <stairblock x="53" y="14" width="13" height="2" />
+        <stairblock x="62" y="11" width="4" height="3" />
+        <stairblock x="75" y="11" width="6" height="5" />
+        <stairblock x="76" y="7" width="4" />
+        <stairblock x="83" y="11" width="7" height="5" />
+        <stairblock x="92" y="11" width="4" height="5" />
+        <stairblock x="96" y="14" width="19" height="2" />
+        <stairblock x="117" y="14" width="5" height="2" />
+        <stairblock x="124" y="14" width="8" height="2" />
+        <stairblock x="134" y="14" width="8" height="2" />
+        <stairblock x="152" y="10" width="2" />
+        <stairblock x="147" y="14" width="48" height="2" />
+        <stairblock x="197" y="14" height="2" />
+        <stairblock x="198" y="11" width="6" height="5" />
+        <stairblock x="206" y="11" width="6" height="5" />
+        <stairblock x="214" y="11" width="6" height="5" />
+        <stairblock x="224" y="11" width="4" height="5" />
+        <stairblock x="230" y="11" width="26" height="5" />
+        <stairblock x="256" y="14" width="3" height="2" />
+        <stairblock x="261" y="14" width="5" height="2" />
+        <stairblock x="268" y="14" width="9" height="2" />
+        <stairblock x="282" y="11" width="6" height="5" />
+        <stairblock x="282" y="4" width="6" height="2" />
+        <stairblock x="302" y="4" width="2" height="3" />
+        <stairblock x="301" y="10" width="3" height="6" />
+        <stairblock x="304" y="14" width="16" height="2" />
+
+        <pipe x="19" y="12" height="4" name="very_start" />
+        <pipe x="51" y="12" height="4" goto="8-4#very_start" />
+        <pipe x="81" y="9" height="7" goto="8-4#area2" />
+        <pipe x="90" y="8" height="8" />
+        <pipe x="115" y="12" height="4" name="area2" />
+        <pipe x="122" y="11" height="5" />
+        <pipe x="132" y="12" height="4" goto="8-4#very_start" />
+        <pipe x="142" y="11" height="5" />
+        <pipe x="152" y="7" height="3" goto="8-4#area3" />
+        <pipe x="195" y="12" height="4" name="area3" />
+        <pipe x="204" y="9" height="7" />
+        <pipe x="212" y="8" height="8" goto="8-4#very_start" />
+        <pipe x="228" y="9" height="7" goto="8-4@underwater#enter" />
+        <pipe x="259" y="12" height="4" name="underwater_exit" />
+        <pipe x="266" y="12" height="4" goto="8-4#very_start" />
+
+        <hiddenblock x="150" y="10" />
+
+        <water x="6" y="14" width="5" />
+        <water x="66" y="14" width="9" />
+        <water x="144" y="14" width="3" />
+        <water x="220" y="14" width="4" />
+        <water x="277" y="14" width="5" />
+        <water x="288" y="14" width="13" />
+        
+        <movingplatform x1="67" y1="14" x2="70" y2="14" width="2" />
+
+        <bowserbridge x="288" y="11" width="13" />
+        <axe x="301" y="9" />
+
+        <princess x="313" y="13" />
+      </objects>
+      <enemies>
+        <goomba x="56" y="13" count="3" />
+
+        <bouncingkoopa x="139" y="13" />
+        <bouncingkoopa x="141" y="13" />
+        <bouncingkoopa x="155" y="13" />
+        <bouncingkoopa x="157" y="13" />
+
+        <buzzybeetle x="128" y="13" />
+        <buzzybeetle x="130" y="13" />
+
+        <hammerbro x="273" y="13" action="stay" />
+
+        <podoboo x="279" y="6" />
+        
+        <piranhaplant x="19" y="12" color="green" />
+        <piranhaplant x="51" y="12" color="green" />
+        <piranhaplant x="81" y="9" color="green" />
+        <piranhaplant x="115" y="12" color="green" />
+        <piranhaplant x="122" y="11" color="green" />
+        <piranhaplant x="132" y="12" color="green" />
+        <piranhaplant x="142" y="11" color="green" />
+        <piranhaplant x="152" y="7" color="green" />
+        <piranhaplant x="195" y="12" color="green" />
+        <piranhaplant x="204" y="9" color="green" />
+        <piranhaplant x="212" y="8" color="green" />
+        <piranhaplant x="228" y="9" color="green" />
+        <piranhaplant x="259" y="12" color="green" />
+        <piranhaplant x="266" y="12" color="green" />
+
+        <bowser x="296" y="10" fireballs hammers />
+
+        <generator type="jumpingfish" xstart="200" xend="256" />
+        <generator type="fireballs" xstart="256" xend="288" />
+      </enemies>
+      <maze>
+        <loop>
+          <checkpoint x="96" y="0" height="0" />
+          <finish x="96" setback="32" />
+        </loop>
+        <loop>
+          <checkpoint x="176" y="0" height="0" />
+          <finish x="176" setback="112" />
+        </loop>
+        <loop>
+          <checkpoint x="256" y="0" height="0" />
+          <finish x="256" setback="192" />
+        </loop>
+      </maze>
+    </sublevel>
+    <sublevel name="underwater">
+      <properties>
+        <dimensions width="71" height="16" />
+        <setting type="underwater" background="water" />
+        <start x="2" y="4" />
+      </properties>
+      <objects>
+        <floorblock x="0" y="3" width="2" height="13" />
+        <floorblock x="2" y="14" height="2" />
+        <floorblock x="5" y="14" width="67" height="2" />
+        <floorblock x="6" y="3" width="66" />
+        <floorblock x="6" y="11" width="5" height="3" />
+        <floorblock x="11" y="10" width="7" height="4" />
+        <floorblock x="6" y="4" width="5" height="2" />
+        <floorblock x="11" y="4" width="7" height="3" />
+        <floorblock x="39" y="4" width="3" height="3" />
+        <floorblock x="39" y="11" width="3" height="3" />
+        <floorblock x="67" y="4" width="5" height="3" />
+        <floorblock x="67" y="10" width="5" height="4" />
+        <floorblock x="69" y="7" width="3" height="3" />
+
+        <pipe x="3" y="12" height="4" name="enter" />
+        <pipe x="68" y="8" width="1" height="7" goto="8-4#underwater_exit" />
+      </objects>
+      <enemies>
+        <blooper x="28" y="12" />
+        <blooper x="51" y="11" />
+        <blooper x="53" y="7" />
+
+        <firebar x="20" y="8" direction="clockwise" size="small" />
+        <firebar x="31" y="11" direction="counterclockwise" size="small" />
+        <firebar x="40" y="7" direction="clockwise" size="small" />
+        <firebar x="56" y="9" direction="clockwise" size="small" />
+        <firebar x="64" y="8" direction="counterclockwise" size="small" />
+      </enemies>
+    </sublevel>
+  </level>
+  
+  <level name="warpzone">
+    <sublevel>
+      <properties>
+        <dimensions width="16" height="16" />
+        <setting type="underground" />
+        <time seconds="999" />
+        <start x="1" y="2" />
+      </properties>
+      <objects>
+        <floorblock x="0" y="14" width="16" height="2" />
+        <pipe x="1" y="11" height="3" name="1-1" />
+        <pipe x="7" y="11" height="3" name="1-1" />
+        <pipe x="13" y="11" height="3" name="1-1" />
+      </objects>
+    </sublevel>
+  </level>
+</game>

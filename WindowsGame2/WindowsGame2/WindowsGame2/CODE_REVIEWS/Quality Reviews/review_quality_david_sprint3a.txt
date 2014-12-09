@@ -1,0 +1,9 @@
+Author: David Margolis
+Date: 10/20/14
+Sprint: 3
+Reviewing: Game1.cs
+By: Dan Carlozzi
+
++ The class is very concise.
+
+- There are some bad comments

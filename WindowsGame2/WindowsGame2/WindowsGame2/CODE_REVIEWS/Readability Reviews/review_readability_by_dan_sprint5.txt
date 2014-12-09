@@ -1,0 +1,9 @@
+﻿Author: Dan Carlozzi
+Date: 11/12/14
+Sprint: 5
+Reviewing: Game1.cs
+By: Alex Losego
+
++ Well organized and readable (It's in English).
+
+- Not very creative with variable names.

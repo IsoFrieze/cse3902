@@ -1,0 +1,13 @@
+﻿Michael McGaha
+10/7/14
+Sprint3
+
+Reviewing: Goomba.cs
+by: Alex Losego
+
+Time: 5 minutes
+
++ The organization of the class makes it easy to read, and will make it easier to
+make changes to in the future. It's easy to determine what the methods do, each does a single job.
+
+- There are a ton of variables that are hard to follow at times. The class is also faily long.

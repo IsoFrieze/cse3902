@@ -1,0 +1,9 @@
+﻿Author: Alex Losego
+Date: 9/24/14
+Sprint: 2
+Reviewing: GoombaMoveLeft.cs
+By: Michael McGaha
+
++ The methods are all very small which makes it very easy to read.
+
+- There are two extra global variables, xSource and ySource that are not used and make it less readable.

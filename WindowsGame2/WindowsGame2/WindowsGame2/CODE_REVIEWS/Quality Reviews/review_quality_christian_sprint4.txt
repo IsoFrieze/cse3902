@@ -1,0 +1,9 @@
+﻿Author: Christian Winterhalter
+Date: 11/3/14
+Sprint: 4
+Reviewing: SStarBouncingLeft.cs
+By: Alex Losego
+
++ The class easy to understand, the logic containing the collision part of the state has high cohesion.
+
+- Nothing

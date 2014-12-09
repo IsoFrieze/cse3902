@@ -1,0 +1,16 @@
+﻿Michael McGaha
+10/19/14
+Sprint3
+Time: 10 minutes
+Reviewing: goomba.cs
+by: Alex Losego
+
+
++ The class has high cohesion as it does what it is supposed to do and nothing more
+
+- This class has high coupeling as it relies on a ton of different interfaces and classes to do its job
+
+
+A hypothetical change that we could do is to impliment different enemy types that are new to the game, this class
+could support this because it has all the required aspects to make the enemy work.
+

@@ -1,0 +1,9 @@
+﻿Author: Dan Carlozzi
+Date: 10/07/14
+Sprint: 3
+Reviewing: Collider.cs
+By: David Margolis
+
++ Well designed. Everything is organized and has a high cohesion.
+
+- The creation of Colliders had us change up the majority of our code and took us a while to fix.

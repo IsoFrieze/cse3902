@@ -1,0 +1,9 @@
+Author: David Margolis
+Date: 9/29/14
+Sprint: 2
+Reviewing: MushroomMoveLeft.cs
+By: Christian Winterhalter
+
++ The class has high cohesion.
+
+- The arguments for Animation use unexplained numbers

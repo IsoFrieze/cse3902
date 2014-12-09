@@ -1,0 +1,11 @@
+﻿Michael McGaha
+9/24/14
+Sprint2
+
+Reviewing: BlockQuestion.cs
+by: Alex Losego
+
+
++ The organization and clarity makes it easy to read and make changes to
+
+- There are extra global variables that are not used like frame and lag

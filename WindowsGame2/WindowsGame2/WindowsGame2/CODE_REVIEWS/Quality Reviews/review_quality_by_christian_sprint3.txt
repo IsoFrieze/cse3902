@@ -1,0 +1,11 @@
+﻿Author: Christian Winterhalter
+Date: 10/20/14
+Sprint: 3
+Reviewing: SStarBouncingLeft.cs
+By: Alex Losego
+
++ The class is small and easy to understand, has high cohesion for the logic containing the collision part of the state.
+
+- Nothing glaring, possibly some ways to cut out some code between this state and the hitbox.
+
+Overall a good implementation since it would allow easy changes to the star object without effecting these state classes

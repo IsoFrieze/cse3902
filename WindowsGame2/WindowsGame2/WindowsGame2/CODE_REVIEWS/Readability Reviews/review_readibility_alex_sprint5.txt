@@ -1,0 +1,9 @@
+﻿Author: Alex Losego
+Date: 11/12/14
+Sprint: 5
+Reviewing: HUD.cs
+By: Dan Carlozzi
+
++ The class is relatively small which makes it easy to read. String constants are turned into variables for easy reading as well.
+
+- Lots of magic numbers, especially in the FlagpolePoints method.

@@ -1,0 +1,9 @@
+Author: David Margolis
+Date: 11/17/14
+Sprint: 5
+Reviewing: Sound.cs
+By: Christian Winterhalter
+
++ The method has high cohesion.
+
+- The class has a lot of file dependencies.

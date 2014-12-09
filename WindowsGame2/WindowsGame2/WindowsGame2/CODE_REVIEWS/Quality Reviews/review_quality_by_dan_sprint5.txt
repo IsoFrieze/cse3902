@@ -1,0 +1,10 @@
+﻿Author: Dan Carlozzi
+Date: 11/17/14
+Sprint: 5
+Reviewing: STitleScreen.cs
+By: Mike McGaha
+
++ High Cohesion (does it job)
+
+- High Coupling (Require width and height from other class)
+

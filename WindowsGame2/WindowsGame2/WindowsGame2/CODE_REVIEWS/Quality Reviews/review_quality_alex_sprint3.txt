@@ -1,0 +1,11 @@
+﻿Author: Alex Losego
+Date: 10/20/14
+Sprint: 3
+Reviewing: SMushroomMovingLeft.cs
+By: Michael McGaha
+
++ The class is nice and small and has better cohesion now that it doesn't contain the Position and Velocity of it's parent object
+
+- The hitbox is being set to the same thing in both the constructor and the update method, which could possibly be factored out as common code.
+
+This class is good because if we wanted to change how mushrooms worked, we wouldn't have to change much if anything in this class.

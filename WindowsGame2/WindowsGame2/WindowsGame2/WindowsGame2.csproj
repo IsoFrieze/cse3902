@@ -1,0 +1,670 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{72D674FC-67F9-43D7-AF8A-49448EE87FD8}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsGame2</RootNamespace>
+    <AssemblyName>WindowsGame2</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <XnaProfile>Reach</XnaProfile>
+    <XnaCrossPlatformGroupID>61fe6869-31b7-4f13-8d0c-9cf7858b850e</XnaCrossPlatformGroupID>
+    <XnaOutputType>Game</XnaOutputType>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <Thumbnail>
+    </Thumbnail>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>false</XnaCompressContent>
+    <CodeAnalysisRuleSet>BasicDesignGuidelineRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>true</XnaCompressContent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.GamerServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Net" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animations\FirebarAnimation.cs" />
+    <Compile Include="Animations\BillBlasterAnimation.cs" />
+    <Compile Include="Animations\MushroomLedgeAnimation.cs" />
+    <Compile Include="Animations\WaterAnimation.cs" />
+    <Compile Include="Animations\SettingDependentAnimation.cs" />
+    <Compile Include="Animations\BackgroundAnimation.cs" />
+    <Compile Include="Animations\PipeSidewaysAnimation.cs" />
+    <Compile Include="Animations\PipeAnimation.cs" />
+    <Compile Include="Animations\PlatformAnimation.cs" />
+    <Compile Include="Animations\GrassLedgeAnimation.cs" />
+    <Compile Include="Collisions\Handlers\AxeCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\BlooperCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\BowserCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\BulletBillCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\BuzzyBeetleCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\CheepCheepLandCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\CheepCheepWaterCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\EmptyCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\LakituCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\LedgeDetectionCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\HammerBroCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\MazeFinishCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\MultiCoinBlockCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\PodobooCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\FirebarCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\FallingPlatformCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\RedKoopaCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\RidingPlatformCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\ScalePlatformCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\MazeCheckpointCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\SpinyCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\SpringboardCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\VineSpawnerCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\TransitionPointCollisionHandler.cs" />
+    <Compile Include="Collisions\Hitbox.cs" />
+    <Compile Include="Collisions\Shape.cs" />
+    <Compile Include="Commands\Game\PersonifyTextures.cs" />
+    <Compile Include="Commands\Game\RandomizeSounds.cs" />
+    <Compile Include="Commands\Game\RandomizeConstants.cs" />
+    <Compile Include="Commands\Game\RandomizeTextures.cs" />
+    <Compile Include="Commands\Game\CommandMute.cs" />
+    <Compile Include="Commands\Players\HoldJumpPlayerCommand.cs" />
+    <Compile Include="Commands\Pointer\MovePointerLeftCommand.cs" />
+    <Compile Include="Commands\Pointer\MovePointerRightCommand.cs" />
+    <Compile Include="Commands\Pointer\MovePointerDownCommand.cs" />
+    <Compile Include="Commands\Pointer\MovePointerUpCommand.cs" />
+    <Compile Include="Controllers\KeyboardState.cs" />
+    <Compile Include="Controllers\KeyboardCommands.cs" />
+    <Compile Include="Controllers\Pointer.cs" />
+    <Compile Include="HotDAMN.cs" />
+    <Compile Include="HUD.cs" />
+    <Compile Include="Interfaces\ICommand\ITechnicalCommand.cs" />
+    <Compile Include="Interfaces\ICommand\IInputCommand.cs" />
+    <Compile Include="Interfaces\IParticleState.cs" />
+    <Compile Include="Level\Camera1.cs" />
+    <Content Include="CODE_REVIEWS\Quality Reviews\review_quality_alex_sprint5.txt" />
+    <Content Include="CODE_REVIEWS\Quality Reviews\review_quality_by_dan_sprint6.txt" />
+    <Content Include="CODE_REVIEWS\Quality Reviews\review_quality_by_dan_sprint5.txt" />
+    <Content Include="CODE_REVIEWS\Quality Reviews\review_quality_by_michael.txt" />
+    <Content Include="CODE_REVIEWS\Quality Reviews\review_quality_by_michael_sprint4.txt" />
+    <Content Include="CODE_REVIEWS\Quality Reviews\review_quality_by_dan_sprint4.txt" />
+    <Content Include="CODE_REVIEWS\Quality Reviews\review_quality_by_michael_sprint5.txt" />
+    <Content Include="CODE_REVIEWS\Quality Reviews\review_quality_david_sprint6.txt" />
+    <Content Include="CODE_REVIEWS\Quality Reviews\review_quality_david_sprint5.txt" />
+    <Content Include="CODE_REVIEWS\Quality Reviews\review_quality_david_sprint4.txt" />
+    <Content Include="CODE_REVIEWS\Quality Reviews\review_quality_by_christian_sprint6.txt" />
+    <Content Include="CODE_REVIEWS\Quality Reviews\review_quality_alex_sprint6.txt" />
+    <Content Include="CODE_REVIEWS\Readability Reviews\code_review_by_michael_sprint4.txt" />
+    <Compile Include="Collisions\Collider2.cs" />
+    <Compile Include="Collisions\Collision.cs" />
+    <Compile Include="Collisions\Handlers\CoinCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\FireballCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\BrickBlockCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\FlagpoleFlagCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\GoombaCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\InvinciblePlayerCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\PiranhaPlantCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\KoopaCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\MushroomCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\OneUpCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\PlayerCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\QuestionBlockCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\StarCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\RopeCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\StaticBlockCollisionHandler.cs" />
+    <Compile Include="Collisions\Handlers\FireflowerCollisionHandler.cs" />
+    <Compile Include="Commands\CommandScheduler.cs" />
+    <Compile Include="Commands\Game\PauseGameCommand.cs" />
+    <Compile Include="Commands\Players\ThrowFireballCommand.cs" />
+    <Compile Include="Commands\Players\RunPlayerCommand.cs" />
+    <Compile Include="Commands\Players\JumpPlayerCommand.cs" />
+    <Compile Include="Commands\Game\CommandExit.cs" />
+    <Compile Include="Commands\Players\KillPlayerCommand.cs" />
+    <Compile Include="Commands\Players\NoPlayerActionCommand.cs" />
+    <Compile Include="Commands\Players\GoUpPlayerCommand.cs" />
+    <Compile Include="Commands\Players\GoRightPlayerCommand.cs" />
+    <Compile Include="Commands\Players\GoLeftPlayerCommand.cs" />
+    <Compile Include="Commands\Players\RemoveStarPlayerCommand.cs" />
+    <Compile Include="Commands\Players\StarPlayerCommand.cs" />
+    <Compile Include="Commands\Players\GoDownPlayerCommand.cs" />
+    <Compile Include="Commands\Players\PowerUpPlayerCommand.cs" />
+    <Compile Include="Commands\Players\PowerDownPlayerCommand.cs" />
+    <Compile Include="Commands\Game\ResetCommand.cs" />
+    <Compile Include="Collisions\Hitboxes.cs" />
+    <Compile Include="Interfaces\IGameState.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLEnemies\XMLlakitu.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLEnemies\XMLgenerator.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLEnemies\XMLblooper.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLEnemies\XMLbowser.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLEnemies\XMLfirebar.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLEnemies\XMLbouncingkoopa.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLEnemies\XMLbuzzybeetle.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLEnemies\XMLhammerbro.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLEnemies\XMLpodoboo.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLObjects\XMLbillblaster.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLObjects\XMLspringboard.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLObjects\XMLinvisibleblock.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLObjects\XMLbridge.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLObjects\XMLcastlewall.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLObjects\XMLfallingplatform.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLObjects\XMLridingplatform.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLObjects\XMLmushroomledge.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLObjects\XMLvine.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLObjects\XMLscaleplatforms.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLObjects\XMLprincess.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLObjects\XMLtoad.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLObjects\XMLaxe.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLObjects\XMLbowserbridge.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLObjects\XMLloop.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLObjects\XMLwater.cs" />
+    <Compile Include="Non-Tangibles\NPC\Princess.cs" />
+    <Compile Include="Non-Tangibles\NPC\Toad.cs" />
+    <Compile Include="Non-Tangibles\Particles\BrokenBrickParticle.cs" />
+    <Compile Include="Non-Tangibles\Particles\Explosion.cs" />
+    <Compile Include="Non-Tangibles\Particles\Fireworks.cs" />
+    <Compile Include="Non-Tangibles\Scenery\CastleWall.cs" />
+    <Compile Include="Non-Tangibles\Scenery\Water.cs" />
+    <Compile Include="Non-Tangibles\Scenery\Fence.cs" />
+    <Compile Include="Non-Tangibles\Scenery\LargeTree.cs" />
+    <Compile Include="Non-Tangibles\Scenery\SmallTree.cs" />
+    <Compile Include="States\Blocks\SBillBlasterIdle.cs" />
+    <Compile Include="States\Enemies\Blooper\SBlooperDead.cs" />
+    <Compile Include="States\Enemies\Blooper\SBlooperSwimming.cs" />
+    <Compile Include="States\Enemies\CheepCheep\SCheepCheepFlyingLeft.cs" />
+    <Compile Include="States\Enemies\CheepCheep\SCheepCheepFlyingRight.cs" />
+    <Compile Include="States\Enemies\HammerBro\SHammerBroJump.cs" />
+    <Compile Include="States\Enemies\HammerBro\SHammerBroDead.cs" />
+    <Compile Include="States\Enemies\HammerBro\SHammerBroApproach.cs" />
+    <Compile Include="States\Enemies\HammerBro\SHammerBroStay.cs" />
+    <Compile Include="States\Enemies\Lakitu\SLakituDead.cs" />
+    <Compile Include="States\Enemies\Lakitu\SLakituGoAway.cs" />
+    <Compile Include="States\Enemies\Lakitu\SLakituHover.cs" />
+    <Compile Include="States\Enemies\Lakitu\SLakituHide.cs" />
+    <Compile Include="States\Enemies\RedKoopa\SRedKoopaShellMovingLeft.cs" />
+    <Compile Include="States\Enemies\RedKoopa\SRedKoopaDead.cs" />
+    <Compile Include="States\Enemies\RedKoopa\SRedKoopaShelled.cs" />
+    <Compile Include="States\Enemies\RedKoopa\SRedKoopaShelledUpsideDown.cs" />
+    <Compile Include="States\Enemies\RedKoopa\SRedKoopaShellMovingRight.cs" />
+    <Compile Include="States\Enemies\RedKoopa\SRedKoopaUpsideDownShellMovingLeft.cs" />
+    <Compile Include="States\Enemies\RedKoopa\SRedKoopaUpsideDownShellMovingRight.cs" />
+    <Compile Include="States\Enemies\RedKoopa\SRedKoopaWalkingLeft.cs" />
+    <Compile Include="States\Enemies\RedKoopa\SRedKoopaWalkingRight.cs" />
+    <Compile Include="States\Enemies\RedKoopa\SRedKoopaWarning.cs" />
+    <Compile Include="States\Enemies\RedKoopa\SRedKoopaWarningUpsideDown.cs" />
+    <Compile Include="States\Enemies\Blooper\SBlooperIdle.cs" />
+    <Compile Include="States\Enemies\Spiny\SSpinyDeadLeft.cs" />
+    <Compile Include="States\Enemies\Spiny\SSpinyDeadRight.cs" />
+    <Compile Include="States\Game\SWarpZone.cs" />
+    <Compile Include="States\Projectiles\Hammer\SHammer.cs" />
+    <Compile Include="States\Special\Generator\SGeneratorIdle.cs" />
+    <Compile Include="States\Special\Springboard\SSpringboardCompressing.cs" />
+    <Compile Include="States\Special\Springboard\SSpringboardIdle.cs" />
+    <Compile Include="States\Special\Springboard\SSpringboardRelaxing.cs" />
+    <Compile Include="Tangibles\Blocks\BlockBulletBlaster.cs" />
+    <Compile Include="Tangibles\Blocks\BlockInvisible.cs" />
+    <Compile Include="Tangibles\Enemies\Blooper.cs" />
+    <Compile Include="Tangibles\Enemies\Bowser.cs" />
+    <Compile Include="Tangibles\Enemies\CheepCheepLand.cs" />
+    <Compile Include="Tangibles\Enemies\HammerBro.cs" />
+    <Compile Include="Tangibles\Enemies\Lakitu.cs" />
+    <Compile Include="States\Players\Mario\Big\Left\SWaterDuckingLeftBigMario.cs" />
+    <Compile Include="States\Players\Mario\Big\Left\SWaterIdleLeftBigMario.cs" />
+    <Compile Include="States\Players\Mario\Big\Left\SWaterSwimmingLeftBigMario.cs" />
+    <Compile Include="States\Players\Mario\Big\Left\SWaterSwimmingLeftIdleBigMario.cs" />
+    <Compile Include="States\Players\Mario\Big\Left\SWaterRunningLeftBigMario.cs" />
+    <Compile Include="States\Players\Mario\Big\Right\SWaterDuckingRightBigMario.cs" />
+    <Compile Include="States\Players\Mario\Big\Right\SWaterIdleRightBigMario.cs" />
+    <Compile Include="States\Players\Mario\Big\Right\SWaterSwimmingRightBigMario.cs" />
+    <Compile Include="States\Players\Mario\Big\Right\SWaterSwimmingRightIdleBigMario.cs" />
+    <Compile Include="States\Players\Mario\Big\Right\SWaterRunningRightBigMario.cs" />
+    <Compile Include="States\Players\Mario\Fire\Left\SWaterDuckingLeftFireMario.cs" />
+    <Compile Include="States\Players\Mario\Fire\Left\SWaterIdleLeftFireMario.cs" />
+    <Compile Include="States\Players\Mario\Fire\Left\SWaterSwimmingLeftFireMario.cs" />
+    <Compile Include="States\Players\Mario\Fire\Left\SWaterSwimmingLeftIdleFireMario.cs" />
+    <Compile Include="States\Players\Mario\Fire\Left\SWaterRunningLeftFireMario.cs" />
+    <Compile Include="States\Players\Mario\Fire\Right\SWaterDuckingRightFireMario.cs" />
+    <Compile Include="States\Players\Mario\Fire\Right\SWaterIdleRightFireMario.cs" />
+    <Compile Include="States\Players\Mario\Fire\Right\SWaterSwimmingRightFireMario.cs" />
+    <Compile Include="States\Players\Mario\Fire\Right\SWaterSwimmingRightIdleFireMario.cs" />
+    <Compile Include="States\Players\Mario\Fire\Right\SWaterRunningRightFireMario.cs" />
+    <Compile Include="States\Players\Mario\Small\Left\SWaterDuckingLeftSmallMario.cs" />
+    <Compile Include="States\Players\Mario\Small\Left\SWaterIdleLeftSmallMario.cs" />
+    <Compile Include="States\Players\Mario\Small\Left\SWaterSwimmingLeftIdleSmallMario.cs" />
+    <Compile Include="States\Players\Mario\Small\Left\SWaterSwimmingLeftSmallMario.cs" />
+    <Compile Include="States\Players\Mario\Small\Left\SWaterRunningLeftSmallMario.cs" />
+    <Compile Include="States\Players\Mario\Small\Right\SWaterRunningRightSmallMario.cs" />
+    <Compile Include="States\Players\Mario\Small\Right\SWaterSwimmingRightSmallMario.cs" />
+    <Compile Include="States\Players\Mario\Small\Right\SWaterSwimmingRightIdleSmallMario.cs" />
+    <Compile Include="States\Players\Mario\Small\Right\SWaterDuckingRightSmallMario.cs" />
+    <Compile Include="States\Players\Mario\Small\Right\SWaterIdleRightSmallMario.cs" />
+    <Compile Include="Tangibles\Enemies\RedKoopa.cs" />
+    <Compile Include="Tangibles\Generators\GeneratorBulletShooter.cs" />
+    <Compile Include="Tangibles\Generators\GeneratorFireballs.cs" />
+    <Compile Include="Tangibles\Generators\GeneratorFishJumping.cs" />
+    <Compile Include="Tangibles\Generators\GeneratorFishSwimming.cs" />
+    <Compile Include="Tangibles\Generators\GeneratorBulletBills.cs" />
+    <Compile Include="Tangibles\Projectiles\BowserFireball.cs" />
+    <Compile Include="Tangibles\Projectiles\Hammer.cs" />
+    <Compile Include="Tangibles\Special\Springboard.cs" />
+    <Compile Include="TextSelections.cs" />
+    <Compile Include="Sound.cs" />
+    <Compile Include="SoundPanel.cs" />
+    <Compile Include="States\Enemies\Bowser\SBowserMovingLeft.cs" />
+    <Compile Include="States\Enemies\Bowser\SBowserMovingRight.cs" />
+    <Compile Include="States\Enemies\Bowser\SBowserShootingFireBallsLeft.cs" />
+    <Compile Include="States\Enemies\Bowser\SFireballDeadBowser.cs" />
+    <Compile Include="States\Enemies\BulletBill\BulletLeftDead.cs" />
+    <Compile Include="States\Enemies\BulletBill\SBulletMovingLeft.cs" />
+    <Compile Include="States\Enemies\BulletBill\SBulletMovingRight.cs" />
+    <Compile Include="States\Enemies\BulletBill\SBulletStomped.cs" />
+    <Compile Include="States\Enemies\BuzzyBeetle\BuzzyBeetleDead.cs" />
+    <Compile Include="States\Enemies\BuzzyBeetle\BuzzyBeetleShelledUpsideDown.cs" />
+    <Compile Include="States\Enemies\BuzzyBeetle\SBuzzyBeetleShelled.cs" />
+    <Compile Include="States\Enemies\BuzzyBeetle\SBuzzyBeetleShellMovingLeft.cs" />
+    <Compile Include="States\Enemies\BuzzyBeetle\SBuzzyBeetleShellMovingRight.cs" />
+    <Compile Include="States\Enemies\BuzzyBeetle\SBuzzyBeetleUpsideDownShellMovingLeft.cs" />
+    <Compile Include="States\Enemies\BuzzyBeetle\SBuzzyBeetleUpsideDownShellMovingRight.cs" />
+    <Compile Include="States\Enemies\BuzzyBeetle\SBuzzyBeetleWalkingLeft.cs" />
+    <Compile Include="States\Enemies\BuzzyBeetle\SBuzzyBeetleWalkingRight.cs" />
+    <Compile Include="States\Enemies\CheepCheep\SCheepCheepDeadLeft.cs" />
+    <Compile Include="States\Enemies\CheepCheep\SCheepCheepSwimmingLeft.cs" />
+    <Compile Include="States\Enemies\Firebar\SFirebarClockwise.cs" />
+    <Compile Include="States\Enemies\Firebar\SFirebarCounterClockwise.cs" />
+    <Compile Include="States\Enemies\Koopa\SKoopaBouncingLeft.cs" />
+    <Compile Include="States\Enemies\Koopa\SKoopaBouncingRight.cs" />
+    <Compile Include="States\Enemies\Koopa\SKoopaShelledUpsidedown.cs" />
+    <Compile Include="States\Enemies\Koopa\SKoopaUpsideDownShellMovingLeft.cs" />
+    <Compile Include="States\Enemies\Koopa\SKoopaUpsideDownShellMovingRight.cs" />
+    <Compile Include="States\Enemies\Koopa\SKoopaWarningUpsideDown.cs" />
+    <Compile Include="States\Enemies\Podoboo\SPodobooMoving.cs" />
+    <Compile Include="States\Enemies\Podoboo\SPodobooWaiting.cs" />
+    <Compile Include="States\Enemies\Spiny\SSpinyEgg.cs" />
+    <Compile Include="States\Enemies\Spiny\SSpinyMovingLeft.cs" />
+    <Compile Include="States\Enemies\Spiny\SSpinyMovingRight.cs" />
+    <Compile Include="States\Game\SCastleComplete.cs" />
+    <Compile Include="States\Game\SLevelComplete.cs" />
+    <Compile Include="States\Game\STitleScreen.cs" />
+    <Compile Include="States\Game\SInLevel.cs" />
+    <Compile Include="States\Game\SGameOver.cs" />
+    <Compile Include="States\Game\SLevelIntro.cs" />
+    <Compile Include="States\Game\SLevelPaused.cs" />
+    <Compile Include="States\Items\FireFlower\SFireFlowerInBlock.cs" />
+    <Compile Include="States\Items\VineSpawner\SVineSpawnerInBlock.cs" />
+    <Compile Include="States\Particles\Score\SParticleFlagpolePoints.cs" />
+    <Compile Include="States\Particles\SFallingParticle.cs" />
+    <Compile Include="States\Particles\SParticleExplosion.cs" />
+    <Compile Include="States\Platforms\SPlatformFalling.cs" />
+    <Compile Include="States\Platforms\SPlatformIdle.cs" />
+    <Compile Include="States\Platforms\SPlatformMovingRight.cs" />
+    <Compile Include="States\Players\Mario\Small\Left\SIdleLeftSmallMario.cs" />
+    <Compile Include="States\Players\Mario\Small\Right\SIdleRightSmallMario.cs" />
+    <Compile Include="States\Particles\Score\SPointsRising.cs" />
+    <Compile Include="States\Projectiles\BowserFireballs\SBowserFireballLeft.cs" />
+    <Compile Include="States\Special\Axe\SAxeIdle.cs" />
+    <Compile Include="States\Special\Maze\SMazeFinishIdle.cs" />
+    <Compile Include="States\Special\TransitionPoint\STransitionPointActive.cs" />
+    <Compile Include="States\Special\Maze\SMazeCheckpointIdle.cs" />
+    <Compile Include="States\Special\TransitionPoint\STransitionPointInactive.cs" />
+    <Compile Include="States\Special\Flagpole\SFlagpoleFlagPulledDown.cs" />
+    <Compile Include="Non-Tangibles\Particles\Score.cs" />
+    <Compile Include="Tangibles\Blocks\BlockBridge.cs" />
+    <Compile Include="Tangibles\Blocks\BowserBridge.cs" />
+    <Compile Include="Tangibles\Blocks\BlockMultiCoin.cs" />
+    <Compile Include="Tangibles\Enemies\BulletBill.cs" />
+    <Compile Include="Tangibles\Enemies\Firebar.cs" />
+    <Compile Include="Tangibles\Enemies\BuzzyBeetle.cs" />
+    <Compile Include="Tangibles\Enemies\CheepCheepWater.cs" />
+    <Compile Include="Tangibles\Enemies\Podoboo.cs" />
+    <Compile Include="Tangibles\Enemies\Spiny.cs" />
+    <Compile Include="Tangibles\Items\VineSpawner.cs" />
+    <Compile Include="Tangibles\Maze\MazeFinish.cs" />
+    <Compile Include="Tangibles\Maze\MazeCheckpoint.cs" />
+    <Compile Include="Tangibles\Platforms\MushroomLedge.cs" />
+    <Compile Include="Tangibles\Platforms\FallingPlatform.cs" />
+    <Compile Include="Tangibles\Platforms\RidingPlatform.cs" />
+    <Compile Include="Tangibles\Platforms\ScalePlatform.cs" />
+    <Compile Include="Tangibles\Players\AutoMovements\FinishCastleAutoMovement.cs" />
+    <Compile Include="Tangibles\Players\AutoMovements\TitleScreenAutoMovement.cs" />
+    <Compile Include="Tangibles\Players\AutoMovements\BeginLevelAutoMovement.cs" />
+    <Compile Include="Tangibles\Players\AutoMovements\FinishLevelAutoMovement.cs" />
+    <Compile Include="Interfaces\IAnimatedSprite.cs" />
+    <Compile Include="Interfaces\IAutoMovement.cs" />
+    <Compile Include="Interfaces\IXMLLevelObject.cs" />
+    <Compile Include="Interfaces\IParticle.cs" />
+    <Compile Include="Interfaces\IBackground.cs" />
+    <Compile Include="Interfaces\ICollisionHandler.cs" />
+    <Compile Include="Interfaces\ICamera.cs" />
+    <Compile Include="Interfaces\ITangibleState\IPlayerState\IMarioState Actions\IClimbingMarioState.cs" />
+    <Compile Include="Interfaces\ITangibleState\IRopeState.cs" />
+    <Compile Include="Interfaces\ITangibleState\IPlayerState\IMarioState Actions\IRunningMarioState.cs" />
+    <Compile Include="Interfaces\ITangibleState\IPlayerState\IMarioState Actions\IJumpingMarioState.cs" />
+    <Compile Include="Interfaces\ITangibleState\IPlayerState\IMarioState Actions\IIdleMarioState.cs" />
+    <Compile Include="Interfaces\ITangibleState\IPlayerState\IMarioState Actions\IDuckingMarioState.cs" />
+    <Compile Include="Interfaces\ITangibleState\IPlayerState\IMarioState Directions\IRightMarioState.cs" />
+    <Compile Include="Interfaces\ITangibleState\IPlayerState\IMarioState Directions\ILeftMarioState.cs" />
+    <Compile Include="Interfaces\ITangibleState\IPlayerState\IMarioState Sizes\IFireMarioState.cs" />
+    <Compile Include="Interfaces\ITangibleState\IPlayerState\IMarioState Sizes\IBigMarioState.cs" />
+    <Compile Include="Interfaces\ITangibleState\IPlayerState\IMarioState Sizes\ISmallMarioState.cs" />
+    <Compile Include="Interfaces\ITangibleState\IPlayerState\IPlayerState.cs" />
+    <Compile Include="Interfaces\ITangibleState\IProjectileState.cs" />
+    <Compile Include="Interfaces\ITangibleState\ITangibleState.cs" />
+    <Compile Include="Interfaces\ITangible\IContainer.cs" />
+    <Compile Include="Interfaces\ITangible\IRope.cs" />
+    <Compile Include="Interfaces\ITangible\IProjectile.cs" />
+    <Compile Include="Interfaces\ITangible\ITangible.cs" />
+    <Compile Include="Interfaces\ITangible\IBlock.cs" />
+    <Compile Include="Interfaces\ITangibleState\IBlockState.cs" />
+    <Compile Include="Interfaces\ICommand\ICommand.cs" />
+    <Compile Include="Interfaces\IController.cs" />
+    <Compile Include="Interfaces\ITangible\IEnemy.cs" />
+    <Compile Include="Interfaces\ITangibleState\IEnemyState.cs" />
+    <Compile Include="Interfaces\ITangibleState\IPlayerState\IMarioState Sizes\IMarioState.cs" />
+    <Compile Include="Interfaces\ITangible\IPlayer.cs" />
+    <Compile Include="Interfaces\ITangibleState\IPowerUpState.cs" />
+    <Compile Include="Interfaces\ITangible\IPowerUp.cs" />
+    <Compile Include="Interfaces\IPowerupAnimation.cs" />
+    <Compile Include="Level\Level.cs" />
+    <Compile Include="Level\LevelLoader.cs" />
+    <Compile Include="Level\LevelParser2.cs" />
+    <Compile Include="Animations\MarioAnimation.cs" />
+    <Compile Include="Level\XML\XMLLevel.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLEnemies\XMLpiranhaplant.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLEnemies\XMLkoopa.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLEnemies\XMLgoomba.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLObjects\XMLinfiniteplatform.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLObjects\XMLmovingplatforms.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLObjects\XMLgrassledge.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLObjects\XMLcastle.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLObjects\XMLflagpole.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLObjects\XMLpipe.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLObjects\XMLhiddenblock.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLObjects\XMLquestionblock.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLObjects\XMLbrickblock.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLObjects\XMLcoin.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLObjects\XMLusedblock.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLObjects\XMLstaircase.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLObjects\XMLstairblock.cs" />
+    <Compile Include="Level\XML\XMLLevelParts\XMLObjects\XMLfloorblock.cs" />
+    <Compile Include="Level\XML\XMLTokenizer.cs" />
+    <Compile Include="Level\XML\XMLParser.cs" />
+    <Compile Include="Level\XML\XMLTree.cs" />
+    <Compile Include="Physics.cs" />
+    <Compile Include="States\Enemies\Goomba\SGoombaDead.cs" />
+    <Compile Include="States\Enemies\Koopa\SKoopaDead.cs" />
+    <Compile Include="States\Enemies\Koopa\SKoopaShellMovingLeft.cs" />
+    <Compile Include="States\Enemies\Koopa\SKoopaShellMovingRight.cs" />
+    <Compile Include="States\Enemies\PiranhaPlant\SPiranhaPlantIdle.cs" />
+    <Compile Include="States\Enemies\PiranhaPlant\SPiranhaPlantWaiting.cs" />
+    <Compile Include="States\Enemies\PiranhaPlant\SPiranhaPlantMovingDown.cs" />
+    <Compile Include="States\Enemies\PiranhaPlant\SPiranhaPlantMovingUp.cs" />
+    <Compile Include="States\Items\1Up\S1UpInBlock.cs" />
+    <Compile Include="States\Items\Coin\SCoinInBlock.cs" />
+    <Compile Include="States\Items\Coin\SCoinSpawning.cs" />
+    <Compile Include="States\Items\Star\SStarInBlock.cs" />
+    <Compile Include="States\Platforms\SScalePlatformIdle.cs" />
+    <Compile Include="States\Platforms\SPlatformMovingUp.cs" />
+    <Compile Include="States\Platforms\SPlatformMovingDown.cs" />
+    <Compile Include="States\Platforms\SPlatformAlternate.cs" />
+    <Compile Include="States\Players\Mario\Big\Left\SClimbingDownLeftBigMario.cs" />
+    <Compile Include="States\Players\Mario\Big\Left\SClimbingIdleLeftBigMario.cs" />
+    <Compile Include="States\Players\Mario\Big\Left\SClimbingUpLeftBigMario.cs" />
+    <Compile Include="States\Players\Mario\Big\Left\SJumpingLeftIdleBigMario.cs" />
+    <Compile Include="States\Players\Mario\Big\Right\SClimbingDownRightBigMario.cs" />
+    <Compile Include="States\Players\Mario\Big\Right\SClimbingIdleRightBigMario.cs" />
+    <Compile Include="States\Players\Mario\Big\Right\SClimbingUpRightBigMario.cs" />
+    <Compile Include="States\Players\Mario\Fire\Left\SClimbingDownLeftFireMario.cs" />
+    <Compile Include="States\Players\Mario\Fire\Left\SClimbingIdleLeftFireMario.cs" />
+    <Compile Include="States\Players\Mario\Fire\Left\SClimbingUpLeftFireMario.cs" />
+    <Compile Include="States\Players\Mario\Fire\Right\SClimbingDownRightFireMario.cs" />
+    <Compile Include="States\Players\Mario\Fire\Right\SClimbingIdleRightFireMario.cs" />
+    <Compile Include="States\Players\Mario\Fire\Right\SClimbingUpRightFireMario.cs" />
+    <Compile Include="States\Players\Mario\Small\Left\SClimbingDownLeftSmallMario.cs" />
+    <Compile Include="States\Players\Mario\Small\Left\SClimbingUpLeftSmallMario.cs" />
+    <Compile Include="States\Players\Mario\Small\Left\SClimbingIdleLeftSmallMario.cs" />
+    <Compile Include="States\Players\Mario\Small\Right\SClimbingDownRightSmallMario.cs" />
+    <Compile Include="States\Players\Mario\Small\Right\SClimbingIdleRightSmallMario.cs" />
+    <Compile Include="States\Players\Mario\Small\Right\SClimbingUpRightSmallMario.cs" />
+    <Compile Include="States\Players\Mario\Transitions\SMarioTansition.cs" />
+    <Compile Include="States\Players\Mario\Big\Right\SJumpingRightIdleBigMario.cs" />
+    <Compile Include="States\Players\Mario\Fire\Left\SJumpingLeftIdleFireMario.cs" />
+    <Compile Include="States\Players\Mario\Fire\Right\SJumpingRightIdleFireMario.cs" />
+    <Compile Include="States\Players\Mario\Small\Left\SJumpingLeftIdleSmallMario.cs" />
+    <Compile Include="States\Players\Mario\Small\Right\SJumpingRightIdleSmallMario.cs" />
+    <Compile Include="States\Projectiles\Fireballs\SFireballBouncingRight.cs" />
+    <Compile Include="States\Projectiles\Fireballs\SFireballBouncingLeft.cs" />
+    <Compile Include="States\Ropes\SRopeIdle.cs" />
+    <Compile Include="States\Special\Flagpole\SFlagpolePoleIdle.cs" />
+    <Compile Include="States\Blocks\SBrickBroken.cs" />
+    <Compile Include="States\Special\Ledge\SLedgeIdle.cs" />
+    <Compile Include="States\Special\Pipe\SPipeSidewaysIdle.cs" />
+    <Compile Include="States\Special\Pipe\SPipeIdle.cs" />
+    <Compile Include="States\Special\Flagpole\SFlagpoleFlagIdle.cs" />
+    <Compile Include="Tangibles\Blocks\BlockPipeSideways.cs" />
+    <Compile Include="Tangibles\Enemies\PiranhaPlant.cs" />
+    <Compile Include="Tangibles\Platforms\ForeverPlatform.cs" />
+    <Compile Include="Tangibles\Platforms\MovingPlatform.cs" />
+    <Compile Include="Tangibles\Platforms\GrassLedge.cs" />
+    <Compile Include="Tangibles\Ropes\Vine.cs" />
+    <Compile Include="Tangibles\Ropes\FlagpolePole.cs" />
+    <Compile Include="Tangibles\Blocks\BlockPipe.cs" />
+    <Compile Include="Tangibles\Blocks\BlockBrick.cs" />
+    <Compile Include="Tangibles\Blocks\BlockFloor.cs" />
+    <Compile Include="Tangibles\Blocks\BlockHidden.cs" />
+    <Compile Include="Tangibles\Blocks\BlockQuestion.cs" />
+    <Compile Include="Tangibles\Blocks\BlockStair.cs" />
+    <Compile Include="Tangibles\Blocks\BlockUsed.cs" />
+    <Compile Include="Tangibles\Enemies\Goomba.cs" />
+    <Compile Include="Tangibles\Enemies\Koopa.cs" />
+    <Compile Include="Tangibles\Items\1Up.cs" />
+    <Compile Include="Tangibles\Items\Coin.cs" />
+    <Compile Include="Tangibles\Items\FireFlower.cs" />
+    <Compile Include="Tangibles\Items\Mushroom.cs" />
+    <Compile Include="Tangibles\Items\Star.cs" />
+    <Compile Include="Tangibles\NullObject.cs" />
+    <Compile Include="Tangibles\Players\Mario.cs" />
+    <Compile Include="Collisions\Collider.cs" />
+    <Compile Include="Animations\FlagpoleAnimation.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Game1.cs" />
+    <Compile Include="Animations\Animation.cs" />
+    <Compile Include="Tangibles\Players\Decorators\PlainPlayer.cs" />
+    <Compile Include="Tangibles\Players\Decorators\BlinkingPlayer.cs" />
+    <Compile Include="Tangibles\Players\Decorators\TemporaryDecorator.cs" />
+    <Compile Include="Tangibles\Players\Decorators\StarPlayer.cs" />
+    <Compile Include="States\Blocks\SBlockGettingBumped.cs" />
+    <Compile Include="States\Blocks\SBlockIdle.cs" />
+    <Compile Include="States\Blocks\SBlockUsed.cs" />
+    <Compile Include="States\Enemies\Goomba\SGoombaMovingLeft.cs" />
+    <Compile Include="States\Enemies\Goomba\SGoombaMovingRight.cs" />
+    <Compile Include="States\Enemies\Goomba\SGoombaStomped.cs" />
+    <Compile Include="States\Enemies\Koopa\SKoopaWarning.cs" />
+    <Compile Include="States\Enemies\Koopa\SKoopaShelled.cs" />
+    <Compile Include="States\Enemies\Koopa\SKoopaWalkingLeft.cs" />
+    <Compile Include="States\Enemies\Koopa\SKoopaWalkingRight.cs" />
+    <Compile Include="States\Items\Coin\SCoinIdle.cs" />
+    <Compile Include="States\Items\1Up\S1UpMovingLeft.cs" />
+    <Compile Include="States\Items\1Up\S1UpMovingRight.cs" />
+    <Compile Include="States\Items\1Up\S1UpSpawning.cs" />
+    <Compile Include="States\Items\Mushroom\SMushroomMovingLeft.cs" />
+    <Compile Include="States\Items\Mushroom\SMushroomMovingRight.cs" />
+    <Compile Include="States\Items\Mushroom\SMushroomInBlock.cs" />
+    <Compile Include="States\Items\FireFlower\SFireFlowerIdle.cs" />
+    <Compile Include="States\Items\FireFlower\SFireFlowerSpawning.cs" />
+    <Compile Include="States\Items\Star\SStarBouncingRight.cs" />
+    <Compile Include="States\Items\Star\SStarBouncingLeft.cs" />
+    <Compile Include="States\Items\Star\SStarSpawning.cs" />
+    <Compile Include="States\Items\Mushroom\SMushroomSpawning.cs" />
+    <Compile Include="States\Players\Mario\Big\Left\SDuckingLeftBigMario.cs" />
+    <Compile Include="States\Players\Mario\Big\Left\SIdleLeftBigMario.cs" />
+    <Compile Include="States\Players\Mario\Big\Left\SJumpingLeftBigMario.cs" />
+    <Compile Include="States\Players\Mario\Big\Left\SRunningLeftBigMario.cs" />
+    <Compile Include="States\Players\Mario\Big\Right\SDuckingRightBigMario.cs" />
+    <Compile Include="States\Players\Mario\Big\Right\SIdleRightBigMario.cs" />
+    <Compile Include="States\Players\Mario\Big\Right\SJumpingRightBigMario.cs" />
+    <Compile Include="States\Players\Mario\Big\Right\SRunningRightBigMario.cs" />
+    <Compile Include="States\Players\Mario\Dead\SDeadMario.cs" />
+    <Compile Include="States\Players\Mario\Fire\Left\SDuckingLeftFireMario.cs" />
+    <Compile Include="States\Players\Mario\Fire\Left\SIdleLeftFireMario.cs" />
+    <Compile Include="States\Players\Mario\Fire\Left\SJumpingLeftFireMario.cs" />
+    <Compile Include="States\Players\Mario\Fire\Left\SRunningLeftFireMario.cs" />
+    <Compile Include="States\Players\Mario\Fire\Right\SDuckingRightFireMario.cs" />
+    <Compile Include="States\Players\Mario\Fire\Right\SIdleRightFireMario.cs" />
+    <Compile Include="States\Players\Mario\Fire\Right\SJumpingRightFireMario.cs" />
+    <Compile Include="States\Players\Mario\Fire\Right\SRunningRightFireMario.cs" />
+    <Compile Include="States\Players\Mario\Small\Left\SDuckingLeftSmallMario.cs" />
+    <Compile Include="States\Players\Mario\Small\Left\SJumpingLeftSmallMario.cs" />
+    <Compile Include="States\Players\Mario\Small\Left\SRunningLeftSmallMario.cs" />
+    <Compile Include="States\Players\Mario\Small\Right\SDuckingRightSmallMario.cs" />
+    <Compile Include="States\Players\Mario\Small\Right\SJumpingRightSmallMario.cs" />
+    <Compile Include="States\Players\Mario\Small\Right\SRunningRightSmallMario.cs" />
+    <Compile Include="Tangibles\Projectiles\Fireball.cs" />
+    <Compile Include="Non-Tangibles\Scenery\TitleCard.cs" />
+    <Compile Include="Non-Tangibles\Scenery\CastleSmall.cs" />
+    <Compile Include="Non-Tangibles\Scenery\CastleBig.cs" />
+    <Compile Include="Non-Tangibles\Scenery\BigHill.cs" />
+    <Compile Include="Non-Tangibles\Scenery\LargeBush.cs" />
+    <Compile Include="Non-Tangibles\Scenery\LargeCloud.cs" />
+    <Compile Include="Non-Tangibles\Scenery\MediumBush.cs" />
+    <Compile Include="Non-Tangibles\Scenery\MediumCloud.cs" />
+    <Compile Include="Non-Tangibles\Scenery\SmallBush.cs" />
+    <Compile Include="Non-Tangibles\Scenery\SmallCloud.cs" />
+    <Compile Include="Non-Tangibles\Scenery\Background.cs" />
+    <Compile Include="Non-Tangibles\Scenery\SmallHill.cs" />
+    <Compile Include="Tangibles\Special\Axe.cs" />
+    <Compile Include="Tangibles\TransitionPoint\LevelTransitionPoint.cs" />
+    <Compile Include="Tangibles\Special\FlagpoleFlag.cs" />
+    <Compile Include="Textures\TextureMap.cs" />
+    <Compile Include="Textures\Textures.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CODE_REVIEWS\Quality Reviews\review_quality_by_christian_sprint2.txt" />
+    <Content Include="CODE_REVIEWS\Quality Reviews\review_quality_by_dan_sprint3.txt" />
+    <Content Include="CODE_REVIEWS\Quality Reviews\review_quality_by_michael_sprint3.txt" />
+    <Content Include="CODE_REVIEWS\Quality Reviews\review_quality_by_michael_sprint2.txt" />
+    <Content Include="CODE_REVIEWS\Quality Reviews\review_quality_by_dan_sprint2.txt" />
+    <Content Include="CODE_REVIEWS\Quality Reviews\review_quailty_alex_sprint2.txt" />
+    <Content Include="CODE_REVIEWS\Quality Reviews\review_quality_dan_sprint3.txt" />
+    <Content Include="CODE_REVIEWS\Quality Reviews\review_quality_david_sprint3a.txt" />
+    <Content Include="CODE_REVIEWS\Quality Reviews\review_quality_david_sprint2.txt" />
+    <Content Include="CODE_REVIEWS\Quality Reviews\review_quality_by_christian_sprint3.txt" />
+    <Content Include="CODE_REVIEWS\Readability Reviews\code_review_by_michael_sprint2.txt" />
+    <Content Include="CODE_REVIEWS\Readability Reviews\code_review_by_michael_sprint3.txt" />
+    <Content Include="CODE_REVIEWS\Quality Reviews\review_quality_alex_sprint3.txt" />
+    <Content Include="CODE_REVIEWS\Readability Reviews\code_review_by_michael_sprint5.txt" />
+    <Content Include="CODE_REVIEWS\Readability Reviews\code_review_by_michael_sprint6.txt" />
+    <Content Include="CODE_REVIEWS\Readability Reviews\review_readability_by_dan_sprint4.txt" />
+    <Content Include="CODE_REVIEWS\Readability Reviews\review_readability_by_dan_sprint5.txt" />
+    <Content Include="CODE_REVIEWS\Readability Reviews\review_readability_dan_sprint3.txt" />
+    <Content Include="CODE_REVIEWS\Quality Reviews\review_quality_alex_sprint4.txt" />
+    <Content Include="CODE_REVIEWS\Readability Reviews\review_readibility_alex_sprint6.txt" />
+    <Content Include="CODE_REVIEWS\Readability Reviews\review_readibility_alex_sprint5.txt" />
+    <Content Include="CODE_REVIEWS\Readability Reviews\review_readibility_alex_sprint4.txt" />
+    <Content Include="CODE_REVIEWS\Readability Reviews\review_readibility_alex_sprint3.txt" />
+    <Content Include="CODE_REVIEWS\Readability Reviews\review_readibility_alex_sprint2.txt" />
+    <Content Include="CODE_REVIEWS\Readability Reviews\review_readibility_dan_sprint6.txt" />
+    <Content Include="CODE_REVIEWS\Readability Reviews\review_readibility_david_sprint6.txt" />
+    <Content Include="CODE_REVIEWS\Readability Reviews\review_readibility_david_sprint5.txt" />
+    <Content Include="CODE_REVIEWS\Readability Reviews\review_readibility_david_sprint4.txt" />
+    <Content Include="CODE_REVIEWS\Readability Reviews\review_readibility_david_sprint3.txt" />
+    <Content Include="CODE_REVIEWS\Readability Reviews\review_readibility_david_sprint2.txt" />
+    <Content Include="CODE_REVIEWS\Readability Reviews\review_readibility_dan_sprint2.txt" />
+    <Content Include="CODE_REVIEWS\Readability Reviews\review_readibility_christian_sprint2.txt" />
+    <Content Include="CODE_REVIEWS\Readability Reviews\review_readibility_david_sprint2_updated.txt" />
+    <Content Include="CODE_REVIEWS\Readability Reviews\review_readibility_christian_sprint3.txt" />
+    <Content Include="CODE_REVIEWS\Readability Reviews\review_readibility_christian_sprint6.txt" />
+    <Content Include="Tangibles\Other\Game.ico" />
+    <Content Include="Tangibles\Other\GameThumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WindowsGame2Content\WindowsGame2Content.contentproj">
+      <Name>WindowsGame2Content</Name>
+      <XnaReferenceType>Content</XnaReferenceType>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>

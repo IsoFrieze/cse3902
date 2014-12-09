@@ -1,0 +1,9 @@
+﻿Author: Dan Carlozzi
+Date: 9/24/14
+Sprint: 2
+Reviewing: PlayerCommand.cs
+By: David Margolis
+
++ Adding the brackets made reading the code a lot easier. Also the added break command stops the code from doing unnecessary loops.
+
+- Unimaginative names for all the variables.
