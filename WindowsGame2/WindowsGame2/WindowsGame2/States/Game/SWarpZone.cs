@@ -54,7 +54,9 @@ namespace WindowsGame2
 
         public void Pause()
         {
-
+            int world = pointer.GetSelectedRow() + 1;
+            int level = pointer.GetSelectedColumn() + 1;
+            Game.state = new SLevelIntro(Game, world + "-" + level);
         }
 
         public void UnPause()

@@ -54,7 +54,24 @@ namespace WindowsGame2
 
         public void Pause()
         {
-
+            if (pointer.GetSelectedRow() == 0)
+            {
+                HUD.numOfPlayers = 1;
+                HUD.SetPlayerInfo();
+                Game.state = new SLevelIntro(Game, HUD.worldNum[HUD.currentPlayer] + "-" + HUD.levelNum[HUD.currentPlayer]);
+            }
+            else if (pointer.GetSelectedRow() == 1)
+            {
+                HUD.numOfPlayers = 2;
+                HUD.SetPlayerInfo();
+                Game.state = new SLevelIntro(Game, HUD.worldNum[HUD.currentPlayer] + "-" + HUD.levelNum[HUD.currentPlayer]);
+            }
+            else if (pointer.GetSelectedRow() == 2)
+            {
+                HUD.numOfPlayers = 1;
+                HUD.SetPlayerInfo();
+                Game.state = new SWarpZone(Game);
+            }
         }
 
         public void UnPause()

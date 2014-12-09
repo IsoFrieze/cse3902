@@ -116,14 +116,14 @@ namespace WindowsGame2
         public static String TEXT_GAME_OVER = "GAME OVER";
         public static String TAB = "    ";
         public static String TEXT_TITLE_SCREEN_SELECTIONS = TAB + "1 PLAYER GAME\n" + TAB + "2 PLAYER GAME\n" + TAB + "WARP ZONE";
-        public static String TEXT_WARP_ZONE_SELECTIONS = TAB + "1-1" + TAB + TAB + "3-1" + TAB + TAB + "5-1" + TAB + TAB + "7-1\n" +
-                                                            TAB + "1-2" + TAB + TAB + "3-2" + TAB + TAB + "5-2" + TAB + TAB + "7-2\n" +
-                                                            TAB + "1-3" + TAB + TAB + "3-3" + TAB + TAB + "5-3" + TAB + TAB + "7-3\n" +
-                                                            TAB + "1-4" + TAB + TAB + "3-4" + TAB + TAB + "5-4" + TAB + TAB + "7-4\n" +
-                                                            TAB + "2-1" + TAB + TAB + "4-1" + TAB + TAB + "6-1" + TAB + TAB + "8-1\n" +
-                                                            TAB + "2-2" + TAB + TAB + "4-2" + TAB + TAB + "6-2" + TAB + TAB + "8-2\n" +
-                                                            TAB + "2-3" + TAB + TAB + "4-3" + TAB + TAB + "6-3" + TAB + TAB + "8-3\n" +
-                                                            TAB + "2-4" + TAB + TAB + "4-4" + TAB + TAB + "6-4" + TAB + TAB + "8-4";
+        public static String TEXT_WARP_ZONE_SELECTIONS = TAB + "1-1" + TAB + TAB + "1-2" + TAB + TAB + "1-3" + TAB + TAB + "1-4\n" +
+                                                            TAB + "2-1" + TAB + TAB + "2-2" + TAB + TAB + "2-3" + TAB + TAB + "2-4\n" +
+                                                            TAB + "3-1" + TAB + TAB + "3-2" + TAB + TAB + "3-3" + TAB + TAB + "3-4\n" +
+                                                            TAB + "4-1" + TAB + TAB + "4-2" + TAB + TAB + "4-3" + TAB + TAB + "4-4\n" +
+                                                            TAB + "5-1" + TAB + TAB + "5-2" + TAB + TAB + "5-3" + TAB + TAB + "5-4\n" +
+                                                            TAB + "6-1" + TAB + TAB + "6-2" + TAB + TAB + "6-3" + TAB + TAB + "6-4\n" +
+                                                            TAB + "7-1" + TAB + TAB + "7-2" + TAB + TAB + "7-3" + TAB + TAB + "7-4\n" +
+                                                            TAB + "8-1" + TAB + TAB + "8-2" + TAB + TAB + "8-3" + TAB + TAB + "8-4";
 
 
         public static char TAG_SUBLEVEL = '@';
